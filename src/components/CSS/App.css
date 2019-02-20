@@ -1,0 +1,265 @@
+html,
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  /* background:  */
+  /* linear-gradient(160deg, rgba(0, 52, 89, 0.1), rgba(0, 52, 89, 0) 50%),
+  linear-gradient(180deg, rgba(0, 52, 89, 0.2), rgba(0, 52, 89, 0) 10%); */
+  /* linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+}
+
+@media (min-width: 320px) and (max-width: 600px),
+  (min-width: 600px) and (max-width: 999px){
+    .home {
+      width: 90%;
+      background-color: white;
+      margin: auto;
+    }
+  
+    .all-posts {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .idv-post {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0 0 40px 0;
+    }
+  
+    .img-tags-div {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      flex-grow: 1;
+    }
+  
+    .img-tags-div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .tags-div {
+      display: flex;
+      position: absolute;
+      width: 90%;
+      top: 8px;
+      left: 16px;
+      color: white;
+      font-size: 12px;
+    }
+  
+    .tag-span-1 {
+      text-align: center;
+      width: 60px;
+      margin: 5px;
+      padding: 10px;
+      background: rgba(211, 114, 124, 0.9);
+    }
+  
+    .tag-span-2 {
+      text-align: center;
+      width: 60px;
+      margin: 5px;
+      padding: 10px;
+      background-color: rgba(0, 52, 89, 0.9);
+    }
+    .tag-span-3 {
+      text-align: center;
+      width: 60px;
+      margin: 5px;
+      padding: 10px;
+      background-color: rgba(255, 204, 0, 0.9);
+    }
+  
+    .date {
+      letter-spacing: 0.25em;
+    }
+  
+    .title {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+  
+    .text-div {
+      width: 500px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 2;
+      margin: 0 0 0 30px;
+    }
+  
+    .text-preview-div {
+      height: 12em;
+      overflow: hidden;
+    }
+  
+    .text-preview {
+      margin: 0 auto;
+      white-space: pre-line;
+      line-height: 2;
+      text-align: justify;
+    }
+  
+    .cnt-reading {
+      font-family: "BrittanySignature", sans-serif;
+      font-size: 24px;
+      letter-spacing: 0.25em;
+      margin: 0 auto;
+      color: black;
+    }
+  
+    .share-post {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .share-post i {
+      padding: 10px;
+    }
+  
+    .fa-heart {
+      color: rgb(159, 25, 23);
+    }
+  
+    .share-post span {
+      letter-spacing: 0.25em;
+      padding: 5px 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+
+ @media (min-width: 1000px) {
+  .home {
+    width: 100%;
+  }
+  .all-posts {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .idv-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 40px 0;
+  }
+
+  .img-tags-div {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .img-tags-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tags-div {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    top: 8px;
+    left: 16px;
+    color: white;
+    font-size: 12px;
+  }
+
+  .tag-span-1 {
+    text-align: center;
+    width: 60px;
+    margin: 5px;
+    padding: 10px;
+    background: rgba(211, 114, 124, 0.9);
+  }
+
+  .tag-span-2 {
+    text-align: center;
+    width: 60px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(0, 52, 89, 0.9);
+  }
+  .tag-span-3 {
+    text-align: center;
+    width: 60px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(255, 204, 0, 0.9);
+  }
+
+  .date {
+    letter-spacing: 0.25em;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .text-div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    margin: 0 0 0 30px;
+  }
+
+  .text-preview-div {
+    height: 12em;
+    overflow: hidden;
+  }
+
+  .text-preview {
+    margin: 0 auto;
+    white-space: pre-line;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  .cnt-reading {
+    font-family: "BrittanySignature", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    margin: 0 auto;
+    color: black;
+  }
+
+  .share-post {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .share-post i {
+    padding: 10px;
+  }
+
+  .fa-heart {
+    color: rgb(159, 25, 23);
+  }
+
+  .share-post span {
+    letter-spacing: 0.25em;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
