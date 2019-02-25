@@ -1,0 +1,147 @@
+@media (min-width: 320px) and (max-width: 600px),
+  (min-width: 600px) and (max-width: 999px) {
+  
+  #stickyheader {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+    bottom: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
+  }
+
+  .social-media {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .search {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  input {
+    height: 30px;
+    text-decoration: none;
+    overflow: hidden;
+    color: black;
+    border: none;
+    width: 100%;
+    outline: none;
+  }
+}
+
+@media (min-width: 1000px) {
+   #stickyheader {
+     width: 100%;
+     position: fixed;
+     z-index: 99999;
+     top: 0;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     align-content: space-between;
+     background-color: white;
+     box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
+   }
+ 
+   .stickyheader-scroll {
+     display: flex;
+     flex-direction: row;
+   }
+ 
+   .stickyheader-name {
+     font-size: 24px;
+     font-family: "BrittanySignature", sans-serif;
+     letter-spacing: 0.25em;
+   }
+ 
+   .nav {
+     padding: 0 10px;
+     width: 50vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+   }
+
+   .nav-scroll {
+     padding: 15px;
+     width: 50vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+   }
+ 
+   .social-media {
+     padding: 0 20px;
+     width: 50vw;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+   }
+ 
+   .search {
+     width: 30%;
+     display: flex;
+     flex-direction: row;
+   }
+ 
+   input {
+     height: 30px;
+     text-decoration: none;
+     overflow: hidden;
+     color: black;
+     border: none;
+     outline: none;
+   }
+ 
+   .name {
+     font-size: 48px;
+     font-family: "BrittanySignature", sans-serif;
+     letter-spacing: 0.25em;
+   }
+ }
+ 
+ .dropdown {
+   font-size: 18px;
+   letter-spacing: 0.25em;
+   padding: 0 10px;
+ }
+ 
+ .dropdown i {
+   margin-left: 20px;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: white;
+   min-width: 200px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content p {
+   color: black;
+   margin: 10px 10px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {
+   background-color: #ddd;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+   display: flex;
+   flex-direction: column;
+ }
+ 

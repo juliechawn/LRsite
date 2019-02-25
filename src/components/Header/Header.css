@@ -1,0 +1,83 @@
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "BrittanySignature";
+  src: url("brittany_signature.ttf") format("truetype");
+}
+
+@media (min-width: 320px) and (max-width: 600px),
+  (min-width: 600px) and (max-width: 999px) {
+  #header {
+    background-color: white;
+    min-height: 20vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+}
+
+@media (min-width: 1000px) {
+ #header {
+    background-color: white;
+    height: 20vh;
+    padding-top:  60px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .name {
+    font-size: 48px;
+    font-family: "BrittanySignature", sans-serif;
+    letter-spacing: 0.25em;
+  }
+}
+
+.category-link {
+  font-size: 18px;
+  letter-spacing: 0.25em;
+  padding: 0 10px;
+}
+
+.dropdown i {
+  margin-left: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  margin: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */

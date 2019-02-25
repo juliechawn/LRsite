@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
-import App from "./components/App";
-import About from "./components/JS/About";
-import Articles from "./components/JS/Articles";
-import Footer from "./components/JS/Footer";
+import App from "./components/App/App";
+import About from "./components/About/About";
+import Article from "./components/Articles/IndividualArticle/Article";
+import ArticleCat from "./components/Articles/ArticleCategories/ArticleCategory";
 import registerServiceWorker from "./registerServiceWorker";
 
 const Root = () => (
@@ -14,9 +14,9 @@ const Root = () => (
     <Switch>
       <Route component={App} exact path="/" />
       <Route component={About} path="/about" />
-      <Route component={Articles} path="/articles" />
+      <Route component={ArticleCat} path="/articlecategory" />
+      <Route component={Article} path="/article" />
     </Switch>
-    <Footer />
     </React.Fragment>
   </Router>
 )

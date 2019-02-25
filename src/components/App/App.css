@@ -1,16 +1,13 @@
 html,
 body {
+  height: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  /* background:  */
-  /* linear-gradient(160deg, rgba(0, 52, 89, 0.1), rgba(0, 52, 89, 0) 50%),
-  linear-gradient(180deg, rgba(0, 52, 89, 0.2), rgba(0, 52, 89, 0) 10%); */
-  /* linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
 }
 
 @media (min-width: 320px) and (max-width: 600px),
   (min-width: 600px) and (max-width: 999px){
-    .home {
+    #home {
       width: 90%;
       background-color: white;
       margin: auto;
@@ -56,7 +53,7 @@ body {
   
     .tag-span-1 {
       text-align: center;
-      width: 60px;
+      width: 70px;
       margin: 5px;
       padding: 10px;
       background: rgba(211, 114, 124, 0.9);
@@ -64,14 +61,14 @@ body {
   
     .tag-span-2 {
       text-align: center;
-      width: 60px;
+      width: 70px;
       margin: 5px;
       padding: 10px;
       background-color: rgba(0, 52, 89, 0.9);
     }
     .tag-span-3 {
       text-align: center;
-      width: 60px;
+      width: 70px;
       margin: 5px;
       padding: 10px;
       background-color: rgba(255, 204, 0, 0.9);
@@ -140,9 +137,12 @@ body {
 
 
  @media (min-width: 1000px) {
-  .home {
+  #home {
     width: 100%;
+    position: relative;
+    min-height: 100vh;
   }
+
   .all-posts {
     width: 90%;
     margin: 0 auto;
@@ -170,36 +170,43 @@ body {
     object-fit: cover;
   }
 
+  .img-tags-div a,
+  .img-tags-div a:link,
+  .img-tags-div a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
   .tags-div {
     display: flex;
+    flex-direction: row;
     position: absolute;
-    width: 90%;
-    top: 8px;
+    top: 16px;
     left: 16px;
-    color: white;
+    right: 16px;
     font-size: 12px;
   }
 
   .tag-span-1 {
     text-align: center;
-    width: 60px;
+    width: 70px;
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
     background: rgba(211, 114, 124, 0.9);
   }
 
   .tag-span-2 {
     text-align: center;
-    width: 60px;
+    width: 70px;
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
     background-color: rgba(0, 52, 89, 0.9);
   }
   .tag-span-3 {
     text-align: center;
-    width: 60px;
+    width: 70px;
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
     background-color: rgba(255, 204, 0, 0.9);
   }
 
@@ -217,7 +224,7 @@ body {
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-grow: 2;
     margin: 0 0 0 30px;
   }
@@ -227,7 +234,7 @@ body {
     overflow: hidden;
   }
 
-  .text-preview {
+  .text {
     margin: 0 auto;
     white-space: pre-line;
     line-height: 2;
@@ -257,7 +264,7 @@ body {
 
   .share-post span {
     letter-spacing: 0.25em;
-    padding: 5px 5px;
+    padding: 5px 5px 5px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
