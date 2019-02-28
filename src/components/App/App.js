@@ -16,6 +16,7 @@ class App extends Component {
             <div className="img-tags-div">
               <NavLink to="/article">
                 <img
+                  className="home-img"
                   alt="img"
                   src="https://images.unsplash.com/photo-1511184117514-74b2b39697a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                 />
@@ -86,6 +87,7 @@ class App extends Component {
             <div className="img-tags-div">
               <NavLink to="/article">
                 <img
+                  className="home-img"
                   alt="img"
                   src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
                 />
@@ -130,13 +132,13 @@ class App extends Component {
                   in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
               </div>
-             
+
               <div className="cnt-reading">
-              <NavLink to="/article">
-                <span>... continue reading</span>
+                <NavLink to="/article">
+                  <span>... continue reading</span>
                 </NavLink>
               </div>
-      
+
               <div className="share-post">
                 <span>
                   <span>LIKE</span>
@@ -158,6 +160,7 @@ class App extends Component {
             <div className="img-tags-div">
               <NavLink to="/article">
                 <img
+                  className="home-img"
                   alt="img"
                   src="https://images.unsplash.com/photo-1518208734895-46d2ff97e480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80"
                 />
@@ -178,9 +181,9 @@ class App extends Component {
               <div className="titles-div">
                 <p className="date">TUESDAY, JANUARY 1, 2019</p>
                 <NavLink to="/article">
-                <p className="title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
+                  <p className="title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
                 </NavLink>
               </div>
               <div className="text-preview-div">
@@ -203,11 +206,9 @@ class App extends Component {
                 </p>
               </div>
               <div className="cnt-reading">
-              <NavLink to="/article">
-
-                <span>... continue reading</span>
+                <NavLink to="/article">
+                  <span>... continue reading</span>
                 </NavLink>
-
               </div>
               <div className="share-post">
                 <span>
@@ -230,6 +231,7 @@ class App extends Component {
             <div className="img-tags-div">
               <NavLink to="/article">
                 <img
+                  className="home-img"
                   alt="img"
                   src="https://images.unsplash.com/photo-1444427169197-de497742b62d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
                 />
@@ -250,9 +252,9 @@ class App extends Component {
               <div className="titles-div">
                 <p className="date">TUESDAY, JANUARY 1, 2019</p>
                 <NavLink to="/article">
-                <p className="title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
+                  <p className="title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  </p>
                 </NavLink>
               </div>
               <div className="text-preview-div">
@@ -275,8 +277,8 @@ class App extends Component {
                 </p>
               </div>
               <div className="cnt-reading">
-              <NavLink to="/article">
-                <span>... continue reading</span>
+                <NavLink to="/article">
+                  <span>... continue reading</span>
                 </NavLink>
               </div>
               <div className="share-post">
@@ -295,7 +297,7 @@ class App extends Component {
                 </span>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
         <Footer />
       </div>

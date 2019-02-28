@@ -39,7 +39,7 @@ a:visited {
   }
 
   .name {
-    font-size: 48px;
+    font-size: 36px;
     font-family: "BrittanySignature", sans-serif;
     letter-spacing: 0.25em;
   }
@@ -50,34 +50,3 @@ a:visited {
   letter-spacing: 0.25em;
   padding: 0 10px;
 }
-
-.dropdown i {
-  margin-left: 20px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content p {
-  color: black;
-  margin: 10px 10px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: flex;
-  flex-direction: column;
-}
-
-/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */

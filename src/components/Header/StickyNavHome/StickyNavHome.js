@@ -8,7 +8,6 @@ class StickyNavHome extends Component {
     this.state = {
       stickyheader: false,
       nav: "nav",
-      logoheader: ".header"
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -26,13 +25,12 @@ class StickyNavHome extends Component {
       this.setState({
         stickyheader: true,
         nav: "nav-scroll",
-        logoheader: ".header"
+       
       });
     } else {
       this.setState({
         stickyheader: false,
         nav: "nav",
-        logoheader: "header-none"
       });
     }
   }
@@ -40,37 +38,63 @@ class StickyNavHome extends Component {
     let stickyheader;
     if (this.state.stickyheader === true) {
       stickyheader = (
-        <div className="stickyheader-scroll">
-            <div className="dropdown">
-              <span className="dropbtn">
-                ARTICLES
-                <i className="fas fa-caret-down fa-lg" />
-              </span>
-              <div className="dropdown-content">
-                <p href="#">LINK</p>
-                <p href="#">LINK</p>
-                <p href="#">LINK</p>
-                <p href="#">ALL ARTICLES</p>
-              </div>
-            </div>
-            <NavLink activeClassName="active" to="/">
-              <div className="dropdown">
-                <span className="stickyheader-name">MamaMilk</span>
-              </div>
-            </NavLink>
-        </div>
-      );
-    }
-    return (
-      <div id="stickyheader">
-        <div className={this.state.nav}>
+        <div className="nav">
           <NavLink activeClassName="active" to="/about">
             <div className="dropdown">
               <span>ABOUT</span>
             </div>
           </NavLink>
-          {stickyheader}
+          <div className="subnav">
+            <span className="subnavbtn">
+              ARTICLES
+              <i className="fas fa-caret-down fa-lg" />
+            </span>
+            <div className="subnav-content">
+            <div className="subnav-layout">
+              <NavLink activeClassName="active" to="/articlecategory">
+              {/* <img
+                  className="nav-img"
+                  alt="img"
+                  src="https://images.unsplash.com/photo-1511184117514-74b2b39697a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                /> */}
+                <p href="#">ARTICLE CAT</p>
+              </NavLink>
+              <NavLink activeClassName="active" to="/articlecategory"> 
+                <p href="#">ARTICLE CAT</p>
+              </NavLink>
+              <NavLink activeClassName="active" to="/articlecategory">
+                <p href="#">ARTICLE CAT</p>
+              </NavLink>
+              <NavLink activeClassName="active" to="/articlecategory">
+                <p href="#">ARTICLE CAT</p>
+              </NavLink>
+              </div>
+            </div>
+          </div>
+          <NavLink activeClassName="active" to="/">
+            <div className="headerlink">
+              <span className="stickyheader-name">MamaMilk</span>
+            </div>
+          </NavLink>
         </div>
+      );
+    }
+    let regularheader;
+    if (this.state.stickyheader === false) {
+      stickyheader = (
+        <div className="nav">
+          <NavLink activeClassName="active" to="/about">
+            <div className="headerlink">
+              <span>ABOUT</span>
+            </div>
+          </NavLink>
+        </div>
+      );
+    }
+    return (
+      <div id="stickyheader">
+          {regularheader}
+          {stickyheader}
         <div className="social-media">
           <span className="search">
             <span className="fa-stack fa-md">

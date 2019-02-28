@@ -12,21 +12,28 @@ class Header extends Component {
               <span>Mama Milk</span>
             </div>
           </NavLink>
-          <NavLink activeClassName="active" to="/articlecategory">
+          <NavLink activeClassName="active" to="/articlecategory1">
             <div className="dropdown">
               <span className="dropbtn">
                 ARTICLE CAT
               </span>
             </div>
           </NavLink>
-          <NavLink activeClassName="active" to="/articlecategory">
+          <NavLink activeClassName="active" to="/articlecategory2">
             <div className="dropdown">
               <span className="dropbtn">
                 ARTICLE CAT
               </span>
             </div>
           </NavLink>
-          <NavLink activeClassName="active" to="/articlecategory">
+          <NavLink activeClassName="active" to="/articlecategory3">
+            <div className="dropdown">
+              <span className="dropbtn">
+                ARTICLE CAT
+              </span>
+            </div>
+          </NavLink>
+          <NavLink activeClassName="active" to="/articlecategory4">
             <div className="dropdown">
               <span className="dropbtn">
                 ARTICLE CAT

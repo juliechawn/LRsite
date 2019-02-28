@@ -65,7 +65,7 @@
      width: 50vw;
      display: flex;
      flex-direction: row;
-     justify-content: flex-start;
+     justify-content: space-between;
    }
  
    .social-media {
@@ -92,7 +92,7 @@
    }
  
    .name {
-     font-size: 48px;
+     font-size: 36px;
      font-family: "BrittanySignature", sans-serif;
      letter-spacing: 0.25em;
    }

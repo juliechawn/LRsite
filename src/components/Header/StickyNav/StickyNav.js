@@ -12,20 +12,23 @@ class StickyNav extends Component {
                 <span>ABOUT</span>
               </div>
             </NavLink>
-            <NavLink activeClassName="active" to="/articles">
             <div className="dropdown">
               <span className="dropbtn">
                 ARTICLES
                 <i className="fas fa-caret-down fa-lg" />
               </span>
               <div className="dropdown-content">
+              <NavLink activeClassName="active" to="/articlecategory">
                 <p href="#">LINK</p>
+                </NavLink>
+                <NavLink activeClassName="active" to="/articlecategory">
                 <p href="#">LINK</p>
+                </NavLink>
+                <NavLink activeClassName="active" to="/articlecategory">
                 <p href="#">LINK</p>
-                <p href="#">ALL ARTICLES</p>
+                </NavLink>
               </div>
             </div>
-          </NavLink>
           <NavLink activeClassName="active" to="/">
             <div className="dropdown">
               <span className="stickyheader-name">MamaMilk</span>
