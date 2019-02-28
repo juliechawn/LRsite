@@ -18,14 +18,20 @@ class StickyNav extends Component {
                 <i className="fas fa-caret-down fa-lg" />
               </span>
               <div className="dropdown-content">
-              <NavLink activeClassName="active" to="/articlecategory">
-                <p href="#">LINK</p>
+              <NavLink activeClassName="active" to="/articlecategory1">
+                <p href="#">ARTICLE CAT 1</p>
                 </NavLink>
-                <NavLink activeClassName="active" to="/articlecategory">
-                <p href="#">LINK</p>
+                <NavLink activeClassName="active" to="/articlecategory2">
+                <p href="#">ARTICLE CAT 2</p>
                 </NavLink>
-                <NavLink activeClassName="active" to="/articlecategory">
-                <p href="#">LINK</p>
+                <NavLink activeClassName="active" to="/articlecategory3">
+                <p href="#">ARTICLE CAT 3</p>
+                </NavLink>
+                <NavLink activeClassName="active" to="/articlecategory4">
+                <p href="#">ARTICLE CAT 4</p>
+                </NavLink>
+                <NavLink activeClassName="active" to="/allarticles">
+                <p href="#">ALL ARTICLES</p>
                 </NavLink>
               </div>
             </div>

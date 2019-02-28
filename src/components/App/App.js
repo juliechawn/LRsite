@@ -2,14 +2,14 @@ import React, { Component } from "react";
 import Footer from "../Footer/Footer.js";
 import Header from "../Header/Header.js";
 import "./App.css";
-import StickyNavHome from "../Header/StickyNavHome/StickyNavHome.js";
+import StickyNav from "../Header/StickyNav/StickyNav.js";
 import { NavLink } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
       <div id="home">
-        <StickyNavHome />
+        <StickyNav />
         <Header />
         <div className="all-posts">
           <div className="idv-post">
