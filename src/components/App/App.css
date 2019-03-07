@@ -145,7 +145,7 @@ body {
 
   .all-posts {
     width: 90%;
-    margin: 0 auto;
+    margin: 150px auto 0px;
     display: flex;
     flex-direction: column;
   }
@@ -168,6 +168,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding: 2px;
+    background-color: black;
   }
 
   .img-tags-div a,

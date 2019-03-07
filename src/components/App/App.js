@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Footer from "../Footer/Footer.js";
-import Header from "../Header/Header.js";
+// import Header from "../Header/Header.js";
 import "./App.css";
 import StickyNav from "../Header/StickyNav/StickyNav.js";
 import { NavLink } from "react-router-dom";
@@ -10,7 +10,6 @@ class App extends Component {
     return (
       <div id="home">
         <StickyNav />
-        <Header />
         <div className="all-posts">
           <div className="idv-post">
             <div className="img-tags-div">
