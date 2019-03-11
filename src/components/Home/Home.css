@@ -1,7 +1,7 @@
 .home-header {
-  margin-top: 100px;
+  margin-top: 60px;
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .photogrid {
@@ -10,26 +10,23 @@
   align-items: center;
   justify-content: center;
   align-content: space-around;
-  /* padding: 0 4px; */
   width: 100%;
 }
 
 .photogrid-img {
   object-fit: cover;
   width: 100%;
+  position: relative;
 }
 
 .vertical {
-  height: 500px;
-  padding: 2px;
-  background-color: black;
+  opacity: 0.2;
+  height: 400px;
 }
 
 .horizontal {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  background-color: black;
-  height: 250px;
+  opacity: 0.2;
+  height: 200px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -37,8 +34,7 @@
   width: 25%;
   display: flex;
   flex-direction: column;
-
-  /* padding: 0 4px; */
+  background-color: white;
 }
 
 .photogrid-title {
@@ -46,4 +42,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-family: "BrittanySignature", sans-serif;
+  letter-spacing: 0.25em;
 }

@@ -7,9 +7,10 @@ class StickyNavHome extends Component {
     super(props);
     this.state = {
       stickyheader: false,
-      nav: "nav",
+      menu: false
     };
     this.handleScroll = this.handleScroll.bind(this);
+    // this.handleMenu = this.handleMenu.bind(this);
   }
 
   componentDidMount() {
@@ -23,17 +24,27 @@ class StickyNavHome extends Component {
   handleScroll() {
     if (window.pageYOffset > 100) {
       this.setState({
-        stickyheader: true,
-        nav: "nav-scroll",
-       
+        stickyheader: true
       });
     } else {
       this.setState({
-        stickyheader: false,
-        nav: "nav",
+        stickyheader: false
       });
     }
   }
+
+  // onMouseEnter() {
+  //   this.setState({
+  //     menu: true
+  //   });
+  // }
+
+  // onMouseLeave() {
+  //   this.setState({
+  //     menu: false
+  //   });
+  // }
+
   render() {
     let stickyheader;
     if (this.state.stickyheader === true) {
@@ -45,31 +56,10 @@ class StickyNavHome extends Component {
             </div>
           </NavLink>
           <div className="subnav">
-            <span className="subnavbtn">
+            <span className="headerlink-article" onMouseEnter={this.state.menu === true} onMouseLeave={this.state.menu === false}>
               ARTICLES
-              <i className="fas fa-caret-down fa-lg" />
+              <i className="fas fa-caret-down fa-ld" />
             </span>
-            <div className="subnav-content">
-            <div className="subnav-layout">
-              <NavLink activeClassName="active" to="/articlecategory">
-              {/* <img
-                  className="nav-img"
-                  alt="img"
-                  src="https://images.unsplash.com/photo-1511184117514-74b2b39697a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                /> */}
-                <p href="#">ARTICLE CAT</p>
-              </NavLink>
-              <NavLink activeClassName="active" to="/articlecategory"> 
-                <p href="#">ARTICLE CAT</p>
-              </NavLink>
-              <NavLink activeClassName="active" to="/articlecategory">
-                <p href="#">ARTICLE CAT</p>
-              </NavLink>
-              <NavLink activeClassName="active" to="/articlecategory">
-                <p href="#">ARTICLE CAT</p>
-              </NavLink>
-              </div>
-            </div>
           </div>
           <NavLink activeClassName="active" to="/">
             <div className="headerlink">
@@ -91,31 +81,38 @@ class StickyNavHome extends Component {
         </div>
       );
     }
+    let menu;
+    if (this.state.menu === true) {
+      menu = <div className="menu">ARTICLE CAT</div>;
+    }
     return (
-      <div id="stickyheader">
+      <div id="nav">
+        <div id="stickyheader">
           {regularheader}
           {stickyheader}
-        <div className="social-media">
-          <span className="search">
-            <span className="fa-stack fa-md">
-              <i className="fa fa-square fa-stack-2x fa-inverse" />
-              <i className="fas fa-search fa-md fa-stack-1x" />
+          <div className="social-media">
+            <span className="search">
+              <span className="fa-stack fa-md">
+                <i className="fa fa-square fa-stack-2x fa-inverse" />
+                <i className="fas fa-search fa-md fa-stack-1x" />
+              </span>
+              <input placeholder="SEARCH" />
             </span>
-            <input placeholder="SEARCH" />
-          </span>
-          <span className="fa-stack fa-md">
-            <i className="fa fa-circle fa-stack-2x" />
-            <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
-          </span>
-          <span className="fa-stack fa-md">
-            <i className="fa fa-circle fa-stack-2x" />
-            <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-          </span>
-          <span className="fa-stack fa-md">
-            <i className="fa fa-circle fa-stack-2x" />
-            <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-          </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
+            </span>
+          </div>
         </div>
+        <div className="menu">ARTICLE CAT</div>
       </div>
     );
   }

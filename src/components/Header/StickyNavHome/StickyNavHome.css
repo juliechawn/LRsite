@@ -7,6 +7,7 @@
     z-index: 99999;
     top: 0;
     bottom: 0;
+    height: 50px;
     padding: 10px 30px;
     display: flex;
     flex-direction: row;
@@ -40,11 +41,17 @@
 }
 
 @media (min-width: 1000px) {
+  #nav {
+    display: flex;
+    flex-direction: column; 
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    top: 0;
+  }
+
    #stickyheader {
-     width: 100%;
-     position: fixed;
-     z-index: 99999;
-     top: 0;
+     height: 50px;
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -99,54 +106,31 @@
      font-family: "BrittanySignature", sans-serif;
      letter-spacing: 0.25em;
    }
+
+   .menu {
+    display: none;
+     margin-top:70px;
+     width: 100%;
+     height: 100px;
+     background: blue;
+   }
  }
 
- .subnav {
+ .headerlink{
   font-size: 18px;
   letter-spacing: 0.25em;
   padding: 0 10px;
 }
- 
- .headerlink {
+
+ .headerlink-article {
    font-size: 18px;
    letter-spacing: 0.25em;
    padding: 0 10px;
  }
 
- 
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  height: 100px;
-  margin: 15px 0;
-  left: 0;
-  background-color: pink;
+ .headerlink-article:hover .menu{
+  margin-top:70px;
   width: 100%;
-  /* z-index: 0; */
-  box-shadow: 2px 0px 2px 2px rgba(0, 52, 89, 0.1);
-}
-
-.subnav-layout {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: black;
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: #eee;
-  color: black;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-}
+  height: 100px;
+  background: blue;
+ }
