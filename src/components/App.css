@@ -6,11 +6,6 @@ body {
 }
 
 @font-face {
-  font-family: "BrittanySignature";
-  src: url("./fonts/brittany_signature.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "SweetGetaway";
   src: url("./fonts/sweet_getaway.ttf") format("truetype");
 }
