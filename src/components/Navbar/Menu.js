@@ -23,7 +23,7 @@ class Menu extends React.Component {
     return (
       <header id="mobile-header">
         <NavLink height={100} activeClassName="active" exact to="/">
-          <h1>Mama Milk</h1>
+          <h1>mama milk</h1>
         </NavLink>
         <nav>
           <div

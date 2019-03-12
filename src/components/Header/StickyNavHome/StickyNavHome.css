@@ -61,9 +61,8 @@
    }
  
    .stickyheader-name {
-     font-size: 24px;
-     font-family: "BrittanySignature", sans-serif;
-     letter-spacing: 0.25em;
+     font-size: 72px;
+     font-family: "SweetGetaway", sans-serif;
    }
  
    .nav {
@@ -103,8 +102,7 @@
  
    .name {
      font-size: 36px;
-     font-family: "BrittanySignature", sans-serif;
-     letter-spacing: 0.25em;
+     font-family: "SweetGetaway", sans-serif;
    }
 
    .menu {
@@ -117,6 +115,10 @@
  }
 
  .headerlink{
+  padding: 0 10px;
+}
+
+ .headerlink-about{
   font-size: 18px;
   letter-spacing: 0.25em;
   padding: 0 10px;

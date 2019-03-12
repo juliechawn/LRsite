@@ -10,6 +10,11 @@ a:visited {
   src: url("brittany_signature.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "SweetGetaway";
+  src: url("sweet_getaway.ttf") format("truetype");
+}
+
 @media (min-width: 320px) and (max-width: 600px),
   (min-width: 600px) and (max-width: 999px) {
   #header {
@@ -40,8 +45,7 @@ a:visited {
 
   .name {
     font-size: 36px;
-    font-family: "BrittanySignature", sans-serif;
-    letter-spacing: 0.25em;
+    font-family: "SweetGetaway", sans-serif;
   }
 }
 

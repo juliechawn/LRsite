@@ -57,9 +57,9 @@
    }
  
    .stickyheader-name {
-     font-size: 24px;
-     font-family: "BrittanySignature", sans-serif;
-     letter-spacing: 0.25em;
+     font-size: 72px;
+     line-height: 0px;
+     font-family: "SweetGetaway", sans-serif;
    }
  
    .nav {
@@ -95,8 +95,7 @@
  
    .name {
      font-size: 36px;
-     font-family: "BrittanySignature", sans-serif;
-     letter-spacing: 0.25em;
+     font-family: "SweetGetaway", sans-serif;
    }
  }
  

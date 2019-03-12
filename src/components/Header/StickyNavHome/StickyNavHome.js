@@ -22,7 +22,7 @@ class StickyNavHome extends Component {
   }
 
   handleScroll() {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 50) {
       this.setState({
         stickyheader: true
       });
@@ -33,17 +33,17 @@ class StickyNavHome extends Component {
     }
   }
 
-  // onMouseEnter() {
-  //   this.setState({
-  //     menu: true
-  //   });
-  // }
+  onMouseEnter() {
+    // this.setState({
+    //   menu: true
+    // });
+  }
 
-  // onMouseLeave() {
-  //   this.setState({
-  //     menu: false
-  //   });
-  // }
+  onMouseLeave() {
+    // this.setState({
+    //   menu: false
+    // });
+  }
 
   render() {
     let stickyheader;
@@ -56,14 +56,14 @@ class StickyNavHome extends Component {
             </div>
           </NavLink>
           <div className="subnav">
-            <span className="headerlink-article" onMouseEnter={this.state.menu === true} onMouseLeave={this.state.menu === false}>
+            <span className="headerlink-article" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
               ARTICLES
               <i className="fas fa-caret-down fa-ld" />
             </span>
           </div>
           <NavLink activeClassName="active" to="/">
             <div className="headerlink">
-              <span className="stickyheader-name">MamaMilk</span>
+              <span className="stickyheader-name">mama milk</span>
             </div>
           </NavLink>
         </div>
@@ -74,7 +74,7 @@ class StickyNavHome extends Component {
       stickyheader = (
         <div className="nav">
           <NavLink activeClassName="active" to="/about">
-            <div className="headerlink">
+            <div className="headerlink-about">
               <span>ABOUT</span>
             </div>
           </NavLink>

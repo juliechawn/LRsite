@@ -51,7 +51,7 @@ class Home extends Component {
               />
             </div>
           </div>
-          <div className="photogrid-title">Mama Milk</div>
+          <div className="photogrid-title">mama milk</div>
         </div>
 
         <div className="more-articles">
