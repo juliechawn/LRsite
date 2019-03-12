@@ -60,31 +60,32 @@
      box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
    }
  
-   .stickyheader-name {
-     font-size: 72px;
-     font-family: "SweetGetaway", sans-serif;
+   .headerlink-name {
+     font-size: 48px;
+     font-family: "badtaste", sans-serif;
    }
  
-   .nav {
-     padding: 0 10px;
+   .nav-div {
+     padding: 0 50px;
      width: 50vw;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
    }
 
+   .social-media-div {
+    padding: 0 50px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
    .nav-img {
      width: 100px;
    }
  
-   .social-media {
-     padding: 0 10px;
-     width: 50vw;
-     display: flex;
-     flex-direction: row;
-     justify-content: flex-end;
-   }
- 
+
    .search {
      width: 30%;
      display: flex;
@@ -114,21 +115,11 @@
    }
  }
 
- .headerlink{
-  padding: 0 10px;
-}
-
- .headerlink-about{
+ .header-link{
   font-size: 18px;
   letter-spacing: 0.25em;
   padding: 0 10px;
 }
-
- .headerlink-article {
-   font-size: 18px;
-   letter-spacing: 0.25em;
-   padding: 0 10px;
- }
 
  .headerlink-article:hover .menu{
   margin-top:70px;

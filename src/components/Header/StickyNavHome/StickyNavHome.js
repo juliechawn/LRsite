@@ -49,20 +49,20 @@ class StickyNavHome extends Component {
     let stickyheader;
     if (this.state.stickyheader === true) {
       stickyheader = (
-        <div className="nav">
+        <div className="nav-div">
           <NavLink activeClassName="active" to="/about">
             <div className="dropdown">
               <span>ABOUT</span>
             </div>
           </NavLink>
           <div className="subnav">
-            <span className="headerlink-article" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+            <span className="header-link" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
               ARTICLES
               <i className="fas fa-caret-down fa-ld" />
             </span>
           </div>
           <NavLink activeClassName="active" to="/">
-            <div className="headerlink">
+            <div className="header-link">
               <span className="stickyheader-name">mama milk</span>
             </div>
           </NavLink>
@@ -72,9 +72,9 @@ class StickyNavHome extends Component {
     let regularheader;
     if (this.state.stickyheader === false) {
       stickyheader = (
-        <div className="nav">
+        <div className="nav-div">
           <NavLink activeClassName="active" to="/about">
-            <div className="headerlink-about">
+            <div className="header-link">
               <span>ABOUT</span>
             </div>
           </NavLink>
@@ -90,7 +90,7 @@ class StickyNavHome extends Component {
         <div id="stickyheader">
           {regularheader}
           {stickyheader}
-          <div className="social-media">
+          <div className="social-media-div">
             <span className="search">
               <span className="fa-stack fa-md">
                 <i className="fa fa-square fa-stack-2x fa-inverse" />

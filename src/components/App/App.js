@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Footer from "../Footer/Footer.js";
 // import Header from "../Header/Header.js";
-import "./App.css";
+import "../App.css";
 import StickyNav from "../Header/StickyNav/StickyNav.js";
 import { NavLink } from "react-router-dom";
 

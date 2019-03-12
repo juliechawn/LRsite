@@ -51,7 +51,23 @@ class Home extends Component {
               />
             </div>
           </div>
-          <div className="photogrid-title">mama milk</div>
+          <div className="photogrid-div">
+            <div className="photogrid-title">mama milk</div>
+            <div className="photogrid-links">
+            <NavLink activeClassName="active" to="/articlecategory1">
+             <span className="header-link">ARTICLE CAT</span>
+             </NavLink>
+             <NavLink activeClassName="active" to="/articlecategory2">
+             <span className="header-link">ARTICLE CAT</span>
+             </NavLink>
+             <NavLink activeClassName="active" to="/articlecategory3">
+             <span className="header-link">ARTICLE CAT</span>
+             </NavLink>
+             <NavLink activeClassName="active" to="/articlecategory4">
+             <span className="header-link">ARTICLE CAT</span>
+             </NavLink>
+            </div>
+          </div>
         </div>
 
         <div className="more-articles">

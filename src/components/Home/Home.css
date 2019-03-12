@@ -37,12 +37,27 @@
   background-color: white;
 }
 
-.photogrid-title {
+.photogrid-div {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 300px;
-  font-family: "SweetGetaway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.photogrid-title {
+  text-align: center;
+  font-size: 150px;
+  font-family: "badtaste", sans-serif;
   /* letter-spacing: 0.2em; */
+}
+
+.photogrid-links {
+  text-align: center;
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
