@@ -13,8 +13,7 @@ class Home extends Component {
         <StickyNavHome />
         <Header title={"milk mama"} artcat={"ARTICLE CAT"} />
         <div className="page-body">
-          <div className="menu">ARTICLE CAT blahhh</div>
-          <MoreArticles />
+        <MoreArticles />
         </div>
         <Footer />
       </div>

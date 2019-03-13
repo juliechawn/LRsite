@@ -10,6 +10,7 @@ class Article extends Component {
     return (
       <div id="article">
         <StickyNav />
+        <div className="page-body">
         <div className="article-body">
           <div className="article">
             <div className="titles-div">
@@ -121,6 +122,7 @@ class Article extends Component {
                 {/* <i className="far fa-share-square fa-lg" /> */}
               </span>
             </div>
+          </div>
           </div>
           <MoreArticles />
         </div>
