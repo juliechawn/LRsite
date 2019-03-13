@@ -10,7 +10,7 @@ class ArticleCategoryFour extends Component {
     return (
       <div id="article-category">
         <StickyNav />
-        <Header />
+        <Header title={"article cat"} />
         <div className="page-body">
           <div className="article-category-body">
             <div className="idv-post">
