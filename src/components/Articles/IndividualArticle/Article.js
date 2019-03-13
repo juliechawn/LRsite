@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // import Navbar from "./Navbar";
 import Footer from "../../Footer/Footer.js";
 import StickyNav from "../../Header/StickyNav/StickyNav.js";
+import MoreArticles from "../../MoreArticles/MoreArticles.js"
 import "./Article.css";
 
 class Article extends Component {
@@ -121,41 +122,7 @@ class Article extends Component {
               </span>
             </div>
           </div>
-          <div className="more-articles">
-          <div className="more-articles-header"><p>MORE ARTICLES</p></div>
-          <div className="more-articles-div">
-            <div className="more-article">
-              <img
-                className="more-img"
-                alt="img"
-                src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-                />
-              <div className="more-title">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </div>
-            <div className="more-article">
-              <img
-                className="more-img"
-                alt="img"
-                src="https://images.unsplash.com/photo-1518208734895-46d2ff97e480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80"
-              />
-              <div className="more-title">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </div>
-            <div className="more-article">
-              <img
-                className="more-img"
-                alt="img"
-                src="https://images.unsplash.com/photo-1518208734895-46d2ff97e480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80"
-              />
-              <div className="more-title">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              </div>
-            </div>
-          </div>
-          </div>
+          <MoreArticles />
         </div>
         <Footer />
       </div>

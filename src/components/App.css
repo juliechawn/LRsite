@@ -6,14 +6,29 @@ body {
 }
 
 @font-face {
-  font-family: "SweetGetaway";
-  src: url("./fonts/sweet_getaway.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Badtaste";
+  font-family: "badtaste";
   src: url("./fonts/badtaste.ttf") format("truetype");
 }
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  font-size: 18px;
+  letter-spacing: 0.25em;
+  padding: 0 10px;
+}
+
+.link-title {
+  font-size: 48px;
+  font-family: "badtaste", sans-serif;
+}
+
+
 
 @media (min-width: 320px) and (max-width: 600px),
   (min-width: 600px) and (max-width: 999px){

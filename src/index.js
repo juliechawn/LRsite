@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-
+import ScrollToTop from 'react-router-scroll-top'
 import App from "./components/App/App";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
@@ -14,9 +14,10 @@ import registerServiceWorker from "./registerServiceWorker";
 
 const Root = () => (
   <Router>
+    <ScrollToTop>
     <React.Fragment>
     <Switch>
-      <Route component={Home}exact path="/" />
+      <Route component={Home} exact path="/" />
       <Route component={App} path="/allarticles" />
       <Route component={About} path="/about" />
       <Route component={ArticleCatOne} path="/articlecategory1" />
@@ -26,6 +27,7 @@ const Root = () => (
       <Route component={Article} path="/article" />
     </Switch>
     </React.Fragment>
+    </ScrollToTop>
   </Router>
 )
 

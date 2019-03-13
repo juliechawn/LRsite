@@ -1,0 +1,37 @@
+.more-articles {
+  border-top: 1px solid black;
+}
+
+.more-articles-header {
+  font-family: "badtaste", sans-serif;
+  font-size: 48px;
+}
+
+.more-articles-div {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+div .link-title {
+  margin: 20px 0;
+}
+
+.more-article {
+  width: 350px;
+  margin: 10px;
+}
+
+.more-img {
+  padding: 1px;
+  background-color: black;
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.more-title {
+  font-size: 18px;
+  text-align: center;
+}
