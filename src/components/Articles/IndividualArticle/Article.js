@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import Navbar from "./Navbar";
 import Footer from "../../Footer/Footer.js";
-import StickyNav from "../../Header/StickyNav/StickyNav.js";
+import StickyNav from "../../StickyNav/StickyNav.js";
 import MoreArticles from "../../MoreArticles/MoreArticles.js"
 import "./Article.css";
 
@@ -14,7 +14,7 @@ class Article extends Component {
           <div className="article">
             <div className="titles-div">
               <p className="date">TUESDAY, JANUARY 1, 2019</p>
-              <p className="article-title">
+              <p className="title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
             </div>

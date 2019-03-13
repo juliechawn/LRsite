@@ -6,7 +6,6 @@
 }
 
 .article {
-  width: 80%;
   margin: auto;
   padding: 0 0 50px 0;
 }
@@ -19,7 +18,6 @@
 .article-img-div {
  display: flex;
  justify-content: center;
-
 }
 
 .article-img {

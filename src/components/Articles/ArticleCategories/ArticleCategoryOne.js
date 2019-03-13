@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./ArticleCategory.css";
 import Footer from "../../Footer/Footer.js";
-import StickyNav from "../../Header/StickyNav/StickyNav.js";
+import StickyNav from "../../StickyNav/StickyNav.js";
+import Header from "../../Header/Header.js"
 import { NavLink } from "react-router-dom";
 
 class ArticleCategoryOne extends Component {
@@ -9,8 +10,8 @@ class ArticleCategoryOne extends Component {
     return (
       <div id="article-category">
         <StickyNav />
-        <div className="article-category-div">
-          <div className="article-category-header"><p>Article Cat</p></div>
+        <Header />
+        <div className="page-body">
           <div className="article-category-body">
           <div className="idv-post">
             <div className="img-tags-div">

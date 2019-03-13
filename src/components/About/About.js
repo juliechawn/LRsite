@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Footer/Footer.js";
-import StickyNav from "../Header/StickyNav/StickyNav.js";
+import StickyNav from "../StickyNav/StickyNav.js";
 import "./About.css"
 
 class About extends React.Component {

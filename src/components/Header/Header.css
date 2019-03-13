@@ -1,40 +1,64 @@
-
-@media (min-width: 320px) and (max-width: 600px),
-  (min-width: 600px) and (max-width: 999px) {
-  #header {
-    background-color: white;
-    min-height: 20vh;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
+.home-header {
+  width: 100%;
+  height: 50vh;
+  padding-top: 80px;
 }
 
-@media (min-width: 1000px) {
- #header {
-    background-color: white;
-    height: 20vh;
-    padding-top:  60px;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .name {
-    font-size: 36px;
-    font-family: "SweetGetaway", sans-serif;
-  }
+.photogrid {
+  align-content: center;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.category-link {
-  font-size: 18px;
-  letter-spacing: 0.25em;
-  padding: 0 10px;
+.photogrid-img {
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+}
+
+.vertical {
+  opacity: 0.15;
+  height: 50vh;
+}
+
+.horizontal {
+  opacity: 0.15;
+  height: 25vh;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.photogrid-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-flow: column wrap;
+  top: 20%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.photogrid-title {
+  text-align: center;
+  font-size: 150px;
+  font-family: "badtaste", sans-serif;
+}
+
+.photogrid-links {
+  text-align: center;
+  margin: 0px 50px 0 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
