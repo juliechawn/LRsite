@@ -63,7 +63,7 @@ class ArticleCategoryOne extends Component {
                 </p>
               </div>
 
-              <div className="cnt-reading">
+              <div className="cnt-reading button">
                 <NavLink to="/article">
                   <span>... continue reading</span>
                 </NavLink>
@@ -136,7 +136,7 @@ class ArticleCategoryOne extends Component {
                 </p>
               </div>
 
-              <div className="cnt-reading">
+              <div className="cnt-reading button">
                 <NavLink to="/article">
                   <span>... continue reading</span>
                 </NavLink>

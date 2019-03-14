@@ -20,7 +20,7 @@ a:visited {
 .link {
   font-size: 18px;
   letter-spacing: 0.25em;
-  padding: 0 10px;
+  padding: 10px 0;
 }
 
 .link-title {
@@ -50,6 +50,9 @@ a:visited {
   margin: 0 auto;
 }
 
+.button:hover {
+  border-bottom: 1px black solid; 
+}
 
 @media (min-width: 320px) and (max-width: 600px),
   (min-width: 600px) and (max-width: 999px){
@@ -65,15 +68,14 @@ a:visited {
     .idv-post {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       margin: 0 0 40px 0;
     }
   
     .img-tags-div {
-      width: 500px;
+      width: 90%;
       height: 500px;
       position: relative;
-      flex-grow: 1;
     }
   
     .img-tags-div img {
@@ -156,6 +158,12 @@ a:visited {
     .fa-heart {
       color: rgb(159, 25, 23);
     }
+
+    .img-tags-div {
+      width: 90%;
+      height: 500px;
+      position: relative;
+    }
   
     .share-post span {
       letter-spacing: 0.25em;
@@ -164,6 +172,28 @@ a:visited {
       flex-direction: row;
       align-items: center;
     }
+
+    .text-div {
+      width: 90%;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 0 0 0 30px;
+    }
+  
+    .text-preview-div {
+      height: 12em;
+      overflow: hidden;
+    }
+  
+    .cnt-reading {
+      font-family: "badtaste", sans-serif;
+      font-size: 36px;
+      margin: 0 auto;
+      color: black;
+    }
+  
   }
 
 

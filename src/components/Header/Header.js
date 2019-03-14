@@ -50,16 +50,16 @@ class Header extends Component {
         <div className="photogrid-title">{this.props.title}</div>
         <div className="photogrid-links">
           <NavLink activeClassName="active" to="/articlecategory1">
-            <p className="link">{this.props.artcat}</p>
+            <p className="link button">{this.props.artcat}</p>
           </NavLink>
           <NavLink activeClassName="active" to="/articlecategory2">
-            <p className="link">{this.props.artcat}</p>
+            <p className="link button">{this.props.artcat}</p>
           </NavLink>
           <NavLink activeClassName="active" to="/articlecategory3">
-            <p className="link">{this.props.artcat}</p>
+            <p className="link button">{this.props.artcat}</p>
           </NavLink>
           <NavLink activeClassName="active" to="/articlecategory4">
-            <p className="link">{this.props.artcat}</p>
+            <p className="link button">{this.props.artcat}</p>
           </NavLink>
         </div>
       </div>

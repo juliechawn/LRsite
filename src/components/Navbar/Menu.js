@@ -25,7 +25,7 @@ class Menu extends React.Component {
         <NavLink height={100} activeClassName="active" exact to="/">
           <h1>mama milk</h1>
         </NavLink>
-        <nav>
+        <div>
           <div
             className="menu-btn"
             onClick={() => this.setState({ visible: !this.state.visible })}
@@ -44,7 +44,7 @@ class Menu extends React.Component {
                 </NavLink>
               </div>
           }
-        </nav>
+        </div>
       </header>
     );
   }
