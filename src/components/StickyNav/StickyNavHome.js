@@ -73,7 +73,6 @@ class StickyNavHome extends Component {
             </span>
           </div>
         </div>
-        {/* <div className="menu">ARTICLE CAT</div> */}
       </div>
       );
     }

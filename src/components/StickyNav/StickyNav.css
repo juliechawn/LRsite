@@ -113,6 +113,7 @@
   .menu {
     background: white;
     width: 100%;
+    border-top-width: 90%;
     height: 80px;
   }
 
@@ -120,8 +121,18 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    border-top: 1px rgba(0, 52, 89, 0.1) solid;
     justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
     height: 100%;
     box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
+  }
+
+  .menu-img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+
   }
 }

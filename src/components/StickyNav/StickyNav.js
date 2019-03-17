@@ -67,14 +67,14 @@ class StickyNav extends Component {
             <NavLink activeClassName="active" to="/about">
               <span className="link button">ABOUT</span>
             </NavLink>
-            <span className="link button" onMouseOver={this.showDropdownMenu}>
+            <span className="link button" onMouseOver={this.showDropdownMenu} onClick={this.showDropdownMenu}>
               ARTICLES
             </span>
             <NavLink activeClassName="active" to="/">
               <span className="link-title">mama milk</span>
             </NavLink>
           </div>
-          <div className="social-media-div">
+          <div className="social-media-div" onMouseOver={this.hideDropdownMenu}>
             <span className="search">
               <span className="fa-stack fa-md">
                 <i className="fa fa-square fa-stack-2x fa-inverse" />
@@ -97,12 +97,23 @@ class StickyNav extends Component {
           </div>
         </div>
         {this.state.displayMenu ? (
-          <div className="menu" onMouseLeave={this.hideDropdownMenu}>
+          <div className="menu" onMouseLeave={this.hideDropdownMenu} >
             <div className="menu-div">
-              <span className="link button">ARTICLE CAT</span>
-              <span className="link button">ARTICLE CAT</span>
-              <span className="link button">ARTICLE CAT</span>
-              <span className="link button">ARTICLE CAT</span>
+              <NavLink activeClassName="active" to="/articlecategory1">
+                <div>
+                  {/* <img className="menu-img" alt="menu-img" src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" /> */}
+                  <span className="link button">ARTICLE CAT</span>
+                </div>
+              </NavLink>
+              <NavLink activeClassName="active" to="/articlecategory2">
+                <span className="link button">ARTICLE CAT</span>
+              </NavLink>
+              <NavLink activeClassName="active" to="/articlecategory3">
+                <span className="link button">ARTICLE CAT</span>
+              </NavLink>
+              <NavLink activeClassName="active" to="/articlecategory4">
+                <span className="link button">ARTICLE CAT</span>
+              </NavLink>
             </div>
           </div>
         ) : null}
