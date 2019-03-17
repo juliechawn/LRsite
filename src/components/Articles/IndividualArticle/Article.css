@@ -1,7 +1,28 @@
+@media (min-width: 320px) and (max-width: 600px),
+  (min-width: 600px) and (max-width: 999px){
+    .article-img {
+      padding: 1px;
+      background-color: black;
+      height: 500px;
+      width: 90%;
+      object-fit: cover;
+    }    
+  }
+
+  @media (min-width: 1000px) {
+    .article-img {
+      padding: 1px;
+      background-color: black;
+      height: 500px;
+      width: 90%;
+      object-fit: cover;
+    }    
+  }
+
 .article-body {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -16,10 +37,3 @@
  justify-content: center;
 }
 
-.article-img {
-  padding: 1px;
-  background-color: black;
-  height: 500px;
-  width: 50%;
-  object-fit: cover;
-}

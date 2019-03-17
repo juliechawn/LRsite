@@ -8,8 +8,10 @@ class StickyNav extends Component {
     this.state = {
       stickyheader: false,
       visible: false,
-      menu: false
+      displayMenu: false
     };
+    this.showDropdownMenu = this.showDropdownMenu.bind(this);
+    this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
     // this.handleMenu = this.handleMenu.bind(this);
   }
 
@@ -21,16 +23,17 @@ class StickyNav extends Component {
     this.setState({ visible: false });
   }
 
-  onMouseEnter() {
-    // this.setState({
-    //   menu: true
-    // });
+  showDropdownMenu(event) {
+    event.preventDefault();
+    this.setState({ displayMenu: true }, () => {
+      document.addEventListener("click", this.hideDropdownMenu);
+    });
   }
 
-  onMouseLeave() {
-    // this.setState({
-    //   menu: false
-    // });
+  hideDropdownMenu() {
+    this.setState({ displayMenu: false }, () => {
+      document.removeEventListener("click", this.hideDropdownMenu);
+    });
   }
 
   render() {
@@ -41,7 +44,7 @@ class StickyNav extends Component {
     // }
     return (
       <div id="nav">
-          <div id="stickyheader">
+        <div id="stickyheader">
           {/* <div
             className="menu-btn"
             onClick={() => this.setState({ visible: !this.state.visible })}
@@ -49,60 +52,63 @@ class StickyNav extends Component {
             <div className={!this.state.visible ? "bar1" : "change bar1"} />
             <div className={!this.state.visible ? "bar2" : "change bar2"} />
             <div className={!this.state.visible ? "bar3" : "change bar3"} />
-          </div> */}
-          {/* { visible &&
-              <div id="menu">
-                <NavLink activeClassName="active" to="/articles">
-                  <p>Articles</p>
-                </NavLink>
-                <NavLink activeClassName="active" to="/about">
-                  <p>About</p>
-                </NavLink>
-              </div>
-          } */}
-            <div className="nav-div">
+          </div>
+          {visible && (
+            <div id="menu">
+              <NavLink activeClassName="active" to="/articles">
+                <p>Articles</p>
+              </NavLink>
               <NavLink activeClassName="active" to="/about">
-                <span className="link button">ABOUT</span>
-              </NavLink>
-              <span
-                className="link"
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-              >
-                ARTICLES
-              </span>
-              <NavLink activeClassName="active" to="/">
-                <span className="link-title">mama milk</span>
+                <p>About</p>
               </NavLink>
             </div>
-            <div className="social-media-div">
-              <span className="search">
-                <span className="fa-stack fa-md">
-                  <i className="fa fa-square fa-stack-2x fa-inverse" />
-                  <i className="fas fa-search fa-md fa-stack-1x" />
-                </span>
-                <input placeholder="SEARCH" />
-              </span>
+          )} */}
+          <div className="nav-div">
+            <NavLink activeClassName="active" to="/about">
+              <span className="link button">ABOUT</span>
+            </NavLink>
+            <span className="link button" onMouseOver={this.showDropdownMenu}>
+              ARTICLES
+            </span>
+            <NavLink activeClassName="active" to="/">
+              <span className="link-title">mama milk</span>
+            </NavLink>
+          </div>
+          <div className="social-media-div">
+            <span className="search">
               <span className="fa-stack fa-md">
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
+                <i className="fa fa-square fa-stack-2x fa-inverse" />
+                <i className="fas fa-search fa-md fa-stack-1x" />
               </span>
-              <span className="fa-stack fa-md">
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-              </span>
-              <span className="fa-stack fa-md">
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-              </span>
-            </div>
-          {/* <div className="menu">ARTICLE CAT</div> */}
+              <input placeholder="SEARCH" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
+            </span>
+          </div>
         </div>
+        {this.state.displayMenu ? (
+          <div className="menu" onMouseLeave={this.hideDropdownMenu}>
+            <div className="menu-div">
+              <span className="link button">ARTICLE CAT</span>
+              <span className="link button">ARTICLE CAT</span>
+              <span className="link button">ARTICLE CAT</span>
+              <span className="link button">ARTICLE CAT</span>
+            </div>
+          </div>
+        ) : null}
       </div>
     );
   }
 }
 
 export default StickyNav;
-
-
