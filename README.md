@@ -1,7 +1,9 @@
 
 # Mama Milk 
 
-Lifestyle Website
+Lifestyle website currently in production
+
+https://lr-site.herokuapp.com/
 
 ## Installation
 ```bash
