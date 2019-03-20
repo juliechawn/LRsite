@@ -7,5 +7,5 @@ Lifestyle Website
 ```bash
 npm install
 ```
-## Build With
+## Built With
 * React
