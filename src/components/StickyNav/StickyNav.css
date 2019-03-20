@@ -7,18 +7,31 @@
   }
 
   #stickyheader {
-    padding-left: 50px;
     height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     background-color: white;
     box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
   }
 
-  .social-media-div,
-  .nav-div {
-    display: none;
+  .mobile-header {
+    height: 100%;
+    text-align: center;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    padding: 0px 50px;
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
+  }
+
+.mobile-menu span {
+    margin: 50px 0;
   }
 
   .menu-btn {
@@ -26,6 +39,10 @@
     display: inline-block;
     cursor: pointer;
     z-index: 1;
+  }
+
+  .mobile-title {
+    width: 100%;
   }
 
   .bar1,
@@ -51,9 +68,17 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
   }
+
+  .social-media-div,
+  .nav-div {
+    display: none;
+  }
 }
 
 @media (min-width: 1000px) {
+  .mobile {
+    display: none;
+  }
   #nav {
     position: fixed;
     z-index: 99999;
@@ -110,14 +135,14 @@
     outline: none;
   }
 
-  .menu {
+  .menu-desktop {
     background: white;
     width: 100%;
     border-top-width: 90%;
     height: 80px;
   }
 
-  .menu-div {
+  .menu-desktop-div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -133,6 +158,5 @@
     height: 200px;
     width: 300px;
     object-fit: cover;
-
   }
 }

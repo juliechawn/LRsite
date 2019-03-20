@@ -13,7 +13,7 @@
     .article-img {
       padding: 1px;
       background-color: black;
-      height: 500px;
+      height: 600px;
       width: 90%;
       object-fit: cover;
     }    
@@ -35,5 +35,27 @@
 .article-img-div {
  display: flex;
  justify-content: center;
+}
+
+.share-post-hor {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.share-post i {
+  padding: 10px;
+}
+
+.fa-heart {
+  color: rgb(159, 25, 23);
+}
+
+.share-post-hor span {
+  letter-spacing: 0.25em;
+  padding: 5px 5px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 

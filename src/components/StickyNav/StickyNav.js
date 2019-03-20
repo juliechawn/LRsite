@@ -7,11 +7,13 @@ class StickyNav extends Component {
     super(props);
     this.state = {
       stickyheader: false,
-      visible: false,
-      displayMenu: false
+      displayDropdownMenu: false,
+      displayHamburgerMenu: false
     };
     this.showDropdownMenu = this.showDropdownMenu.bind(this);
-    this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
+    // this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
+    this.showHamburgerMenu = this.showHamburgerMenu.bind(this);
+    // this.hideHamburgerMenu = this.hideHamburgerMenu.bind(this);
     // this.handleMenu = this.handleMenu.bind(this);
   }
 
@@ -23,51 +25,76 @@ class StickyNav extends Component {
     this.setState({ visible: false });
   }
 
+  showHamburgerMenu(event) {
+    event.preventDefault();
+    this.setState({ displayHamburgerMenu: true }, () => {
+      document.addEventListener("click", this.showHamburgerMenu);
+    });
+  }
+
+  // hideHamburgerMenu(event) {
+  //   event.preventDefault();
+  //   this.setState({ displayHamburgerMenu: false}, () => {
+  //     document.removeEventListener("click", this.hideHamburgerMenu);
+  //   });
+  // }
+
+
+
   showDropdownMenu(event) {
     event.preventDefault();
-    this.setState({ displayMenu: true }, () => {
+    this.setState({ displayDropdownMenu: true }, () => {
       document.addEventListener("click", this.hideDropdownMenu);
     });
   }
 
-  hideDropdownMenu() {
-    this.setState({ displayMenu: false }, () => {
+  componentWillUnmount() {
+    this.setState({ displayDropdownMenu: false }, () => {
       document.removeEventListener("click", this.hideDropdownMenu);
     });
   }
 
   render() {
-    // const { visible } = this.state;
-    // let menu;
-    // if (this.state.menu === true) {
-    //   menu = <div className="menu">ARTICLE CAT</div>;
-    // }
+
     return (
       <div id="nav">
         <div id="stickyheader">
-          {/* <div
-            className="menu-btn"
-            onClick={() => this.setState({ visible: !this.state.visible })}
-          >
-            <div className={!this.state.visible ? "bar1" : "change bar1"} />
-            <div className={!this.state.visible ? "bar2" : "change bar2"} />
-            <div className={!this.state.visible ? "bar3" : "change bar3"} />
-          </div>
-          {visible && (
-            <div id="menu">
-              <NavLink activeClassName="active" to="/articles">
-                <p>Articles</p>
-              </NavLink>
-              <NavLink activeClassName="active" to="/about">
-                <p>About</p>
+          <div className="mobile mobile-header">
+            <div
+              className="menu-btn"
+              // onMouseOver={this.showDropdownMenu}
+              onClick={this.showHamburgerMenu}
+              // onClick={() => this.setState({ visible: !this.state.visible })}
+            >
+              <div className={this.state.displayHamburgerMenu ? "bar1" : "change bar1"} />
+              <div className={!this.state.displayHamburgerMenu ? "bar2" : "change bar2"} />
+              <div className={!this.state.displayHamburgerMenu ? "bar3" : "change bar3"} />
+            </div>
+            <div className="mobile-title">
+              <NavLink activeClassName="active" to="/">
+                <span className="link-title">mama milk</span>
               </NavLink>
             </div>
-          )} */}
+          </div>
+          {this.state.displayHamburgerMenu ? (
+            <div className="mobile mobile-menu">
+              <NavLink activeClassName="active" to="/articles">
+                <span className="link button">Articles</span>
+              </NavLink>
+              <NavLink activeClassName="active" to="/about">
+                <span className="link">About</span>
+              </NavLink>
+            </div>
+          ) : null}
           <div className="nav-div">
             <NavLink activeClassName="active" to="/about">
               <span className="link button">ABOUT</span>
             </NavLink>
-            <span className="link button" onMouseOver={this.showDropdownMenu} onClick={this.showDropdownMenu}>
+            <span
+              className="link button"
+              onMouseOver={this.showDropdownMenu}
+              onClick={this.showDropdownMenu}
+            >
               ARTICLES
             </span>
             <NavLink activeClassName="active" to="/">
@@ -96,9 +123,11 @@ class StickyNav extends Component {
             </span>
           </div>
         </div>
-        {this.state.displayMenu ? (
-          <div className="menu" onMouseLeave={this.hideDropdownMenu} >
-            <div className="menu-div">
+        {this.state.displayDropdownMenu ? (
+          <div className="menu-desktop" 
+          // onMouseLeave={this.hideDropdownMenu}
+          >
+            <div className="menu-desktop-div">
               <NavLink activeClassName="active" to="/articlecategory1">
                 <div>
                   {/* <img className="menu-img" alt="menu-img" src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" /> */}

@@ -19,14 +19,7 @@ class Article extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
             </div>
-            <div className="article-img-div">
-            <img
-              className="article-img"
-              alt="img"
-              src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-            />
-            </div>
-            <div className="share-post">
+            <p className="share-post">
               <span>
                 <span>LIKE</span>
                 <i className="fas fa-heart fa-lg" />
@@ -40,7 +33,23 @@ class Article extends Component {
                 <i className="fab fa-pinterest-p fa-lg" />
                 {/* <i className="far fa-share-square fa-lg" /> */}
               </span>
+            </p>
+            <p className="share-post-hor">
+              <span>
+                <i className="fas fa-heart fa-lg"><span>1</span></i>
+                <i className="fab fa-instagram fa-lg" />
+                <i className="fab fa-facebook-f fa-lg" />
+                <i className="fab fa-pinterest-p fa-lg" />
+              </span>
+            </p>
+            <div className="article-img-div">
+            <img
+              className="article-img"
+              alt="img"
+              src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+            />
             </div>
+           
             <div>
               <p className="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
