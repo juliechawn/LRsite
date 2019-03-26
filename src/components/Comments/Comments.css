@@ -1,0 +1,43 @@
+.comments {
+  padding: 20px 0;
+}
+.addComment {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
+  padding: 20px 0;
+}
+
+.addComment input {
+  background-color: rgba(0, 52, 89, 0.1);
+  border: 0.5px black solid;
+}
+
+.comment-input {
+  padding: 0 0 50px 0;
+}
+
+.addComment-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addComment-contact-span {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.addComment-btn {
+  padding: 25px 0 0px 0px;
+}
+
+.comment {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgba(0, 52, 89, 0.1);
+  border: 0.5px black solid;
+  padding: 10px 20px;
+}

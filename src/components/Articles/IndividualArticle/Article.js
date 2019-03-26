@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Footer from "../../Footer/Footer.js";
 import StickyNav from "../../StickyNav/StickyNav.js";
 import MoreArticles from "../../MoreArticles/MoreArticles.js"
+import Comments from "../../Comments/Comments.js"
 import "./Article.css";
 
 class Article extends Component {
@@ -134,6 +135,7 @@ class Article extends Component {
           </div>
           </div>
           <MoreArticles />
+          <Comments />
         </div>
         <Footer />
       </div>

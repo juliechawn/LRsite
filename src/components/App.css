@@ -54,6 +54,11 @@ a:visited {
   border-bottom: 1px black solid; 
 }
 
+.top-border {
+  border-top: 1px solid black;
+}
+
+
 @media (min-width: 320px) and (max-width: 600px),
   (min-width: 600px) and (max-width: 999px){
 

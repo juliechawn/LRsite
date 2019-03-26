@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 class MoreArticles extends Component {
   render() {
     return (
-        <div className="more-articles">
+        <div className="more-articles top-border">
           <div className="link-title">more articles</div>
           <div className="more-articles-div">
           <NavLink to="/article">
