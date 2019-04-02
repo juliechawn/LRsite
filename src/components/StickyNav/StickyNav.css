@@ -2,7 +2,7 @@
   (min-width: 600px) and (max-width: 999px) {
   #nav {
     position: fixed;
-    z-index: 99999;
+    z-index: 8888;
     width: 100%;
   }
 
@@ -22,16 +22,24 @@
   }
 
   .mobile-menu {
-    padding: 0px 50px;
-    background: white;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
   }
 
-.mobile-menu span {
-    margin: 50px 0;
+  .mobile-slider {
+    height: 100vh;
+    background-color: white ;
+    width: 300px;
+  }
+  
+  .mobile-slider-div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  .mobile-slider-span {
+    padding: 15px 0px;
   }
 
   .menu-btn {
@@ -49,9 +57,9 @@
   .bar2,
   .bar3 {
     width: 35px;
-    height: 3px;
+    height: 1px;
     background-color: black;
-    margin: 6px 0;
+    margin: 8px 0;
     transition: 0.4s;
   }
 
@@ -72,6 +80,22 @@
   .social-media-div,
   .nav-div {
     display: none;
+  }
+
+  .background-enter {
+    transform: translate(-100%);
+  }
+  .background-enter.background-enter-active {
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+  }
+  .background-leave {
+    transform: translate(0%);
+  }
+
+  .background-leave.background-leave-active {
+    transform: translate(-100%);
+    transition: transform 1000ms ease-in-out;
   }
 }
 
@@ -138,25 +162,41 @@
   .menu-desktop {
     background: white;
     width: 100%;
-    border-top-width: 90%;
+    border-top-width: 100%;
     height: 80px;
+    border-top: 1px rgba(0, 52, 89, 0.1) solid;
+    box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
   }
 
   .menu-desktop-div {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    border-top: 1px rgba(0, 52, 89, 0.1) solid;
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
     height: 100%;
-    box-shadow: 0px 2px 0px rgba(0, 52, 89, 0.1);
   }
 
   .menu-img {
     height: 200px;
     width: 300px;
     object-fit: cover;
+  }
+
+  .background-enter {
+    transform: translate(0, -80px);
+  }
+  .background-enter.background-enter-active {
+    transform: translate(0%);
+    transition: transform 1000ms ease-in-out;
+  }
+  .background-leave {
+    transform: translate(0%);
+  }
+
+  .background-leave.background-leave-active {
+    transform: translate(-100%);
+    transition: transform 1000ms ease-in-out;
   }
 }

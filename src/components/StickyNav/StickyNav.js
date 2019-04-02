@@ -1,74 +1,84 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./StickyNav.css";
+import { CSSTransitionGroup } from 'react-transition-group';
 
 class StickyNav extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      stickyheader: false,
       displayDropdownMenu: false,
-      displayHamburgerMenu: false
+      displayHamburgerMenu: false,
     };
-    this.showDropdownMenu = this.showDropdownMenu.bind(this);
-    // this.hideDropdownMenu = this.hideDropdownMenu.bind(this);
-    this.showHamburgerMenu = this.showHamburgerMenu.bind(this);
-    // this.hideHamburgerMenu = this.hideHamburgerMenu.bind(this);
-    // this.handleMenu = this.handleMenu.bind(this);
   }
 
-  show() {
-    this.setState({ visible: true });
-  }
-
-  hide() {
-    this.setState({ visible: false });
-  }
-
-  showHamburgerMenu(event) {
-    event.preventDefault();
-    this.setState({ displayHamburgerMenu: true }, () => {
-      document.addEventListener("click", this.showHamburgerMenu);
-    });
-  }
-
-  // hideHamburgerMenu(event) {
-  //   event.preventDefault();
-  //   this.setState({ displayHamburgerMenu: false}, () => {
-  //     document.removeEventListener("click", this.hideHamburgerMenu);
-  //   });
-  // }
-
-
-
-  showDropdownMenu(event) {
-    event.preventDefault();
-    this.setState({ displayDropdownMenu: true }, () => {
-      document.addEventListener("click", this.hideDropdownMenu);
-    });
-  }
-
-  componentWillUnmount() {
-    this.setState({ displayDropdownMenu: false }, () => {
-      document.removeEventListener("click", this.hideDropdownMenu);
-    });
-  }
 
   render() {
-
+    let dropdownMenu;
+    if (this.state.displayDropdownMenu === true) {
+      dropdownMenu = (
+        <div
+          className="menu-desktop"
+          onMouseLeave={() => this.setState({ displayDropdownMenu: false })}
+        >
+          <div className="menu-desktop-div">
+            <NavLink activeClassName="active" to="/articlecategory1">
+              <div>
+                <span className="link button">ARTICLE CAT</span>
+              </div>
+            </NavLink>
+            <NavLink activeClassName="active" to="/articlecategory2">
+              <span className="link button">ARTICLE CAT</span>
+            </NavLink>
+            <NavLink activeClassName="active" to="/articlecategory3">
+              <span className="link button">ARTICLE CAT</span>
+            </NavLink>
+            <NavLink activeClassName="active" to="/articlecategory4">
+              <span className="link button">ARTICLE CAT</span>
+            </NavLink>
+          </div>
+        </div>
+      );
+    }
+    let hamburgerMenu;
+    if (this.state.displayHamburgerMenu === true) {
+      hamburgerMenu = (
+        <div
+          className="mobile mobile-slider"
+          onMouseLeave={() => this.setState({ displayHamburgerMenu: false })}
+        >
+        <div className="mobile-slider-div">
+          <NavLink className="mobile-slider-span" activeClassName="active" to="/about">
+            <span className="button link">ABOUT</span>
+          </NavLink>
+          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory1">
+            <span className="link button">ARTICLE CAT</span>
+          </NavLink>
+          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory2">
+            <span className="link button">ARTICLE CAT</span>
+          </NavLink>
+          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory3">
+            <span className="link button">ARTICLE CAT</span>
+          </NavLink>
+          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory4">
+            <span className="link button">ARTICLE CAT</span>
+          </NavLink>
+          </div>
+        </div>
+      );
+    }
+    console.log("click");
     return (
       <div id="nav">
         <div id="stickyheader">
           <div className="mobile mobile-header">
             <div
               className="menu-btn"
-              // onMouseOver={this.showDropdownMenu}
-              onClick={this.showHamburgerMenu}
-              // onClick={() => this.setState({ visible: !this.state.visible })}
+              onMouseOver={() => this.setState({ displayHamburgerMenu: true })}
             >
-              <div className={this.state.displayHamburgerMenu ? "bar1" : "change bar1"} />
-              <div className={!this.state.displayHamburgerMenu ? "bar2" : "change bar2"} />
-              <div className={!this.state.displayHamburgerMenu ? "bar3" : "change bar3"} />
+              <div className={"bar1"} />
+              <div className={"bar2"} />
+              <div className={"bar3"} />
             </div>
             <div className="mobile-title">
               <NavLink activeClassName="active" to="/">
@@ -76,24 +86,21 @@ class StickyNav extends Component {
               </NavLink>
             </div>
           </div>
-          {this.state.displayHamburgerMenu ? (
-            <div className="mobile mobile-menu">
-              <NavLink activeClassName="active" to="/articles">
-                <span className="link button">Articles</span>
-              </NavLink>
-              <NavLink activeClassName="active" to="/about">
-                <span className="link">About</span>
-              </NavLink>
-            </div>
-          ) : null}
+          <CSSTransitionGroup
+          transitionName="background"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
+          {hamburgerMenu}
+          </CSSTransitionGroup>
+
           <div className="nav-div">
             <NavLink activeClassName="active" to="/about">
               <span className="link button">ABOUT</span>
             </NavLink>
             <span
-              className="link button"
-              onMouseOver={this.showDropdownMenu}
-              onClick={this.showDropdownMenu}
+              className="articles-menu link button"
+              onMouseEnter={() => this.setState({ displayDropdownMenu: true })}
             >
               ARTICLES
             </span>
@@ -101,7 +108,7 @@ class StickyNav extends Component {
               <span className="link-title">mama milk</span>
             </NavLink>
           </div>
-          <div className="social-media-div" onMouseOver={this.hideDropdownMenu}>
+          <div className="social-media-div">
             <span className="search">
               <span className="fa-stack fa-md">
                 <i className="fa fa-square fa-stack-2x fa-inverse" />
@@ -123,29 +130,14 @@ class StickyNav extends Component {
             </span>
           </div>
         </div>
-        {this.state.displayDropdownMenu ? (
-          <div className="menu-desktop" 
-          // onMouseLeave={this.hideDropdownMenu}
-          >
-            <div className="menu-desktop-div">
-              <NavLink activeClassName="active" to="/articlecategory1">
-                <div>
-                  {/* <img className="menu-img" alt="menu-img" src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" /> */}
-                  <span className="link button">ARTICLE CAT</span>
-                </div>
-              </NavLink>
-              <NavLink activeClassName="active" to="/articlecategory2">
-                <span className="link button">ARTICLE CAT</span>
-              </NavLink>
-              <NavLink activeClassName="active" to="/articlecategory3">
-                <span className="link button">ARTICLE CAT</span>
-              </NavLink>
-              <NavLink activeClassName="active" to="/articlecategory4">
-                <span className="link button">ARTICLE CAT</span>
-              </NavLink>
-            </div>
-          </div>
-        ) : null}
+         <CSSTransitionGroup
+          transitionName="background"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+          > 
+        {dropdownMenu}
+        </CSSTransitionGroup> 
+
       </div>
     );
   }

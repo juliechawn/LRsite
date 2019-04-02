@@ -13,6 +13,14 @@ class Comments extends Component {
     if (this.state.addComment === true) {
       addComment = (
         <div className="addComment">
+          <span
+            className="close-addComment"
+            onClick={() =>
+              this.setState({ addComment: !this.state.addComment })
+            }
+          >
+            <i className="fas fa-times" />
+          </span>
           <span className="link">COMMENT</span>
           <input className="comment-input" type="text" />
           <div className="addComment-contact">
@@ -80,13 +88,11 @@ class Comments extends Component {
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div
-            className="addComment-btn cnt-reading button"
-          >
-            {/* <NavLink to="/article"> */}
-            <span>more comments</span>
-            {/* </NavLink> */}
-          </div>
+        <div className="addComment-btn cnt-reading button">
+          {/* <NavLink to="/article"> */}
+          <span>more comments</span>
+          {/* </NavLink> */}
+        </div>
       </div>
     );
   }

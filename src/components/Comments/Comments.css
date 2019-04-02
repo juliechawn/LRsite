@@ -1,6 +1,7 @@
 .comments {
   padding: 20px 0;
 }
+
 .addComment {
   display: flex;
   flex-direction: column;
@@ -9,9 +10,14 @@
   padding: 20px 0;
 }
 
+.close-addComment {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .addComment input {
   background-color: rgba(0, 52, 89, 0.1);
-  border: 0.5px black solid;
+  border: 0.5px rgba(0, 52, 89, 0.1) solid;
 }
 
 .comment-input {
@@ -36,8 +42,8 @@
 
 .comment {
   width: 90%;
-  margin: 10px auto;
+  margin: 20px auto;
   background-color: rgba(0, 52, 89, 0.1);
-  border: 0.5px black solid;
+  border: 0.5px rgba(0, 52, 89, 0.1) solid;
   padding: 10px 20px;
 }

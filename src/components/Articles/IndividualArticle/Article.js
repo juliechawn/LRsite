@@ -35,14 +35,14 @@ class Article extends Component {
                 {/* <i className="far fa-share-square fa-lg" /> */}
               </span>
             </p>
-            <p className="share-post-hor">
+            {/* <p className="share-post-hor">
               <span>
                 <i className="fas fa-heart fa-lg"><span>1</span></i>
                 <i className="fab fa-instagram fa-lg" />
                 <i className="fab fa-facebook-f fa-lg" />
                 <i className="fab fa-pinterest-p fa-lg" />
               </span>
-            </p>
+            </p> */}
             <div className="article-img-div">
             <img
               className="article-img"

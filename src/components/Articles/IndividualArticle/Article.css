@@ -11,10 +11,11 @@
 
   @media (min-width: 1000px) {
     .article-img {
+      margin: 20px 0;
       padding: 1px;
       background-color: black;
       height: 600px;
-      width: 50%;
+      width: 60%;
       object-fit: cover;
     }    
   }
@@ -41,7 +42,6 @@
   display: flex;
   flex-direction: row;
 }
-
 
 .share-post i {
   padding: 10px;
