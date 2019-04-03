@@ -38,9 +38,9 @@ class ArticleCategoryFour extends Component {
                 <div className="titles-div">
                   <p className="date">TUESDAY, JANUARY 1, 2019</p>
                   <NavLink to="/article">
-                    <p className="title">
+                    <span className="title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
+                    </span>
                   </NavLink>
                 </div>
                 <div className="text-preview-div">

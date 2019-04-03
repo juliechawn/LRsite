@@ -18,7 +18,7 @@ class StickyNav extends Component {
       dropdownMenu = (
         <div
           className="menu-desktop"
-          // onMouseLeave={() => this.setState({ displayDropdownMenu: false })}
+          onMouseLeave={() => this.setState({ displayDropdownMenu: false })}
         >
           <div className="menu-desktop-div">
             <NavLink activeClassName="active" to="/articlecategory1">
@@ -44,9 +44,11 @@ class StickyNav extends Component {
       hamburgerMenu = (
         <div
           className="mobile mobile-slider"
-          // onMouseLeave={() => this.setState({ displayHamburgerMenu: false })}
         >
         <div className="mobile-slider-div">
+          <NavLink className="mobile-slider-span" activeClassName="active" to="/about">
+            <span className="button link">HOME</span>
+          </NavLink>
           <NavLink className="mobile-slider-span" activeClassName="active" to="/about">
             <span className="button link">ABOUT</span>
           </NavLink>
@@ -76,6 +78,13 @@ class StickyNav extends Component {
               <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
             </span>
           </div>
+          <span className="search">
+              <span className="fa-stack fa-md">
+                <i className="fa fa-square fa-stack-2x fa-inverse" />
+                <i className="fas fa-search fa-md fa-stack-1x" />
+              </span>
+              <input placeholder="SEARCH" />
+            </span>
         </div>
         </div>
       );
@@ -144,6 +153,7 @@ class StickyNav extends Component {
         </div>
          <CSSTransitionGroup
           transitionName="background"
+          animation= '0.5s slideIn forwards'
           transitionEnterTimeout={500}
           transitionLeaveTimeout={500}
           > 
