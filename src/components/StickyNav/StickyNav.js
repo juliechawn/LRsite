@@ -18,7 +18,7 @@ class StickyNav extends Component {
       dropdownMenu = (
         <div
           className="menu-desktop"
-          onMouseLeave={() => this.setState({ displayDropdownMenu: false })}
+          // onMouseLeave={() => this.setState({ displayDropdownMenu: false })}
         >
           <div className="menu-desktop-div">
             <NavLink activeClassName="active" to="/articlecategory1">
@@ -44,7 +44,7 @@ class StickyNav extends Component {
       hamburgerMenu = (
         <div
           className="mobile mobile-slider"
-          onMouseLeave={() => this.setState({ displayHamburgerMenu: false })}
+          // onMouseLeave={() => this.setState({ displayHamburgerMenu: false })}
         >
         <div className="mobile-slider-div">
           <NavLink className="mobile-slider-span" activeClassName="active" to="/about">
@@ -86,11 +86,11 @@ class StickyNav extends Component {
           <div className="mobile mobile-header">
             <div
               className="menu-btn"
-              onMouseOver={() => this.setState({ displayHamburgerMenu: true })}
+              onClick={() => this.setState({ displayHamburgerMenu: !this.state.displayHamburgerMenu})}
             >
-              <div className={"bar1"} />
-              <div className={"bar2"} />
-              <div className={"bar3"} />
+              <div className={this.state.displayHamburgerMenu ? "change bar1" : "bar1"} />
+              <div className={this.state.displayHamburgerMenu ? "change bar2" : "bar2"} />
+              <div className={this.state.displayHamburgerMenu ? "change bar3" : "bar3"} />
             </div>
             <div className="mobile-title">
               <NavLink activeClassName="active" to="/">

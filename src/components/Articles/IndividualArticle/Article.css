@@ -1,3 +1,7 @@
+@media (min-width: 1px) and (max-width: 649px) {}
+@media (min-width: 650px) and (max-width: 1099px) {}
+@media (min-width: 1100px) {}
+
 @media (min-width: 320px) and (max-width: 600px),
   (min-width: 600px) and (max-width: 999px){
     .article-img {

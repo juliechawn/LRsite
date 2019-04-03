@@ -54,10 +54,9 @@ class StickyNavHome extends Component {
                 onClick={this.showDropdownMenu}
                 // onClick={() => this.setState({ visible: !this.state.visible })}
               >
-
               </div>
             </div>
-            {this.state.displayHamburgerMenu ? (
+            {/* {this.state.displayHamburgerMenu ? (
               <div className="mobile mobile-menu">
                 <NavLink activeClassName="active" to="/articles">
                   <p>Articles</p>
@@ -66,7 +65,7 @@ class StickyNavHome extends Component {
                   <p>About</p>
                 </NavLink>
               </div>
-            ) : null}
+            ) : null} */}
             <div className="nav-div">
               <NavLink activeClassName="active" to="/about">
                 <span className="link button">ABOUT</span>
