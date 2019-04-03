@@ -1,11 +1,319 @@
-/* .article-category-header {
-  text-align: center;
-  padding: 100px 0 20px 0;
-  font-size: 24px;
-  letter-spacing: 0.25em;
-} */
+@media (min-width: 320px) and (max-width: 649px) {
+  .article-category-body {
+    margin-top: 25px;
+  }
 
-.article-category-body {
-  margin: 0 auto;
-  padding: 50px 0 0 0;
+  .all-posts {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .idv-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 40px 0;
+  }
+
+  .img-tags-div {
+    width: 100%;
+    height: 400px;
+  }
+
+  .home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tags-div {
+    display: none;
+  }
+
+  .text-div {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-preview-div {
+    height: 12em;
+    overflow: hidden;
+  }
+
+  .text-preview {
+    margin: 0 auto;
+    white-space: pre-line;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  .share-post {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .share-post i {
+    padding: 10px;
+  }
+
+  .fa-heart {
+    color: rgb(159, 25, 23);
+  }
+
+  .share-post span {
+    letter-spacing: 0.25em;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cnt-reading {
+    font-family: "badtaste", sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    color: black;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1099px) {
+  .article-category-body {
+    margin: 25px auto 0;
+    width: 90%;
+  }
+
+  .all-posts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .idv-post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 40px 0;
+  }
+
+  .img-tags-div {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-tags-div a,
+  .img-tags-div a:link,
+  .img-tags-div a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  .tags-div {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    font-size: 12px;
+  }
+
+  .tag-span-1 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background: rgba(211, 114, 124, 0.9);
+  }
+
+  .tag-span-2 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(0, 52, 89, 0.9);
+  }
+  .tag-span-3 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(255, 204, 0, 0.9);
+  }
+
+  .text-div {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .text-preview-div {
+    height: 12em;
+    overflow: hidden;
+  }
+
+  .text-preview {
+    margin: 0 auto;
+    white-space: pre-line;
+    line-height: 2;
+    text-align: justify;
+  }
+
+  .share-post {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .share-post i {
+    padding: 10px;
+  }
+
+  .fa-heart {
+    color: rgb(159, 25, 23);
+  }
+
+  .share-post span {
+    letter-spacing: 0.25em;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cnt-reading {
+    font-family: "badtaste", sans-serif;
+    font-size: 30px;
+    margin: 0 auto;
+    color: black;
+  }
+}
+
+@media (min-width: 1100px) {
+  .article-category-body {
+    margin-top: 25px;
+  }
+
+  .all-posts {
+    margin: 150px auto 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .idv-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 40px 0;
+  }
+
+  .img-tags-div {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    flex-grow: 1;
+  }
+
+  .home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .img-tags-div a,
+  .img-tags-div a:link,
+  .img-tags-div a:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  .tags-div {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    font-size: 12px;
+  }
+
+  .tag-span-1 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background: rgba(211, 114, 124, 0.9);
+  }
+
+  .tag-span-2 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(0, 52, 89, 0.9);
+  }
+  .tag-span-3 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(255, 204, 0, 0.9);
+  }
+
+  .text-div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 2;
+    margin: 0 0 0 30px;
+  }
+
+  .text-preview-div {
+    height: 12em;
+    overflow: hidden;
+  }
+
+  .cnt-reading {
+    font-family: "badtaste", sans-serif;
+    font-size: 36px;
+    margin: 0 auto;
+    color: black;
+  }
+
+  .share-post {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .share-post i {
+    padding: 10px;
+  }
+
+  .fa-heart {
+    color: rgb(159, 25, 23);
+  }
+
+  .share-post span {
+    letter-spacing: 0.25em;
+    padding: 5px 5px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }

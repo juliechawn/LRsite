@@ -7,7 +7,8 @@ class StickyNavHome extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      stickyheader: false
+      stickyheader: false,
+      displayHamburgerMenu: false,
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -53,9 +54,7 @@ class StickyNavHome extends Component {
                 onClick={this.showDropdownMenu}
                 // onClick={() => this.setState({ visible: !this.state.visible })}
               >
-                <div className={!this.state.visible ? "bar1" : "change bar1"} />
-                <div className={!this.state.visible ? "bar2" : "change bar2"} />
-                <div className={!this.state.visible ? "bar3" : "change bar3"} />
+
               </div>
             </div>
             {this.state.displayHamburgerMenu ? (

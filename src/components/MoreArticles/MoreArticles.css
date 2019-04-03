@@ -21,8 +21,6 @@ div .link-title {
 }
 
 .more-img {
-  padding: 1px;
-  background-color: black;
   height: 300px;
   object-fit: cover;
   width: 100%;

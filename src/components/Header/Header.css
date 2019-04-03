@@ -1,74 +1,141 @@
-@media (min-width: 320px) and (max-width: 600px),
-  (min-width: 600px) and (max-width: 999px) {
-    .photogrid-links {
-      display: none;
-    }
-
+@media (min-width: 1px) and (max-width: 649px) {
+  .page-header-photogrid-tablet, .page-header-photogrid-desktop {
+    display: none;
   }
 
-  @media (min-width: 1000px) {
-    .photogrid-links {
-      text-align: center;
-      margin: 0px 50px 0 50px;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-    }
+  .photogrid-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: "badtaste", sans-serif;
   }
 
-.home-header {
-  width: 100%;
-  height: 50vh;
-  padding-top: 80px;
+  .page-header {
+    width: 100%;
+    height: 25vh;
+    padding-top: 80px;
+  }
+
+  .photogrid-img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    opacity: 0.15;
+    height: 25vh;
+  }
+
+  .photogrid-div {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column wrap;
+    top: 20%;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-.photogrid {
-  align-content: center;
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+@media (min-width: 650px) and (max-width: 1099px) {
+  .page-header-photogrid-mobile, .page-header-photogrid-desktop{
+    display: none;
+  }
+
+  .photogrid-title {
+    text-align: center;
+    font-size: 75px;
+    font-family: "badtaste", sans-serif;
+  }
+
+  .page-header {
+    width: 100%;
+    height: 30vh;
+    padding-top: 80px;
+  }
+
+  .page-header-photogrid-tablet {
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .photogrid-img {
+    object-fit: cover;
+    opacity: 0.15;
+    height: 30vh;
+    position: relative;
+  }
+  
+  .page-header-column-tablet {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .photogrid-div {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column wrap;
+    top: 20%;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-.photogrid-img {
-  object-fit: cover;
-  width: 100%;
-  position: relative;
-}
+@media (min-width: 1100px) { 
+  .page-header-photogrid-tablet {
+    display: none;
+  }
 
-.vertical {
-  opacity: 0.15;
-  height: 50vh;
-}
+  .photogrid-title {
+    text-align: center;
+    font-size: 100px;
+    font-family: "badtaste", sans-serif;
+  }
 
-.horizontal {
-  opacity: 0.15;
-  height: 25vh;
-}
+  .page-header {
+    width: 100%;
+    height: 40vh;
+    padding-top: 80px;
+  }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-}
+  .page-header-photogrid-desktop {
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 
-.photogrid-div {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-flow: column wrap;
-  top: 20%;
-  width: 100%;
-  margin: 0 auto;
-}
+  .page-header-img {
+    object-fit: cover;
+    opacity: 0.15;
+    height: 40vh;
+    position: relative;
+  }
+  
+  .page-header-column-desktop {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
 
-.photogrid-title {
-  text-align: center;
-  font-size: 150px;
-  font-family: "badtaste", sans-serif;
+  .photogrid-div {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column wrap;
+    top: 20%;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
-

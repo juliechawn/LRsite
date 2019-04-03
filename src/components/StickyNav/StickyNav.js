@@ -12,7 +12,6 @@ class StickyNav extends Component {
     };
   }
 
-
   render() {
     let dropdownMenu;
     if (this.state.displayDropdownMenu === true) {
@@ -63,11 +62,24 @@ class StickyNav extends Component {
           <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory4">
             <span className="link button">ARTICLE CAT</span>
           </NavLink>
+          <div className="social-media-mobile">
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
+            </span>
+            <span className="fa-stack fa-md">
+              <i className="fa fa-circle fa-stack-2x" />
+              <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
+            </span>
           </div>
+        </div>
         </div>
       );
     }
-    console.log("click");
     return (
       <div id="nav">
         <div id="stickyheader">
@@ -132,8 +144,8 @@ class StickyNav extends Component {
         </div>
          <CSSTransitionGroup
           transitionName="background"
-          transitionEnterTimeout={1000}
-          transitionLeaveTimeout={1000}
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}
           > 
         {dropdownMenu}
         </CSSTransitionGroup> 
