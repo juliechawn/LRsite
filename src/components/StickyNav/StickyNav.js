@@ -22,9 +22,7 @@ class StickyNav extends Component {
         >
           <div className="menu-desktop-div">
             <NavLink activeClassName="active" to="/articlecategory1">
-              <div>
                 <span className="link button">ARTICLE CAT</span>
-              </div>
             </NavLink>
             <NavLink activeClassName="active" to="/articlecategory2">
               <span className="link button">ARTICLE CAT</span>
@@ -46,24 +44,12 @@ class StickyNav extends Component {
           className="mobile mobile-slider"
         >
         <div className="mobile-slider-div">
-          <NavLink className="mobile-slider-span" activeClassName="active" to="/about">
-            <span className="button link">HOME</span>
-          </NavLink>
-          <NavLink className="mobile-slider-span" activeClassName="active" to="/about">
-            <span className="button link">ABOUT</span>
-          </NavLink>
-          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory1">
-            <span className="link button">ARTICLE CAT</span>
-          </NavLink>
-          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory2">
-            <span className="link button">ARTICLE CAT</span>
-          </NavLink>
-          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory3">
-            <span className="link button">ARTICLE CAT</span>
-          </NavLink>
-          <NavLink className="mobile-slider-span" activeClassName="active" to="/articlecategory4">
-            <span className="link button">ARTICLE CAT</span>
-          </NavLink>
+            <span className="link button"> <NavLink exact activeClassName="active" to="/">HOME</NavLink></span>
+            <span className="link button"><NavLink activeClassName="active" to="/about">ABOUT</NavLink></span>
+            <span className="link button"><NavLink activeClassName="active" to="/articlecategory1">ARTICLE CAT</NavLink></span>
+            <span className="link button"><NavLink activeClassName="active" to="/articlecategory2">ARTICLE CAT</NavLink></span>
+            <span className="link button"><NavLink activeClassName="active" to="/articlecategory3">ARTICLE CAT</NavLink></span>
+            <span className="link button"><NavLink activeClassName="active" to="/articlecategory4">ARTICLE CAT</NavLink></span>
           <div className="social-media-mobile">
             <span className="fa-stack fa-md">
               <i className="fa fa-circle fa-stack-2x" />
@@ -102,7 +88,7 @@ class StickyNav extends Component {
               <div className={this.state.displayHamburgerMenu ? "change bar3" : "bar3"} />
             </div>
             <div className="mobile-title">
-              <NavLink activeClassName="active" to="/">
+              <NavLink exact activeClassName="active" to="/">
                 <span className="link-title">mama milk</span>
               </NavLink>
             </div>
@@ -125,7 +111,7 @@ class StickyNav extends Component {
             >
               ARTICLES
             </span>
-            <NavLink activeClassName="active" to="/">
+            <NavLink exact activeClassName="active" to="/">
               <span className="link-title">mama milk</span>
             </NavLink>
           </div>
