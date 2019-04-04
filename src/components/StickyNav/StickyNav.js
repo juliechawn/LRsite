@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./StickyNav.css";
-import { CSSTransitionGroup } from 'react-transition-group';
+import { CSSTransitionGroup } from "react-transition-group";
 
 class StickyNav extends Component {
   constructor(props) {
     super(props);
     this.state = {
       displayDropdownMenu: false,
-      displayHamburgerMenu: false,
+      displayHamburgerMenu: false
     };
   }
 
@@ -22,7 +22,7 @@ class StickyNav extends Component {
         >
           <div className="menu-desktop-div">
             <NavLink activeClassName="active" to="/articlecategory1">
-                <span className="link button">ARTICLE CAT</span>
+              <span className="link button">ARTICLE CAT</span>
             </NavLink>
             <NavLink activeClassName="active" to="/articlecategory2">
               <span className="link button">ARTICLE CAT</span>
@@ -40,38 +40,60 @@ class StickyNav extends Component {
     let hamburgerMenu;
     if (this.state.displayHamburgerMenu === true) {
       hamburgerMenu = (
-        <div
-          className="mobile mobile-slider"
-        >
-        <div className="mobile-slider-div">
-            <span className="link button"> <NavLink exact activeClassName="active" to="/">HOME</NavLink></span>
-            <span className="link button"><NavLink activeClassName="active" to="/about">ABOUT</NavLink></span>
-            <span className="link button"><NavLink activeClassName="active" to="/articlecategory1">ARTICLE CAT</NavLink></span>
-            <span className="link button"><NavLink activeClassName="active" to="/articlecategory2">ARTICLE CAT</NavLink></span>
-            <span className="link button"><NavLink activeClassName="active" to="/articlecategory3">ARTICLE CAT</NavLink></span>
-            <span className="link button"><NavLink activeClassName="active" to="/articlecategory4">ARTICLE CAT</NavLink></span>
-          <div className="social-media-mobile">
-            <span className="fa-stack fa-md">
-              <i className="fa fa-circle fa-stack-2x" />
-              <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
+        <div className="mobile mobile-slider">
+          <div className="mobile-slider-div">
+            <span className="link button">
+              <NavLink exact activeClassName="active" to="/">
+                HOME
+              </NavLink>
             </span>
-            <span className="fa-stack fa-md">
-              <i className="fa fa-circle fa-stack-2x" />
-              <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
+            <span className="link button">
+              <NavLink activeClassName="active" to="/about">
+                ABOUT
+              </NavLink>
             </span>
-            <span className="fa-stack fa-md">
-              <i className="fa fa-circle fa-stack-2x" />
-              <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
+            <span className="link button">
+              <NavLink activeClassName="active" to="/articlecategory1">
+                ARTICLE CAT
+              </NavLink>
             </span>
-          </div>
-          <span className="search">
+            <span className="link button">
+              <NavLink activeClassName="active" to="/articlecategory2">
+                ARTICLE CAT
+              </NavLink>
+            </span>
+            <span className="link button">
+              <NavLink activeClassName="active" to="/articlecategory3">
+                ARTICLE CAT
+              </NavLink>
+            </span>
+            <span className="link button">
+              <NavLink activeClassName="active" to="/articlecategory4">
+                ARTICLE CAT
+              </NavLink>
+            </span>
+            <div className="social-media-mobile">
+              <span className="fa-stack fa-md">
+                <i className="fa fa-circle fa-stack-2x" />
+                <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
+              </span>
+              <span className="fa-stack fa-md">
+                <i className="fa fa-circle fa-stack-2x" />
+                <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
+              </span>
+              <span className="fa-stack fa-md">
+                <i className="fa fa-circle fa-stack-2x" />
+                <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
+              </span>
+            </div>
+            <span className="search">
               <span className="fa-stack fa-md">
                 <i className="fa fa-square fa-stack-2x fa-inverse" />
                 <i className="fas fa-search fa-md fa-stack-1x" />
               </span>
               <input placeholder="SEARCH" />
             </span>
-        </div>
+          </div>
         </div>
       );
     }
@@ -81,26 +103,39 @@ class StickyNav extends Component {
           <div className="mobile mobile-header">
             <div
               className="menu-btn"
-              onClick={() => this.setState({ displayHamburgerMenu: !this.state.displayHamburgerMenu})}
+              onClick={() =>
+                this.setState({
+                  displayHamburgerMenu: !this.state.displayHamburgerMenu
+                })
+              }
             >
-              <div className={this.state.displayHamburgerMenu ? "change bar1" : "bar1"} />
-              <div className={this.state.displayHamburgerMenu ? "change bar2" : "bar2"} />
-              <div className={this.state.displayHamburgerMenu ? "change bar3" : "bar3"} />
+              <div
+                className={
+                  this.state.displayHamburgerMenu ? "change bar1" : "bar1"
+                }
+              />
+              <div
+                className={
+                  this.state.displayHamburgerMenu ? "change bar2" : "bar2"
+                }
+              />
+              <div
+                className={
+                  this.state.displayHamburgerMenu ? "change bar3" : "bar3"
+                }
+              />
             </div>
-            <div className="mobile-title">
-              <NavLink exact activeClassName="active" to="/">
-                <span className="link-title">mama milk</span>
-              </NavLink>
+            <div className="mobile-title">       
+                <NavLink exact activeClassName="" to="/"><span className="link-title">mama milk</span></NavLink>      
             </div>
           </div>
           <CSSTransitionGroup
-          transitionName="background"
-          transitionEnterTimeout={1000}
-          transitionLeaveTimeout={1000}
-        >
-          {hamburgerMenu}
+            transitionName="background"
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
+          >
+            {hamburgerMenu}
           </CSSTransitionGroup>
-
           <div className="nav-div">
             <NavLink activeClassName="active" to="/about">
               <span className="link button">ABOUT</span>
@@ -111,7 +146,7 @@ class StickyNav extends Component {
             >
               ARTICLES
             </span>
-            <NavLink exact activeClassName="active" to="/">
+            <NavLink exact activeClassName="" to="/">
               <span className="link-title">mama milk</span>
             </NavLink>
           </div>
@@ -137,15 +172,14 @@ class StickyNav extends Component {
             </span>
           </div>
         </div>
-         <CSSTransitionGroup
+        <CSSTransitionGroup
           transitionName="background"
-          animation= '0.5s slideIn forwards'
+          animation="0.5s slideIn forwards"
           transitionEnterTimeout={500}
           transitionLeaveTimeout={500}
-          > 
-        {dropdownMenu}
-        </CSSTransitionGroup> 
-
+        >
+          {dropdownMenu}
+        </CSSTransitionGroup>
       </div>
     );
   }

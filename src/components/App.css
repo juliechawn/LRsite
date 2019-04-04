@@ -32,6 +32,7 @@ a:visited {
 }
 
 @media (min-width: 1px) and (max-width: 649px) {
+
   .link {
     font-size: 14px;
     letter-spacing: 0.25em;

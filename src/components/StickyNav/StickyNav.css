@@ -1,4 +1,8 @@
 @media (min-width: 1px) and (max-width: 649px) {
+  .home-header-mobile .link-title {
+    display: none;
+  }
+  
   #nav {
     position: fixed;
     z-index: 8888;
@@ -34,7 +38,7 @@
   .mobile-slider-div {
     display: flex;
     flex-direction: column;
-    height:90vh;
+    height: 90vh;
     justify-content: space-evenly;
     padding-left: 50px;
   }
@@ -60,18 +64,18 @@
     transition: 0.4s;
   }
 
-  .change.bar1  {
-    -webkit-transform:  rotate(-45deg) translate(-7px, 4px);
-  transform: rotate(-45deg) translate(-7px, 4px);
+  .change.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+    transform: rotate(-45deg) translate(-7px, 4px);
   }
 
-  .change.bar2{
+  .change.bar2 {
     opacity: 0;
   }
 
-  .change.bar3{
-     -webkit-transform: rotate(45deg) translate(-6px, -6px);
-  transform: rotate(45deg) translate(-6px, -6px);
+  .change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
   }
 
   .social-media-div,
@@ -97,6 +101,9 @@
 }
 
 @media (min-width: 650px) and (max-width: 1099px) {
+  .home-header-mobile .link-title {
+    display: none;
+  }
 
   #nav {
     position: fixed;
@@ -135,7 +142,7 @@
   .mobile-slider-div {
     display: flex;
     flex-direction: column;
-    height:90vh;
+    height: 90vh;
     justify-content: space-evenly;
     padding-left: 50px;
   }
@@ -161,18 +168,18 @@
     transition: 0.4s;
   }
 
-  .change.bar1  {
-    -webkit-transform:  rotate(-45deg) translate(-7px, 4px);
-  transform: rotate(-45deg) translate(-7px, 4px);
+  .change.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 4px);
+    transform: rotate(-45deg) translate(-7px, 4px);
   }
 
-  .change.bar2{
+  .change.bar2 {
     opacity: 0;
   }
 
-  .change.bar3{
-     -webkit-transform: rotate(45deg) translate(-6px, -6px);
-  transform: rotate(45deg) translate(-6px, -6px);
+  .change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
   }
 
   .social-media-div,

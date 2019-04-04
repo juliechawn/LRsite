@@ -7,8 +7,7 @@ class StickyNavHome extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      stickyheader: false,
-      displayHamburgerMenu: false,
+      stickyheader: false
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -36,36 +35,16 @@ class StickyNavHome extends Component {
   render() {
     let stickyheader;
     if (this.state.stickyheader === true) {
-      stickyheader = (
-        <div>
-          <StickyNav />
-        </div>
-      );
+      stickyheader = <StickyNav />;
     }
     let homeheader;
     if (this.state.stickyheader === false) {
       homeheader = (
         <div id="nav">
           <div id="stickyheader">
-            <div className="mobile mobile-header">
-              <div
-                className="menu-btn"
-                onMouseOver={this.showDropdownMenu}
-                onClick={this.showDropdownMenu}
-                // onClick={() => this.setState({ visible: !this.state.visible })}
-              >
-              </div>
+            <div className="home-header-mobile">
+              <StickyNav />
             </div>
-            {/* {this.state.displayHamburgerMenu ? (
-              <div className="mobile mobile-menu">
-                <NavLink activeClassName="active" to="/articles">
-                  <p>Articles</p>
-                </NavLink>
-                <NavLink activeClassName="active" to="/about">
-                  <p>About</p>
-                </NavLink>
-              </div>
-            ) : null} */}
             <div className="nav-div">
               <NavLink activeClassName="active" to="/about">
                 <span className="link button">ABOUT</span>
