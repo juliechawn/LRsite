@@ -2,7 +2,7 @@
   .home-header-mobile .link-title {
     display: none;
   }
-  
+
   #nav {
     position: fixed;
     z-index: 8888;
@@ -205,6 +205,10 @@
 }
 
 @media (min-width: 1100px) {
+  .home-header-mobile {
+    display: none;
+  }
+  
   .mobile {
     display: none;
   }

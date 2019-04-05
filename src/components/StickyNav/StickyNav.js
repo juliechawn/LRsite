@@ -42,57 +42,74 @@ class StickyNav extends Component {
       hamburgerMenu = (
         <div className="mobile mobile-slider">
           <div className="mobile-slider-div">
-            <span className="link button">
+            <span>
               <NavLink exact activeClassName="active" to="/">
+                <span className="link button">
                 HOME
+                </span>
               </NavLink>
             </span>
-            <span className="link button">
+            <span>
               <NavLink activeClassName="active" to="/about">
-                ABOUT
+                <span className="link button">ABOUT</span>
               </NavLink>
             </span>
-            <span className="link button">
+            <span>
               <NavLink activeClassName="active" to="/articlecategory1">
-                ARTICLE CAT
+                <span className="link button">ARTICLE CAT</span>
               </NavLink>
             </span>
-            <span className="link button">
+            <span>
               <NavLink activeClassName="active" to="/articlecategory2">
-                ARTICLE CAT
+              <span className="link button">ARTICLE CAT</span>
               </NavLink>
             </span>
-            <span className="link button">
+            <span>
               <NavLink activeClassName="active" to="/articlecategory3">
-                ARTICLE CAT
+              <span className="link button">ARTICLE CAT</span>
               </NavLink>
             </span>
-            <span className="link button">
+            <span>
               <NavLink activeClassName="active" to="/articlecategory4">
-                ARTICLE CAT
+              <span className="link button">ARTICLE CAT</span>
               </NavLink>
             </span>
             <div className="social-media-mobile">
-              <span className="fa-stack fa-md">
+              <a
+                className="fa-stack fa-md"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-circle fa-stack-2x" />
                 <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
-              </span>
-              <span className="fa-stack fa-md">
+              </a>
+              <a
+                className="fa-stack fa-md"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-circle fa-stack-2x" />
                 <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-              </span>
-              <span className="fa-stack fa-md">
+              </a>
+              <a
+                className="fa-stack fa-md"
+                href="https://www.pinterest.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="fa fa-circle fa-stack-2x" />
                 <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-              </span>
+              </a>
             </div>
-            <span className="search">
+            {/* <span className="search">
               <span className="fa-stack fa-md">
                 <i className="fa fa-square fa-stack-2x fa-inverse" />
                 <i className="fas fa-search fa-md fa-stack-1x" />
               </span>
               <input placeholder="SEARCH" />
-            </span>
+            </span> */}
           </div>
         </div>
       );
@@ -125,8 +142,10 @@ class StickyNav extends Component {
                 }
               />
             </div>
-            <div className="mobile-title">       
-                <NavLink exact activeClassName="" to="/"><span className="link-title">mama milk</span></NavLink>      
+            <div className="mobile-title">
+              <NavLink exact activeClassName="" to="/">
+                <span className="link-title">mama milk</span>
+              </NavLink>
             </div>
           </div>
           <CSSTransitionGroup
@@ -158,18 +177,33 @@ class StickyNav extends Component {
               </span>
               <input placeholder="SEARCH" />
             </span>
-            <span className="fa-stack fa-md">
+            <a
+              className="fa-stack fa-md"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-circle fa-stack-2x" />
               <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
-            </span>
-            <span className="fa-stack fa-md">
+            </a>
+            <a
+              className="fa-stack fa-md"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-circle fa-stack-2x" />
               <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-            </span>
-            <span className="fa-stack fa-md">
+            </a>
+            <a
+              className="fa-stack fa-md"
+              href="https://www.pinterest.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-circle fa-stack-2x" />
               <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-            </span>
+            </a>
           </div>
         </div>
         <CSSTransitionGroup

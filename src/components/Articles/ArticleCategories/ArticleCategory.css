@@ -1,8 +1,8 @@
-@media (min-width: 320px) and (max-width: 649px) {
+@media (min-width: 1px) and (max-width: 649px) {
   .article-category-body {
     margin-top: 25px;
   }
-
+  
   .all-posts {
     width: 100%;
     margin: auto;

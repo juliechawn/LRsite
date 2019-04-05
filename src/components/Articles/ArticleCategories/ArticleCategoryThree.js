@@ -20,7 +20,7 @@ class ArticleCategoryThree extends Component {
                   <img
                     className="home-img"
                     alt="img"
-                    src="https://images.unsplash.com/photo-1518208734895-46d2ff97e480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80"
+                    src="https://images.unsplash.com/photo-1509116043833-3233ceed8153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
                   />
                 </NavLink>
                 <div className="tags-div">

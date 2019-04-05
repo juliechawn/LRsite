@@ -3,7 +3,7 @@ import Footer from "../Footer/Footer.js";
 import StickyNavHome from "../StickyNav/StickyNavHome.js";
 import MoreArticles from "../MoreArticles/MoreArticles.js";
 import HeaderHome from "../Header/HeaderHome.js";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "./Home.css";
 
 class Home extends Component {

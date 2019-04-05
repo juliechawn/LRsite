@@ -26,11 +26,11 @@ class Comments extends Component {
           <div className="addComment-contact">
             <span className="addComment-contact-span">
               <span className="link">NAME</span>
-              <input type="text" />
+              <input className="contact-input" type="text" />
             </span>
             <span className="addComment-contact-span">
               <span className="link">EMAIL</span>
-              <input type="text" />
+              <input className="contact-input" type="text" />
             </span>
           </div>
           <div

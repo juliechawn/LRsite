@@ -1,28 +1,28 @@
-@media (min-width: 1px) and (max-width: 649px) {}
-@media (min-width: 650px) and (max-width: 1099px) {}
-@media (min-width: 1100px) {}
+@media (min-width: 1px) and (max-width: 649px) {
+  .article-img {
+    height: 500px;
+    width: 90%;
+    object-fit: cover;
+  }    
+}
 
-@media (min-width: 320px) and (max-width: 600px),
-  (min-width: 600px) and (max-width: 999px){
-    .article-img {
-      padding: 1px;
-      background-color: black;
-      height: 500px;
-      width: 90%;
-      object-fit: cover;
-    }    
-  }
+@media (min-width: 650px) and (max-width: 1099px) {
+  .article-img {
+    height: 500px;
+    width: 90%;
+    object-fit: cover;
+  }    
+}
 
-  @media (min-width: 1000px) {
-    .article-img {
-      margin: 20px 0;
-      padding: 1px;
-      background-color: black;
-      height: 600px;
-      width: 60%;
-      object-fit: cover;
-    }    
-  }
+@media (min-width: 1100px) {
+  .article-img {
+    margin: 20px 0;
+    height: 600px;
+    width: 60%;
+    object-fit: cover;
+  } 
+}
+
 
 .article-body {
   display: flex;
