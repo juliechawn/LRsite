@@ -6,7 +6,6 @@ class Header extends Component {
   render() {
     return (
       <div className="page-header">
-      
         <div className="mobile page-header-photogrid-mobile">
           <img
             className="photogrid-img"
@@ -31,7 +30,6 @@ class Header extends Component {
             />
           </div>
         </div>
-
         <div className="page-header-photogrid-desktop">
           <div className="page-header-column-desktop">
             <img

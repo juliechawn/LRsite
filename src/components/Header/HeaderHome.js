@@ -6,7 +6,16 @@ class HeaderHome extends Component {
   render() {
     return (
       <div className="home-header">
-        <div className="home-header-photogrid">
+      
+        <div className="mobile page-header-photogrid-mobile">
+          <img
+            className="photogrid-img"
+            alt="grid-img"
+            src="https://images.unsplash.com/photo-1445633629932-0029acc44e88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+
+        <div className="home-header-tablet-desktop-photogrid">
           <div className="column">
             <img
               className="photogrid-img vertical"
