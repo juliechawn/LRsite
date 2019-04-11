@@ -15,6 +15,7 @@ class Home extends Component {
         <StickyNavHome />
         <HeaderHome title={"milk mama"} artcat={"ARTICLE CAT"} />
         <div className="page-body">
+        <div className="article-category-body">
         <ArticlePreview
               date={"TUESDAY, JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
@@ -28,6 +29,7 @@ class Home extends Component {
         <MoreArticles />
         </div>
         <Footer />
+        </div>
       </div>
     );
   }

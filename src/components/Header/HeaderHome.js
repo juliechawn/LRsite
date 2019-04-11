@@ -6,7 +6,6 @@ class HeaderHome extends Component {
   render() {
     return (
       <div className="home-header">
-      
         <div className="mobile page-header-photogrid-mobile">
           <img
             className="photogrid-img"
