@@ -76,7 +76,7 @@ class StickyNav extends Component {
             </span>
             <div className="social-media-mobile">
               <a
-                className="fa-stack fa-md"
+                className="fa-stack fa-md button"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,7 +85,7 @@ class StickyNav extends Component {
                 <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
               </a>
               <a
-                className="fa-stack fa-md"
+                className="fa-stack fa-md button"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -94,7 +94,7 @@ class StickyNav extends Component {
                 <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
               </a>
               <a
-                className="fa-stack fa-md"
+                className="fa-stack fa-md button"
                 href="https://www.pinterest.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -144,7 +144,7 @@ class StickyNav extends Component {
             </div>
             <div className="mobile-title">
               <NavLink exact activeClassName="" to="/">
-                <span className="link-title">mama milk</span>
+                <span className="link-title button">mama milk</span>
               </NavLink>
             </div>
           </div>
@@ -166,7 +166,7 @@ class StickyNav extends Component {
               ARTICLES
             </span>
             <NavLink exact activeClassName="" to="/">
-              <span className="link-title">mama milk</span>
+              <span className="link-title button">mama milk</span>
             </NavLink>
           </div>
           <div className="social-media-div">
@@ -178,7 +178,7 @@ class StickyNav extends Component {
               <input placeholder="SEARCH" />
             </span>
             <a
-              className="fa-stack fa-md"
+              className="fa-stack fa-md button"
               href="https://www.instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -187,7 +187,7 @@ class StickyNav extends Component {
               <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
             </a>
             <a
-              className="fa-stack fa-md"
+              className="fa-stack fa-md button"
               href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -196,7 +196,7 @@ class StickyNav extends Component {
               <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
             </a>
             <a
-              className="fa-stack fa-md"
+              className="fa-stack fa-md button"
               href="https://www.pinterest.com/"
               target="_blank"
               rel="noopener noreferrer"

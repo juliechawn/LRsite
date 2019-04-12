@@ -42,7 +42,7 @@ class ArticlePreview extends Component {
           </div>
           <div className="cnt-reading button">
             <NavLink to="/article">
-              <span>... continue reading</span>
+             <span>... continue reading</span>
             </NavLink>
           </div>
           <Share />

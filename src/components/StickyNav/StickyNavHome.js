@@ -58,15 +58,15 @@ class StickyNavHome extends Component {
                 </span>
                 <input placeholder="SEARCH" />
               </span>
-              <span className="fa-stack fa-md">
+              <span className="fa-stack fa-md button">
                 <i className="fa fa-circle fa-stack-2x" />
                 <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
               </span>
-              <span className="fa-stack fa-md">
+              <span className="fa-stack fa-md button">
                 <i className="fa fa-circle fa-stack-2x" />
                 <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
               </span>
-              <span className="fa-stack fa-md">
+              <span className="fa-stack fa-md button">
                 <i className="fa fa-circle fa-stack-2x" />
                 <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
               </span>

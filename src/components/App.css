@@ -28,11 +28,11 @@ a:visited {
 }
 
 .button:hover {
-  border-bottom: 1px black solid; 
+  color: rgba(0, 52, 89, 0.9) !important;
 }
 
 .active {
-  border-bottom: 1px black solid; 
+  color: rgba(0, 52, 89, 0.9) !important;
 }
 
 @media (min-width: 1px) and (max-width: 649px) {
