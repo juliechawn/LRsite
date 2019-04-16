@@ -43,8 +43,8 @@ class StickyNav extends Component {
         <div className="mobile mobile-slider">
           <div className="mobile-slider-div">
             <span>
-              <NavLink exact activeClassName="active" to="/">
-                <span className="link underline">
+              <NavLink className="link underline" exact activeClassName="active" to="/">
+                <span>
                 HOME
                 </span>
               </NavLink>

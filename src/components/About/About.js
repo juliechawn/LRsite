@@ -72,11 +72,15 @@ class About extends React.Component {
             </span>
           </div>
           <div
-            className="addComment-btn cnt-reading button"
-           
+            className="addComment-btn cnt-reading see-more-button"
           >
             {/* <NavLink to="/article"> */}
             <span>send message</span>
+            <span className="wave">
+                  <span className="dot" />
+                  <span className="dot" />
+                  <span className="dot" />
+                </span>
             {/* </NavLink> */}
           </div>
         </div>
