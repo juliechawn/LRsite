@@ -88,9 +88,14 @@ class Comments extends Component {
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className="addComment-btn cnt-reading button">
+        <div className="addComment-btn cnt-reading see-more-button">
           {/* <NavLink to="/article"> */}
           <span>more comments</span>
+          <span className="wave">
+                  <span className="dot" />
+                  <span className="dot" />
+                  <span className="dot" />
+                </span>
           {/* </NavLink> */}
         </div>
       </div>
