@@ -2,8 +2,9 @@ import React, { Component } from "react";
 // import Navbar from "./Navbar";
 import Footer from "../../Footer/Footer.js";
 import StickyNav from "../../StickyNav/StickyNav.js";
-import MoreArticles from "../../MoreArticles/MoreArticles.js"
-import Comments from "../../Comments/Comments.js"
+import MoreArticles from "../../MoreArticles/MoreArticles"
+import Comments from "../../Comments/Comments"
+import Share from "../../Share/Share";
 import "./Article.css";
 
 class Article extends Component {
@@ -20,21 +21,7 @@ class Article extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
             </div>
-            <p className="share-post">
-              <span>
-                <span>LIKE</span>
-                <i className="fas fa-heart fa-lg" />
-                <span>1</span>
-              </span>
-              <span>|</span>
-              <span>
-                <span>SHARE</span>
-                <i className="fab fa-instagram fa-lg" />
-                <i className="fab fa-facebook-f fa-lg" />
-                <i className="fab fa-pinterest-p fa-lg" />
-                {/* <i className="far fa-share-square fa-lg" /> */}
-              </span>
-            </p>
+            <Share />
             {/* <p className="share-post-hor">
               <span>
                 <i className="fas fa-heart fa-lg"><span>1</span></i>
@@ -117,21 +104,7 @@ class Article extends Component {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div className="share-post">
-              <span>
-                <span>LIKE</span>
-                <i className="fas fa-heart fa-lg" />
-                <span>1</span>
-              </span>
-              <span>|</span>
-              <span>
-                <span>SHARE</span>
-                <i className="fab fa-instagram fa-lg" />
-                <i className="fab fa-facebook-f fa-lg" />
-                <i className="fab fa-pinterest-p fa-lg" />
-                {/* <i className="far fa-share-square fa-lg" /> */}
-              </span>
-            </div>
+            <Share />
           </div>
           </div>
           <MoreArticles />

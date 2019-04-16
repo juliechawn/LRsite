@@ -56,6 +56,7 @@
   .share-post {
     display: flex;
     flex-direction: row;
+    margin: 10px 0;
   }
 
   .share-post i {
@@ -154,6 +155,14 @@
     background-color: rgba(255, 204, 0, 0.9);
   }
 
+  .tag-span-4 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(94, 125, 89, 0.9);
+  }
+
   .text-div {
     width: 100%;
     height: 400px;
@@ -177,6 +186,7 @@
   .share-post {
     display: flex;
     flex-direction: row;
+    margin: 10px 0;
   }
 
   .share-post i {
@@ -274,6 +284,14 @@
     background-color: rgba(255, 204, 0, 0.9);
   }
 
+  .tag-span-4 {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(94, 125, 89, 0.9)
+  }
+
   .text-div {
     width: 500px;
     height: 500px;
@@ -299,6 +317,7 @@
   .share-post {
     display: flex;
     flex-direction: row;
+    margin: 10px 0;
   }
 
   .share-post i {

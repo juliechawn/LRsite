@@ -274,7 +274,7 @@ class App extends Component {
                   in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
               </div>
-              <div className="cnt-reading">
+              <div className="cnt-reading underline">
                 <NavLink to="/article">
                   <span>... continue reading</span>
                 </NavLink>

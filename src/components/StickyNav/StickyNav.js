@@ -21,17 +21,17 @@ class StickyNav extends Component {
           onMouseLeave={() => this.setState({ displayDropdownMenu: false })}
         >
           <div className="menu-desktop-div">
-            <NavLink activeClassName="active" to="/articlecategory1">
-              <span className="link button">ARTICLE CAT</span>
+            <NavLink className="link underline" activeClassName="active" to="/articlecategory1">
+              <span>ARTICLE CAT</span>
             </NavLink>
-            <NavLink activeClassName="active" to="/articlecategory2">
-              <span className="link button">ARTICLE CAT</span>
+            <NavLink className="link underline" activeClassName="active" to="/articlecategory2">
+              <span>ARTICLE CAT</span>
             </NavLink>
-            <NavLink activeClassName="active" to="/articlecategory3">
-              <span className="link button">ARTICLE CAT</span>
+            <NavLink className="link underline" activeClassName="active" to="/articlecategory3">
+              <span>ARTICLE CAT</span>
             </NavLink>
-            <NavLink activeClassName="active" to="/articlecategory4">
-              <span className="link button">ARTICLE CAT</span>
+            <NavLink className="link underline" activeClassName="active" to="/articlecategory4">
+              <span>ARTICLE CAT</span>
             </NavLink>
           </div>
         </div>
@@ -44,34 +44,34 @@ class StickyNav extends Component {
           <div className="mobile-slider-div">
             <span>
               <NavLink exact activeClassName="active" to="/">
-                <span className="link button">
+                <span className="link underline">
                 HOME
                 </span>
               </NavLink>
             </span>
             <span>
-              <NavLink activeClassName="active" to="/about">
-                <span className="link button">ABOUT</span>
+              <NavLink className="link underline" activeClassName="active" to="/about">
+                <span>ABOUT</span>
               </NavLink>
             </span>
             <span>
-              <NavLink activeClassName="active" to="/articlecategory1">
-                <span className="link button">ARTICLE CAT</span>
+              <NavLink className="link underline" activeClassName="active" to="/articlecategory1">
+                <span>ARTICLE CAT</span>
               </NavLink>
             </span>
             <span>
-              <NavLink activeClassName="active" to="/articlecategory2">
-              <span className="link button">ARTICLE CAT</span>
+              <NavLink  className="link underline" activeClassName="active" to="/articlecategory2">
+              <span>ARTICLE CAT</span>
               </NavLink>
             </span>
             <span>
-              <NavLink activeClassName="active" to="/articlecategory3">
-              <span className="link button">ARTICLE CAT</span>
+              <NavLink className="link underline" activeClassName="active" to="/articlecategory3">
+              <span>ARTICLE CAT</span>
               </NavLink>
             </span>
             <span>
-              <NavLink activeClassName="active" to="/articlecategory4">
-              <span className="link button">ARTICLE CAT</span>
+              <NavLink className="link underline" activeClassName="active" to="/articlecategory4">
+              <span>ARTICLE CAT</span>
               </NavLink>
             </span>
             <div className="social-media-mobile">
@@ -156,17 +156,17 @@ class StickyNav extends Component {
             {hamburgerMenu}
           </CSSTransitionGroup>
           <div className="nav-div">
-            <NavLink activeClassName="active" to="/about">
-              <span className="link button">ABOUT</span>
+            <NavLink className="link underline" activeClassName="active" to="/about">
+              <span>ABOUT</span>
             </NavLink>
             <span
-              className="articles-menu link button"
+              className="articles-menu link underline"
               onMouseEnter={() => this.setState({ displayDropdownMenu: true })}
             >
               ARTICLES
             </span>
             <NavLink exact activeClassName="" to="/">
-              <span className="link-title button">mama milk</span>
+              <span className="link-title">mama milk</span>
             </NavLink>
           </div>
           <div className="social-media-div">
