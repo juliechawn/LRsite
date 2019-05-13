@@ -9,11 +9,6 @@
 }
 
 @media (min-width: 1px) and (max-width: 649px) {
-  .more-articles-header {
-    font-family: "badtaste", sans-serif;
-    font-size: 48px;
-  }
-
   .more-articles-div {
     display: flex;
     flex-flow: row wrap;
@@ -26,28 +21,23 @@
   }
 
   .more-article {
-    width: 350px;
+    width: 300px;
     margin: 10px;
   }
 
   .more-img {
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     width: 100%;
   }
 
   .more-title {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
 }
 
 @media (min-width: 650px) and (max-width: 1099px) {
-  .more-articles-header {
-    font-family: "badtaste", sans-serif;
-    font-size: 48px;
-  }
-
   .more-articles-div {
     display: flex;
     flex-flow: row wrap;
@@ -60,28 +50,23 @@
   }
 
   .more-article {
-    width: 350px;
+    width: 300px;
     margin: 10px;
   }
 
   .more-img {
-    height: 300px;
+    height: 250px;
     object-fit: cover;
     width: 100%;
   }
 
   .more-title {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
 }
 
 @media (min-width: 1100px) {
-  .more-articles-header {
-    font-family: "badtaste", sans-serif;
-    font-size: 48px;
-  }
-
   .more-articles-div {
     display: flex;
     flex-flow: row wrap;

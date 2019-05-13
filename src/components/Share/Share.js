@@ -15,7 +15,6 @@ class Share extends Component {
           <i className="fab fa-instagram fa-lg button" />
           <i className="fab fa-facebook-f fa-lg button" />
           <i className="fab fa-pinterest-p fa-lg button" />
-          {/* <i className="far fa-share-square fa-lg" /> */}
         </span>
       </span>
     );

@@ -54,7 +54,6 @@ class About extends React.Component {
               </p>
             </div>
             <div>
-
             </div>
           </div>
           <div className="link-title">contact lauren</div>

@@ -3,6 +3,19 @@ import Share from "../../Share/Share";
 import { NavLink } from "react-router-dom";
 
 class ArticlePreview extends Component {
+  getCategory() {
+    switch (this.props.category) {
+      case "CATEGORY 1":
+        return "articlecategory1";
+      case "CATEGORY 2":
+        return "articlecategory2";
+      case "CATEGORY 3":
+        return "articlecategory3";
+      case "CATEGORY 4":
+        return "articlecategory4";
+      default:
+    }
+  }
   render() {
     return (
       <div className="idv-post">
@@ -11,26 +24,17 @@ class ArticlePreview extends Component {
             <img className="home-img" alt="img" src={this.props.image} />
           </NavLink>
           <div className="tags-div">
-            <NavLink className="tag-span-1 button" to="/articlecategory">
-              <span>ARTICLE CAT</span>
+            <NavLink
+              exact activeClassName=""
+              className={`button ${this.getCategory()}`}
+              to={`/${this.getCategory()}`}
+            >
+              <span>{this.props.category}</span>
             </NavLink>
-            {/* <NavLink className="tag-span-2 button" to="/articlecategory">
-              <span to="/articlecategory">ARTICLE CAT</span>
-            </NavLink>
-            <NavLink className="tag-span-3 button" to="/articlecategory">
-              <span to="/articlecategory">ARTICLE CAT</span>
-            </NavLink>
-            <NavLink className="tag-span-4 button" to="/articlecategory">
-              <span to="/articlecategory">ARTICLE CAT</span>
-            </NavLink>
-            <NavLink className="tag-span-4 button" to="/articlecategory">
-              <span to="/articlecategory">ARTICLE CAT</span>
-            </NavLink> */}
           </div>
         </div>
         <div className="text-div">
           <div className="titles-div">
-
             <p className="date">{this.props.date}</p>
             <NavLink to="/article">
               <span className="title">{this.props.title}</span>

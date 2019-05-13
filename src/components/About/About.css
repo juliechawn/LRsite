@@ -1,6 +1,6 @@
 @media (min-width: 1px) and (max-width: 649px) {
   .about-body {
-    margin-top: 25px;
+    margin: 25px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,30 +10,32 @@
   .about-img-div {
     margin-bottom: 25px;
     height: 400px;
+    object-fit: cover;
   } 
 }
 
 @media (min-width: 650px) and (max-width: 1099px) {
   .about-body {
-    margin-top: 25px;
-    
+    margin: 25px 0;
   } 
+  
   .about-img-div {
-    height: 500px;
+    height: 400px;
     width: 50%;
     float: left;
     padding-right: 25px;  
+    object-fit: cover;
   }
 }
 
 @media (min-width: 1100px) {
   .about-body {
-    margin-top: 25px;
+    margin: 25px 0;
     
   } 
   .about-img-div {
-    height: 600px;
-    width: 50%;
+    height: 500px;
+    width: 40%;
     float: left;
     padding-right: 25px;  
     object-fit: cover;

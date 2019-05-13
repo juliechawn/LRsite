@@ -21,6 +21,7 @@
   .img-tags-div {
     width: 100%;
     height: 400px;
+    position: relative;
   }
 
   .home-img {
@@ -30,7 +31,15 @@
   }
 
   .tags-div {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    width: 90%;
+    font-size: 12px;
+    letter-spacing: 0.25em;  
   }
 
   .text-div {
@@ -135,33 +144,6 @@
     letter-spacing: 0.25em;
   }
 
-  .tag-span-1 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background: rgba(211, 114, 124, 0.9);
-  }
-
-  .tag-span-2 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgba(0, 52, 89, 0.9);
-  }
-  .tag-span-3 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgba(255, 204, 0, 0.9);
-  }
-
-  .tag-span-4 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgba(94, 125, 89, 0.9);
-  }
-
   .text-div {
     width: 100%;
     height: 325px;
@@ -185,6 +167,7 @@
   .share-post {
     font-size: 14px;
     letter-spacing: 0.25em;
+    margin: 10px 0;
   }
 
   .share-post i {
@@ -253,33 +236,6 @@
     letter-spacing: 0.25em;
   }
 
-  .tag-span-1 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background: rgba(211, 114, 124, 0.9);
-  }
-
-  .tag-span-2 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgba(0, 52, 89, 0.9);
-  }
-  .tag-span-3 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgba(255, 204, 0, 0.9);
-  }
-
-  .tag-span-4 {
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    background-color: rgba(94, 125, 89, 0.9)
-  }
-
   .text-div {
     width: 500px;
     height: 500px;
@@ -305,6 +261,7 @@
   .share-post {
     font-size: 14px;
     letter-spacing: 0.25em;
+    margin: 10px 0;
   }
 
   .share-post i {

@@ -51,7 +51,7 @@ class Comments extends Component {
         <div className="share-post">
           <span>
             <span>COMMENTS</span>
-            <span>1</span>
+            <span> 2 </span>
           </span>
           <span>|</span>
           <span>
@@ -90,7 +90,7 @@ class Comments extends Component {
         </div>
         <div className="addComment-btn cnt-reading see-more-button">
           {/* <NavLink to="/article"> */}
-          <span>more comments</span>
+          <span>see more comments</span>
           <span className="wave">
                   <span className="dot" />
                   <span className="dot" />

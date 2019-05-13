@@ -27,13 +27,11 @@ class MoreArticles extends Component {
     )
       .then(res => res.json())
       .then(res => {
-        console.log(res.results);
         this.setState({
           items: res.results
         });
       })
       .catch(error => {
-        console.error(error);
         this.setState({
           error: true
         });

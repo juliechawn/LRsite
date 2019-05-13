@@ -14,6 +14,7 @@ class ArticleCategoryThree extends Component {
         <div className="page-body">
           <div className="article-category-body">
             <ArticlePreview
+              category={"CATEGORY 3"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
@@ -24,6 +25,7 @@ class ArticleCategoryThree extends Component {
               }
             />
             <ArticlePreview
+              category={"CATEGORY 3"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
