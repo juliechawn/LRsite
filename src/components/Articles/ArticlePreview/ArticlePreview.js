@@ -22,11 +22,15 @@ class ArticlePreview extends Component {
             </NavLink>
             <NavLink className="tag-span-4 button" to="/articlecategory">
               <span to="/articlecategory">ARTICLE CAT</span>
+            </NavLink>
+            <NavLink className="tag-span-4 button" to="/articlecategory">
+              <span to="/articlecategory">ARTICLE CAT</span>
             </NavLink> */}
           </div>
         </div>
         <div className="text-div">
           <div className="titles-div">
+
             <p className="date">{this.props.date}</p>
             <NavLink to="/article">
               <span className="title">{this.props.title}</span>

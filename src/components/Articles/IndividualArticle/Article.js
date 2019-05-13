@@ -16,28 +16,20 @@ class Article extends Component {
         <div className="article-body">
           <div className="article">
             <div className="titles-div">
-              <p className="date">TUESDAY, JANUARY 1, 2019</p>
-              <p className="title">
+              <p className="date"><span className="tag-1">ARTICLE CAT</span> | JANUARY 1, 2019 | <Share /> </p>
+              <p className="article-title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
             </div>
-            <Share />
-            {/* <p className="share-post-hor">
-              <span>
-                <i className="fas fa-heart fa-lg"><span>1</span></i>
-                <i className="fab fa-instagram fa-lg" />
-                <i className="fab fa-facebook-f fa-lg" />
-                <i className="fab fa-pinterest-p fa-lg" />
-              </span>
-            </p> */}
+
             <div className="article-img-div">
-            <img
-              className="article-img"
-              alt="img"
-              src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
-            />
+              <img
+                className="article-img"
+                alt="img"
+                src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"
+              />
+              <div className="caption"><strong>caption caption caption caption caption caption caption caption caption caption caption caption</strong></div>
             </div>
-           
             <div>
               <p className="text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

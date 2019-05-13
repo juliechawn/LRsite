@@ -14,7 +14,7 @@ class ArticleCategoryOne extends Component {
         <div className="page-body">
           <div className="article-category-body">
             <ArticlePreview
-              date={"TUESDAY, JANUARY 1, 2019"}
+              date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
                 "https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"

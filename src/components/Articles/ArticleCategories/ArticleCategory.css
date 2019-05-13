@@ -35,14 +35,14 @@
 
   .text-div {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .text-preview-div {
-    height: 10em;
+    height: 5em;
     overflow: hidden;
   }
 
@@ -54,6 +54,7 @@
   }
 
   .share-post {
+    font-size: 12px;
     display: flex;
     flex-direction: row;
     margin: 10px 0;
@@ -129,12 +130,13 @@
     top: 16px;
     left: 16px;
     right: 16px;
+    width: 90%;
     font-size: 12px;
+    letter-spacing: 0.25em;
   }
 
   .tag-span-1 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background: rgba(211, 114, 124, 0.9);
@@ -142,14 +144,12 @@
 
   .tag-span-2 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background-color: rgba(0, 52, 89, 0.9);
   }
   .tag-span-3 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background-color: rgba(255, 204, 0, 0.9);
@@ -157,7 +157,6 @@
 
   .tag-span-4 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background-color: rgba(94, 125, 89, 0.9);
@@ -165,14 +164,14 @@
 
   .text-div {
     width: 100%;
-    height: 400px;
+    height: 325px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .text-preview-div {
-    height: 9em;
+    height: 7em;
     overflow: hidden;
   }
 
@@ -184,9 +183,8 @@
   }
 
   .share-post {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0;
+    font-size: 14px;
+    letter-spacing: 0.25em;
   }
 
   .share-post i {
@@ -195,14 +193,6 @@
 
   .fa-heart {
     color: rgb(159, 25, 23);
-  }
-
-  .share-post span {
-    letter-spacing: 0.25em;
-    padding: 5px 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 
   .cnt-reading {
@@ -255,15 +245,16 @@
     display: flex;
     flex-direction: row;
     position: absolute;
+    width: 90%;
     top: 16px;
     left: 16px;
     right: 16px;
     font-size: 12px;
+    letter-spacing: 0.25em;
   }
 
   .tag-span-1 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background: rgba(211, 114, 124, 0.9);
@@ -271,14 +262,12 @@
 
   .tag-span-2 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background-color: rgba(0, 52, 89, 0.9);
   }
   .tag-span-3 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background-color: rgba(255, 204, 0, 0.9);
@@ -286,7 +275,6 @@
 
   .tag-span-4 {
     text-align: center;
-    width: 70px;
     margin: 5px;
     padding: 15px;
     background-color: rgba(94, 125, 89, 0.9)
@@ -315,9 +303,8 @@
   }
 
   .share-post {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0;
+    font-size: 14px;
+    letter-spacing: 0.25em;
   }
 
   .share-post i {
@@ -326,13 +313,5 @@
 
   .fa-heart {
     color: rgb(159, 25, 23);
-  }
-
-  .share-post span {
-    letter-spacing: 0.25em;
-    padding: 5px 5px 5px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 }

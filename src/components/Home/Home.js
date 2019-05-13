@@ -18,7 +18,7 @@ class Home extends Component {
           <div className="article-category-body">
             <div className="home-body">
               <ArticlePreview
-                date={"TUESDAY, JANUARY 1, 2019"}
+                date={"JANUARY 1, 2019"}
                 title={
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 }
@@ -30,7 +30,7 @@ class Home extends Component {
                 }
               />
               <ArticlePreview
-                date={"TUESDAY, JANUARY 1, 2019"}
+                date={"JANUARY 1, 2019"}
                 title={
                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                 }

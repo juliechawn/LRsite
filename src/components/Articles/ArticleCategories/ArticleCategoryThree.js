@@ -14,7 +14,7 @@ class ArticleCategoryThree extends Component {
         <div className="page-body">
           <div className="article-category-body">
             <ArticlePreview
-              date={"TUESDAY, JANUARY 1, 2019"}
+              date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
                 "https://images.unsplash.com/photo-1509116043833-3233ceed8153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
@@ -24,7 +24,7 @@ class ArticleCategoryThree extends Component {
               }
             />
             <ArticlePreview
-              date={"TUESDAY, JANUARY 1, 2019"}
+              date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
                 "https://images.unsplash.com/photo-1518208734895-46d2ff97e480?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1293&q=80"
