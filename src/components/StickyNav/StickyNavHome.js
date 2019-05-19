@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./StickyNav.css";
 import StickyNav from "./StickyNav";
+import SocailMedia from "../SocialMedia/SocialMedia";
 
 class StickyNavHome extends Component {
   constructor(props) {
@@ -58,18 +59,7 @@ class StickyNavHome extends Component {
                 </span>
                 <input placeholder="SEARCH" />
               </span>
-              <span className="fa-stack fa-md button">
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
-              </span>
-              <span className="fa-stack fa-md button">
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-              </span>
-              <span className="fa-stack fa-md button">
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-              </span>
+             <SocailMedia />
             </div>
           </div>
         </div>

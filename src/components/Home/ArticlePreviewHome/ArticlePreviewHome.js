@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Share from "../../Share/Share";
 import { NavLink } from "react-router-dom";
+import "./ArticlePreviewHome.css"
 
-class ArticlePreview extends Component {
+class ArticlePreviewHome extends Component {
   getCategory() {
     switch (this.props.category) {
       case "CATEGORY ONE":
@@ -18,10 +19,10 @@ class ArticlePreview extends Component {
   }
   render() {
     return (
-      <div className="idv-post">
+      <div className="home-idv-post">
         <div className="img-tags-div">
           <NavLink to="/article">
-            <img className="preview-img" alt="img" src={this.props.image} />
+            <img className="home-img" alt="img" src={this.props.image} />
           </NavLink>
           <div className="tags-div">
             <NavLink
@@ -33,19 +34,26 @@ class ArticlePreview extends Component {
             </NavLink>
           </div>
         </div>
-        <div className="text-div">
+        <div className="home-text-div">
           <div className="titles-div">
             <p className="date">{this.props.date}</p>
             <NavLink to="/article">
               <span className="title">{this.props.title}</span>
             </NavLink>
           </div>
-          <div className="text-preview-div">
-            <p className="text b">{this.props.text}</p>
+          <div className="home-text-preview-div">
+            <p className="text">{this.props.text}</p>
           </div>
-          <div className="addComment-btn">
+          <div className="see-more-button cnt-reading">
             <NavLink to="/article">
-            <span className="button-send button">CONTINUE READING</span>
+              <span>
+                continue reading
+                <span className="wave">
+                  <span className="dot" />
+                  <span className="dot" />
+                  <span className="dot" />
+                </span>
+              </span>
             </NavLink>
           </div>
           <Share />
@@ -55,4 +63,4 @@ class ArticlePreview extends Component {
   }
 }
 
-export default ArticlePreview;
+export default ArticlePreviewHome;

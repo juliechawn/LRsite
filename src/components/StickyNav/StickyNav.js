@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./StickyNav.css";
 import { CSSTransitionGroup } from "react-transition-group";
+import SocailMedia from "../SocialMedia/SocialMedia";
 
 class StickyNav extends Component {
   constructor(props) {
@@ -22,16 +23,16 @@ class StickyNav extends Component {
         >
           <div className="menu-desktop-div">
             <NavLink className="link underline" activeClassName="active" to="/articlecategory1">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY ONE</span>
             </NavLink>
             <NavLink className="link underline" activeClassName="active" to="/articlecategory2">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY TWO</span>
             </NavLink>
             <NavLink className="link underline" activeClassName="active" to="/articlecategory3">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY THREE</span>
             </NavLink>
             <NavLink className="link underline" activeClassName="active" to="/articlecategory4">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY FOUR</span>
             </NavLink>
           </div>
         </div>
@@ -56,52 +57,26 @@ class StickyNav extends Component {
             </span>
             <span>
               <NavLink className="link underline" activeClassName="active" to="/articlecategory1">
-                <span>ARTICLE CAT</span>
+                <span>CATEGORY ONE</span>
               </NavLink>
             </span>
             <span>
               <NavLink  className="link underline" activeClassName="active" to="/articlecategory2">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY TWO</span>
               </NavLink>
             </span>
             <span>
               <NavLink className="link underline" activeClassName="active" to="/articlecategory3">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY THREE</span>
               </NavLink>
             </span>
             <span>
               <NavLink className="link underline" activeClassName="active" to="/articlecategory4">
-              <span>ARTICLE CAT</span>
+              <span>CATEGORY FOUR</span>
               </NavLink>
             </span>
             <div className="social-media-mobile">
-              <a
-                className="fa-stack fa-md button"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
-              </a>
-              <a
-                className="fa-stack fa-md button"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-              </a>
-              <a
-                className="fa-stack fa-md button"
-                href="https://www.pinterest.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-circle fa-stack-2x" />
-                <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-              </a>
+            <SocailMedia />
             </div>
             {/* <span className="search">
               <span className="fa-stack fa-md">
@@ -163,7 +138,7 @@ class StickyNav extends Component {
               className="articles-menu link underline"
               onMouseEnter={() => this.setState({ displayDropdownMenu: true })}
             >
-              ARTICLES
+            ARTICLES
             </span>
             <NavLink exact activeClassName="" to="/">
               <span className="link-title">mama milk</span>
@@ -177,33 +152,7 @@ class StickyNav extends Component {
               </span>
               <input placeholder="SEARCH" />
             </span>
-            <a
-              className="fa-stack fa-md button"
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-circle fa-stack-2x" />
-              <i className="fab fa-instagram fa-md fa-stack-1x fa-inverse" />
-            </a>
-            <a
-              className="fa-stack fa-md button"
-              href="https://www.facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-circle fa-stack-2x" />
-              <i className="fab fa-facebook-f fa-md fa-stack-1x fa-inverse" />
-            </a>
-            <a
-              className="fa-stack fa-md button"
-              href="https://www.pinterest.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-circle fa-stack-2x" />
-              <i className="fab fa-pinterest-p fa-md fa-stack-1x  fa-inverse" />
-            </a>
+           <SocailMedia />
           </div>
         </div>
         <CSSTransitionGroup

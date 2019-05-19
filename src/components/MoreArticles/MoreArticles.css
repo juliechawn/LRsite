@@ -1,96 +1,52 @@
 .more-articles {
   margin: 25px 0;
 }
-.see-more-button-div {
+
+.more-articles-div {
+  padding: 30px 0;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
-  height: 100%;
+  justify-content: space-around;
+}
+
+.more-article {
+  width: 300px;
+  margin: 10px;
+}
+
+.more-img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.more-title {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.see-more-button-div {
+  margin: auto;
+  width: 100%;
   text-align: center;
   margin: 25px 0;
 }
 
-@media (min-width: 1px) and (max-width: 649px) {
-  .more-articles-div {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  div .link-title {
-    padding: 20px 0;
-  }
-
-  .more-article {
-    width: 300px;
-    margin: 10px;
-  }
-
-  .more-img {
-    height: 250px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .more-title {
-    font-size: 16px;
-    text-align: center;
-  }
+div .link-title {
+  padding: 20px 0;
 }
 
-@media (min-width: 650px) and (max-width: 1099px) {
-  .more-articles-div {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: space-around;
-  }
 
-  div .link-title {
-    padding: 20px 0;
-  }
-
-  .more-article {
-    width: 300px;
-    margin: 10px;
-  }
-
-  .more-img {
-    height: 250px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .more-title {
-    font-size: 16px;
-    text-align: center;
-  }
+#page-numbers {
+  list-style: none;
+  display: flex;
 }
 
-@media (min-width: 1100px) {
-  .more-articles-div {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  div .link-title {
-    padding: 20px 0;
-  }
-
-  .more-article {
-    width: 350px;
-    margin: 10px;
-  }
-
-  .more-img {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .more-title {
-    font-size: 18px;
-    text-align: center;
-  }
+#page-numbers > li {
+  margin-right: 0.3em;
+  color: blue;
+  user-select: none;
+  cursor: pointer;
 }

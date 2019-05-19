@@ -1,0 +1,128 @@
+@media (min-width: 1px) and (max-width: 649px) {
+  .top-articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .top-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 30px 0;
+  }
+
+  .top-articles-header {
+    text-align: left !important;
+  }
+  
+  .top-article-border {
+      padding: 30px 0 15px 0;
+    border-top: 1px black solid;
+  }
+
+  .top-article-img-div {
+    width: 100px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  .top-article-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .top-article-title-div {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1099px) {
+  .top-articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .top-articles-header {
+    border-top: 1px black solid;
+    padding: 25px 0;
+    text-align: left;
+  }
+
+  .top-article-border {
+    padding: 30px 0 15px 0;
+    border-top: 1px black solid;
+  }
+
+  .top-article-img-div {
+    width: 100px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  .top-article-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .top-article-title-div {
+    margin-top: 10px;
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .top-articles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .top-articles-header {
+    text-align: left;
+  }
+
+  .top-articles-header {
+    border-top: 1px black solid;
+    padding: 25px 0;
+    text-align: left;
+  }
+
+  .top-article-border {
+    padding: 40px 0 25px 0;
+    border-top: 1px black solid;
+  }
+
+  .top-article-img-div {
+    width: 100px;
+    height: 110px;
+    object-fit: cover;
+  }
+
+  .top-article-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .top-article-title-div {
+    margin-left: 10px;
+  }
+
+}
+

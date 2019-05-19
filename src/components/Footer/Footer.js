@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <div id="footer">
         <p className="link">ALL RIGHTS RESERVED 2019</p>
-        <NavLink className="link underline" activeClassName="active" to="/about">
+        <NavLink exact activeClassName="" to="/about">
         <span className="link">CONTACT</span>
         </NavLink>
       </div>

@@ -64,35 +64,65 @@ a:visited {
   animation-delay: -0.9s;
 }
 
-.articlecategory1{
+.article-p {
+  padding-bottom: 25px;
+}
+
+
+.share-post i {
+  padding: 10px;
+}
+
+.fa-heart {
+  color: rgb(159, 25, 23);
+}
+
+.bottom-margin {
+  padding-bottom: 25px;
+}
+
+.articlecategory1{   
+  font-size: 12px;
   text-align: center;
-  margin: 5px;
   padding: 15px;
   background: rgba(211, 114, 124, 0.8);
   color: white !important;
+  letter-spacing: 0.25em;  
 }
 
 .articlecategory2 {
+  font-size: 12px;
   text-align: center;
-  margin: 5px;
   padding: 15px;
   background-color: rgba(0, 52, 89, 0.8);
   color: white !important;
+  letter-spacing: 0.25em;  
 }
 .articlecategory3 {
+  font-size: 12px;
   text-align: center;
-  margin: 5px;
   padding: 15px;
   background-color: rgba(255, 204, 0, 0.8);
   color: white !important;
+  letter-spacing: 0.25em;  
 }
 
 .articlecategory4 {
+  font-size: 12px;
   text-align: center;
-  margin: 5px;
   padding: 15px;
+  letter-spacing: 0.25em;  
   background-color: rgba(94, 125, 89, 0.8);
   color: white !important;
+}
+
+.button-send {
+  font-size: 12px;
+  text-align: center;
+  padding: 15px;
+  background: black;
+  color: white !important;
+  letter-spacing: 0.25em;
 }
 
 @keyframes wave {
@@ -145,12 +175,20 @@ a:visited {
     text-align: justify;
   }
 
-  .tag-1{
-    color: white;
-    padding: 15px;
+.share-post {
     font-size: 12px;
-    background-color: rgba(211, 114, 124, 0.9);
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
   }
+
+.share-post span {
+  letter-spacing: 0.25em;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 }
 
 @media (min-width: 650px) and (max-width: 1099px) {
@@ -172,7 +210,7 @@ a:visited {
   }
 
   .date {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.25em;
   }
 
@@ -189,12 +227,20 @@ a:visited {
     text-align: justify;
   }
 
-  .tag-1{
-    color: white;
-    padding: 15px;
-    font-size: 14px;
-    background-color: rgba(211, 114, 124, 0.9);
+.share-post {
+    font-size: 12px;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
   }
+
+.share-post span {
+  letter-spacing: 0.25em;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 }
 
 @media (min-width: 1100px) {
@@ -205,7 +251,7 @@ a:visited {
   }
   
   .link {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0.25em;
     padding: 10px 0;
   }
@@ -231,10 +277,19 @@ a:visited {
     line-height: 2;
     text-align: justify;
   }
-  .tag-1{
-    color: white;
-    padding: 15px;
+
+  .share-post {
     font-size: 14px;
-    background-color: rgba(211, 114, 124, 0.9);
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .share-post span {
+    letter-spacing: 0.25em;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

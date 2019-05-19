@@ -23,7 +23,7 @@
     height: 25vh;
   }
 
-  .photogrid-div {
+  .photogrid-header-div {
     display: block;
     position: absolute;
     left: 0;
@@ -75,14 +75,14 @@
     background-color: white;
   }
 
-  .photogrid-div {
+  .photogrid-header-div {
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     display: flex;
     flex-flow: column wrap;
-    top: 20%;
+    top: 25%;
     width: 100%;
     margin: 0 auto;
   }
@@ -127,14 +127,14 @@
     background-color: white;
   }
 
-  .photogrid-div {
+  .photogrid-header-div {
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     display: flex;
     flex-flow: column wrap;
-    top: 20%;
+    top: 25%;
     width: 100%;
     margin: 0 auto;
   }

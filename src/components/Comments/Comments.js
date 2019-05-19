@@ -34,13 +34,13 @@ class Comments extends Component {
             </span>
           </div>
           <div
-            className="addComment-btn cnt-reading button"
+            className="addComment-btn"
             onClick={() =>
               this.setState({ addComment: !this.state.addComment })
             }
           >
             {/* <NavLink to="/article"> */}
-            <span>post comment</span>
+            <span className="button-send button">POST COMMENT</span>
             {/* </NavLink> */}
           </div>
         </div>
@@ -70,7 +70,7 @@ class Comments extends Component {
           <p>
             <span className="date">LOREM IPSUM | TUESDAY, JANUARY 1, 2019</span>
           </p>
-          <p>
+          <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -81,21 +81,16 @@ class Comments extends Component {
           <p>
             <span className="date">LOREM IPSUM | TUESDAY, JANUARY 1, 2019</span>
           </p>
-          <p>
+          <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className="addComment-btn cnt-reading see-more-button">
+        <div className="addComment-btn">
           {/* <NavLink to="/article"> */}
-          <span>see more comments</span>
-          <span className="wave">
-                  <span className="dot" />
-                  <span className="dot" />
-                  <span className="dot" />
-                </span>
+          <span className="button-send button">SEE MORE COMMENTS</span>
           {/* </NavLink> */}
         </div>
       </div>

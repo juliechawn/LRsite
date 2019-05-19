@@ -2,19 +2,18 @@ import React, { Component } from "react";
 import "./ArticleCategory.css";
 import Footer from "../../Footer/Footer.js";
 import StickyNav from "../../StickyNav/StickyNav.js";
-import Header from "../../Header/Header.js";
 import ArticlePreview from "../ArticlePreview/ArticlePreview";
+import MoreArticles from "../../MoreArticles/MoreArticles"
 
 class ArticleCategoryOne extends Component {
   render() {
     return (
       <div id="article-category">
         <StickyNav />
-        <Header title={"article cat"} />
         <div className="page-body">
           <div className="article-category-body">
             <ArticlePreview
-              category={"CATEGORY 1"}
+              category={"CATEGORY ONE"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
@@ -25,7 +24,7 @@ class ArticleCategoryOne extends Component {
               }
             />
             <ArticlePreview
-              category={"CATEGORY 1"}
+              category={"CATEGORY ONE"}
               date={"TUESDAY, JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={
@@ -36,6 +35,10 @@ class ArticleCategoryOne extends Component {
               }
             />
           </div>
+          <MoreArticles 
+          api={"pregnancy"}
+          category={"CATEGORY ONE"}/>
+
         </div>
         <Footer />
       </div>

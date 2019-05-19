@@ -5,25 +5,38 @@ import { NavLink } from "react-router-dom";
 class MoreArticles extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       items: [],
-      visible: 3,
+      visible: 4,
       error: false
     };
 
     this.loadMore = this.loadMore.bind(this);
   }
 
+  getCategory() {
+    switch (this.props.category) {
+      case "CATEGORY ONE":
+        return "articlecategory1";
+      case "CATEGORY TWO":
+        return "articlecategory2";
+      case "CATEGORY THREE":
+        return "articlecategory3";
+      case "CATEGORY FOUR":
+        return "articlecategory4";
+      default:
+    }
+  }
+
   loadMore() {
     this.setState(prev => {
-      return { visible: prev.visible + 1 };
+      return { visible: prev.visible + 1};
     });
   }
 
   componentDidMount() {
     fetch(
-      "https://api.unsplash.com/search/photos/?page=1&per_page=20&query=mother&client_id=5b6c80594c0633a69ead9499a7bae3248a6fb73406a95ad97a3f20b6f457579f"
+      `https://api.unsplash.com/search/photos/?page=1&per_page=20&query=${this.props.api}&client_id=5b6c80594c0633a69ead9499a7bae3248a6fb73406a95ad97a3f20b6f457579f`
     )
       .then(res => res.json())
       .then(res => {
@@ -37,37 +50,25 @@ class MoreArticles extends Component {
         });
       });
   }
-
   render() {
     return (
       <div className="more-articles">
-        <div className="more-articles-div">
+      <div className="link top-articles-header">YOU MAY ALSO LIKE</div>
+      {/* <div className="cnt-reading top-articles-header">you may also like</div> */}
+        <div className="more-articles-div top-border">
           {this.state.items.slice(0, this.state.visible).map((item, index) => {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
                 <div className="more-article">
                   <img className="more-img" alt="img" src={item.urls.regular} />
-                  <h2 className="more-title">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </h2>
+                  <div className="more-title">
+                  <span className={`button ${this.getCategory()}`}><strong>{this.props.category}</strong></span> 
+                  <p className="more-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  </div>
                 </div>
               </NavLink>
             );
           })}
-        </div>
-        <div className="see-more-button-div">
-          {this.state.visible < this.state.items.length && (
-            <span onClick={this.loadMore} className="see-more-button cnt-reading">
-              see more articles
-              <span className="wave">
-                <span className="dot" />
-                <span className="dot" />
-                <span className="dot" />
-              </span>
-            </span>
-          )}
         </div>
       </div>
     );
