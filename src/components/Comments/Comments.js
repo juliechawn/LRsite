@@ -40,7 +40,7 @@ class Comments extends Component {
             }
           >
             {/* <NavLink to="/article"> */}
-            <span className="button-send button">POST COMMENT</span>
+            <span className="button">POST COMMENT</span>
             {/* </NavLink> */}
           </div>
         </div>
@@ -90,7 +90,7 @@ class Comments extends Component {
         </div>
         <div className="addComment-btn">
           {/* <NavLink to="/article"> */}
-          <span className="button-send button">SEE MORE COMMENTS</span>
+          <span className="box-button button">SEE MORE COMMENTS</span>
           {/* </NavLink> */}
         </div>
       </div>

@@ -7,7 +7,7 @@ class MoreArticles extends Component {
     super(props);
     this.state = {
       items: [],
-      visible: 4,
+      visible: 3,
       error: false
     };
 
@@ -53,9 +53,8 @@ class MoreArticles extends Component {
   render() {
     return (
       <div className="more-articles">
-      <div className="link top-articles-header">YOU MAY ALSO LIKE</div>
-      {/* <div className="cnt-reading top-articles-header">you may also like</div> */}
-        <div className="more-articles-div top-border">
+      <div className="link more-articles-title">YOU MAY ALSO LIKE</div>
+        <div className="more-articles-div">
           {this.state.items.slice(0, this.state.visible).map((item, index) => {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
@@ -69,6 +68,12 @@ class MoreArticles extends Component {
               </NavLink>
             );
           })}
+          
+        </div>
+        <div className="see-more-button-div">
+          {this.state.visible < this.state.items.length && (
+            <span onClick={this.loadMore}  className="button box-button">load more</span>
+          )}
         </div>
       </div>
     );

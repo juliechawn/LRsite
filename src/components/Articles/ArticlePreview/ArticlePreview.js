@@ -41,11 +41,11 @@ class ArticlePreview extends Component {
             </NavLink>
           </div>
           <div className="text-preview-div">
-            <p className="text b">{this.props.text}</p>
+            <p className="text">{this.props.text}</p>
           </div>
           <div className="addComment-btn">
             <NavLink to="/article">
-            <span className="button-send button">CONTINUE READING</span>
+            <span className="box-button button">CONTINUE READING</span>
             </NavLink>
           </div>
           <Share />

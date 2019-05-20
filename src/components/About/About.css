@@ -1,10 +1,10 @@
 @media (min-width: 1px) and (max-width: 800px) {
   .about-body {
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    padding-top: 25px;
     justify-content: space-around;
   }
 
@@ -16,8 +16,7 @@
   }
 
   .contact-form {
-    border-top: 1px black solid;
-    padding: 25px 0;
+    margin: 25px 0;
   }
 }
 
@@ -30,11 +29,11 @@
   }
   
   .about-body {
+    padding-top: 150px;
     display: flex;
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    padding-top: 25px;
     justify-content: space-around;
   }
   
@@ -45,6 +44,15 @@
 }
 
 @media (min-width: 1100px) {
+  .social-media-contact {
+    display: none;
+  }
+  
+  .header-black {
+    background-color: black;
+    color: white;
+    height: 100px;
+  }
   .contact-top-articles-div {
     display: flex;
     flex-direction: column;
@@ -52,11 +60,11 @@
     width: 30%;
   }
   .about-body {
+    padding-top: 150px;
     display: flex;
     flex-direction: row;
     width: 100%;
     margin: 0 auto;
-    padding-top: 25px;
     justify-content: space-around;
   }
   .contact-form {

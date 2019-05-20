@@ -20,7 +20,7 @@ class ArticlePreviewHome extends Component {
   render() {
     return (
       <div className="home-idv-post">
-        <div className="img-tags-div">
+        <div className="img-tags-div-home">
           <NavLink to="/article">
             <img className="home-img" alt="img" src={this.props.image} />
           </NavLink>
@@ -44,15 +44,10 @@ class ArticlePreviewHome extends Component {
           <div className="home-text-preview-div">
             <p className="text">{this.props.text}</p>
           </div>
-          <div className="see-more-button cnt-reading">
+          <div className="addComment-btn">
             <NavLink to="/article">
-              <span>
-                continue reading
-                <span className="wave">
-                  <span className="dot" />
-                  <span className="dot" />
-                  <span className="dot" />
-                </span>
+              <span className="box-button button">
+                CONTINUE READING
               </span>
             </NavLink>
           </div>

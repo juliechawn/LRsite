@@ -7,27 +7,35 @@ class HeaderHome extends Component {
     return (
       <div className="home-header">
         <div className="mobile page-header-photogrid-mobile">
-        <div className="column">
-          <img
-            className="photogrid-img"
-            alt="grid-img"
-            src="https://images.unsplash.com/photo-1445633629932-0029acc44e88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-          />
-          </div>
           <div className="column">
-          <img
+            <img
+              className="photogrid-img"
+              alt="grid-img"
+              src="https://images.unsplash.com/photo-1445633629932-0029acc44e88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+
+          <div className="column">
+            <img
               className="photogrid-img vertical"
               alt="grid-img"
               src="https://images.unsplash.com/photo-1501714869488-1e3e64b423d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
             />
-            </div>
-            <div className="column">
+          </div>
+          <div className="column">
             <img
               className="photogrid-img horizontal"
               alt="grid-img"
               src="https://images.unsplash.com/photo-1547115293-cee20f19b938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1518&q=80"
             />
-            </div>
+          </div>
+          <div className="column">
+            <img
+              className="photogrid-img horizontal"
+              alt="grid-img"
+              src="https://images.unsplash.com/photo-1547115293-cee20f19b938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1518&q=80"
+            />
+          </div>
         </div>
 
         <div className="home-header-tablet-desktop-photogrid">
@@ -70,21 +78,12 @@ class HeaderHome extends Component {
             />
           </div>
         </div>
-        <div className="photogrid-div">
-          <div className="photogrid-title">{this.props.title}</div>
-          <div className="photogrid-links">
-            <NavLink activeClassName="active" to="/articlecategory1">
-              <p className="link underline">CATEGORY ONE</p>
-            </NavLink>
-            <NavLink activeClassName="active" to="/articlecategory2">
-              <p className="link underline">CATEGORY TWO</p>
-            </NavLink>
-            <NavLink activeClassName="active" to="/articlecategory3">
-              <p className="link underline">CATEGORY THREE</p>
-            </NavLink>
-            <NavLink activeClassName="active" to="/articlecategory4">
-              <p className="link underline">CATEGORY FOUR</p>
-            </NavLink>
+        <div className="photogrid-div w3-animate-opacity">
+          <div className="photogrid-title w3-animate-opacity">
+            {this.props.title}
+          </div>
+          <div className="photogrid-subheader w3-animate-opacity">
+            {this.props.subheader}
           </div>
         </div>
       </div>

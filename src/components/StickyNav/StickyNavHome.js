@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./StickyNav.css";
 import StickyNav from "./StickyNav";
-import SocailMedia from "../SocialMedia/SocialMedia";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 class StickyNavHome extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class StickyNavHome extends Component {
   }
 
   handleScroll() {
-    if (window.pageYOffset > 250) {
+    if (window.pageYOffset > 300) {
       this.setState({
         stickyheader: true
       });
@@ -38,6 +38,7 @@ class StickyNavHome extends Component {
     if (this.state.stickyheader === true) {
       stickyheader = <StickyNav />;
     }
+    
     let homeheader;
     if (this.state.stickyheader === false) {
       homeheader = (
@@ -48,7 +49,7 @@ class StickyNavHome extends Component {
             </div>
             <div className="nav-div">
               <NavLink activeClassName="active" to="/about">
-                <span className="link underline">ABOUT</span>
+                <span className="nav-about link underline">ABOUT</span>
               </NavLink>
             </div>
             <div className="social-media-div">
@@ -59,7 +60,39 @@ class StickyNavHome extends Component {
                 </span>
                 <input placeholder="SEARCH" />
               </span>
-             <SocailMedia />
+            </div>
+          </div>
+          <div className="menu-scroll">
+            <div className="menu-desktop-div">
+              <NavLink
+                className="menu-link link"
+                activeClassName="active"
+                to="/articlecategory1"
+              >
+                <span>CATEGORY ONE</span>
+              </NavLink>
+              <NavLink
+                className="menu-link link"
+                activeClassName="active"
+                to="/articlecategory2"
+              >
+                <span>CATEGORY TWO</span>
+              </NavLink>
+              <NavLink
+                className="menu-link link"
+                activeClassName="active"
+                to="/articlecategory3"
+              >
+                <span>CATEGORY THREE</span>
+              </NavLink>
+              <NavLink
+                className="menu-link link"
+                activeClassName="active"
+                to="/articlecategory4"
+              >
+                <span>CATEGORY FOUR</span>
+              </NavLink>
+              <SocialMedia />
             </div>
           </div>
         </div>

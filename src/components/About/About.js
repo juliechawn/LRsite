@@ -1,10 +1,7 @@
 import React from "react";
 import Footer from "../Footer/Footer.js";
 import StickyNav from "../StickyNav/StickyNav.js";
-import Header from "../Header/Header.js";
 import TopArticles from "../TopArticles/TopArticles";
-import SocialMedia from "../SocialMedia/SocialMedia"
-
 import "./About.css";
 
 class About extends React.Component {
@@ -12,7 +9,6 @@ class About extends React.Component {
     return (
       <div id="about">
         <StickyNav />
-        <Header title={"about lauren"} />
         <div className="page-body">
           <div className="about-body">
             <div className="article">
@@ -64,36 +60,31 @@ class About extends React.Component {
                   pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                   in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-              </div>  
-            </div>             
-            <div className="contact-top-articles-div">
-            <div className="contact-form">
-                <div className="cnt-reading bottom-margin">follow lauren</div>           
-                <SocialMedia />
-                </div>
-             <div className="contact-form">
-             <div className="cnt-reading ">contact lauren</div>           
-              <div className="addComment">
-                <span className="link">MESSAGE</span>
-                <input className="comment-input" type="text" />
-                <div className="addComment-contact">
-                  <span className="addComment-contact-span">
-                    <span className="link">NAME</span>
-                    <input className="contact-input" type="text" />
-                  </span>
-                  <span className="addComment-contact-span">
-                    <span className="link">EMAIL</span>
-                    <input className="contact-input" type="text" />
-                  </span>
-                </div>
-                <div className="addComment-btn">
-                <span className="button-send button">SEND MESSAGE</span>
-                </div>
-                <div>
-                </div>
               </div>
             </div>
-            <TopArticles />
+            <div className="contact-top-articles-div">
+              <div className="contact-form">
+                <div className="cnt-reading ">contact lauren</div>
+                <div className="addComment">
+                  <span className="link">MESSAGE</span>
+                  <input className="comment-input" type="text" />
+                  <div className="addComment-contact">
+                    <span className="addComment-contact-span">
+                      <span className="link">NAME</span>
+                      <input className="contact-input" type="text" />
+                    </span>
+                    <span className="addComment-contact-span">
+                      <span className="link">EMAIL</span>
+                      <input className="contact-input" type="text" />
+                    </span>
+                  </div>
+                  <div className="addComment-btn">
+                    <span className="box-button button">SEND MESSAGE</span>
+                  </div>
+                  <div />
+                </div>
+              </div>
+              <TopArticles />
             </div>
           </div>
         </div>

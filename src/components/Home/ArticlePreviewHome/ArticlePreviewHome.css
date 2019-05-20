@@ -1,4 +1,4 @@
-@media (min-width: 1px) and (max-width: 800px) {
+@media (min-width: 1px) and (max-width: 999px) {
   .article-category-body {
     padding-top: 110px;
   }
@@ -61,91 +61,9 @@
     line-height: 2;
     text-align: justify;
   }
-
 }
 
-/* @media (min-width: 650px) and (max-width: 999px) {
-  .article-category-body {
-    margin: 25px auto 0;
-    width: 90%;
-  }
-
-  .all-posts {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .idv-post {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 0 40px 0;
-  }
-
-  .img-tags-div {
-    width: 100%;
-    height: 500px;
-    position: relative;
-  }
-
-  .home-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .img-tags-div a,
-  .img-tags-div a:link,
-  .img-tags-div a:visited {
-    text-decoration: none;
-    color: white;
-  }
-
-  .tags-div {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    right: 16px;
-    width: 90%;
-    font-size: 12px;
-    letter-spacing: 0.25em;
-  }
-
-  .text-div {
-    width: 100%;
-    height: 325px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .text-preview-div {
-    height: 7em;
-    overflow: hidden;
-    white-space: wrap;
-    width: 100%; 
-  }
-
-  .share-post {
-    font-size: 12px;
-    letter-spacing: 0.25em;
-  }
-
-  .share-post i {
-    padding: 10px;
-  }
-
-  .fa-heart {
-    color: rgb(159, 25, 23);
-  }
-
-} */
-
-@media (min-width: 801px) {
+@media (min-width: 1000px) {
   .article-category-body {
     padding-top: 110px;
   }
@@ -163,14 +81,14 @@
     margin: 0 0 40px 0;
   }
 
-  .img-tags-div {
+  .img-tags-div-home {
     width: 500px;
     height: 300px;
   }
 
   .home-img {
     width: 75%;
-    height: 75%;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -195,7 +113,7 @@
 
   .home-text-div {
     width: 500px;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
