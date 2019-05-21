@@ -1,6 +1,6 @@
 @media (min-width: 1px) and (max-width: 800px) {
   .about-body {
-    padding-top: 150px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -29,7 +29,7 @@
   }
   
   .about-body {
-    padding-top: 150px;
+    padding-top: 110px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -60,7 +60,7 @@
     width: 30%;
   }
   .about-body {
-    padding-top: 150px;
+    padding-top: 110px;
     display: flex;
     flex-direction: row;
     width: 100%;

@@ -3,8 +3,8 @@ import Footer from "../Footer/Footer.js";
 import StickyNavHome from "../StickyNav/StickyNavHome.js";
 import MoreArticles from "../MoreArticles/MoreArticles.js";
 import HeaderHome from "../Header/HeaderHome.js";
-import Share from "../Share/Share"
-// import ArticlePreviewHome from "./ArticlePreviewHome/ArticlePreviewHome";
+import Share from "../Share/Share";
+import ArticlePreviewHome from "./ArticlePreviewHome/ArticlePreviewHome";
 import "./Home.css";
 import { NavLink } from "react-router-dom";
 
@@ -18,6 +18,7 @@ class Home extends Component {
           subheader={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
         />
         <div className="page-body">
+          <span class="anchor" id="whatsnew" name="/whatsnew"/>
           <div className="home-body">
             <div className="home-top-article">
               <div className="top-img-div">
@@ -38,28 +39,29 @@ class Home extends Component {
                 </div>
               </div>
               <div className="home-top-article-text">
-              <span className="date">JANUARY 1, 2019</span>
+                <span className="date">JANUARY 1, 2019</span>
                 <span className="home-title">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </span>
                 <div className="home-text-preview-div">
-                <div className="home-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
+                  <div className="home-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                  </div>
                 </div>
                 <div className="addComment-btn">
                   <NavLink to="/article">
@@ -69,32 +71,32 @@ class Home extends Component {
                 <Share />
               </div>
             </div>
-            <div className="page-divide">
-            </div>
+         
             <div className="home-top-article reverse">
-            <div className="home-top-article-text">
-              <span className="date">JANUARY 1, 2019</span>
+              <div className="home-top-article-text">
+                <span className="date">JANUARY 1, 2019</span>
                 <span className="home-title">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </span>
                 <div className="home-text-preview-div">
-                <div className="home-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
+                  <div className="home-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                  </div>
                 </div>
                 <div className="addComment-btn">
                   <NavLink to="/article">
@@ -113,10 +115,10 @@ class Home extends Component {
                   <NavLink
                     exact
                     activeClassName=""
-                    className="articlecategory2"
-                    to="/articlecategory2"
+                    className="articlecategory3"
+                    to="/articlecategory3"
                   >
-                    <span>category two</span>
+                    <span>category three</span>
                   </NavLink>
                 </div>
               </div>
@@ -124,7 +126,6 @@ class Home extends Component {
           </div>
           <MoreArticles api={"family"} category={"CATEGORY ONE"} />
         </div>
-
         <Footer />
       </div>
     );

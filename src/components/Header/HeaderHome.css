@@ -1,4 +1,4 @@
-@media (min-width: 1px) and (max-width: 649px) {
+@media (min-width: 1px) and (max-width: 999px) {
   .home-header-tablet-desktop-photogrid {
     display: none;
   }
@@ -6,71 +6,10 @@
   .home-header {
     width: 100%;
     padding-top: 80px;
-    height: 40vh;
+    height: 90vh;
   }
 
   .page-header-photogrid-mobile {   
-    align-content: center;
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
-  .column {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-  }
-
-  .photogrid-img {
-    object-fit: cover;
-    width: 100%;
-    position: relative;
-    opacity: 0.15;
-    height: 40vh;
-  }
-
-  .photogrid-div {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-flow: column wrap;
-    top: 20%;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .photogrid-title {
-    text-align: center;
-    font-size: 10vh;
-    font-family: "badtaste", sans-serif;
-  }
-
-  .photogrid-subheader {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 0.25em;
-    padding: 10px 25px;
-    word-spacing: 5px;
-  }
-}
-
-@media (min-width: 650px) and (max-width: 1099px) {
-.page-header-photogrid-mobile {
-    display: none;
-  }
-
-  .home-header {
-    width: 100%;
-    height: 40vh;
-    padding-top: 80px;
-  }
-  
-  .home-header-tablet-desktop-photogrid {
     align-content: center;
     position: relative;
     display: flex;
@@ -86,12 +25,12 @@
   
   .vertical {
     opacity: 0.15;
-    height: 40vh;
+    height: 90vh;
   }
   
   .horizontal {
     opacity: 0.15;
-    height: 20vh;
+    height: 45vh;
   }
   
   .column {
@@ -100,7 +39,7 @@
     flex-direction: column;
     background-color: white;
   }
-  
+
   .photogrid-div {
     display: block;
     position: absolute;
@@ -108,13 +47,14 @@
     right: 0;
     display: flex;
     flex-flow: column wrap;
-    top: 22%;
+    top: 40vh;
     width: 100%;
     margin: 0 auto;
   }
+
   .photogrid-title {
     text-align: center;
-    font-size: 10vh;
+    font-size: 75px;
     font-family: "badtaste", sans-serif;
   }
 
@@ -126,12 +66,20 @@
     padding: 10px 25px;
     word-spacing: 5px;
   }
+
+  .photogrid-arrow {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   .home-header {
     width: 100%;
-    height: 40vh;
+    height: 85vh;
     padding-top: 138px;
   }
   
@@ -151,12 +99,12 @@
   
   .vertical {
     opacity: 0.15;
-    height: 40vh;
+    height: 85vh;
   }
   
   .horizontal {
     opacity: 0.15;
-    height: 20vh;
+    height: 42.5vh;
   }
   
   .column {
@@ -173,14 +121,14 @@
     right: 0;
     display: flex;
     flex-flow: column wrap;
-    top: 28%;
+    top: 40vh;
     width: 100%;
     margin: 0 auto;
   }
 
   .photogrid-title {
     text-align: center;
-    font-size: 12vh;
+    font-size: 125px;
     font-family: "badtaste", sans-serif;
   }
 
@@ -192,5 +140,13 @@
     padding: 10px 0;
     word-spacing: 5px;
   }    
+
+  .photogrid-arrow {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+  }
 }
 

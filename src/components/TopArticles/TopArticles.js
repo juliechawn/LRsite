@@ -6,7 +6,7 @@ class TopArticles extends Component {
   render() {
     return (
           <div className="top-articles">
-          <div className="cnt-reading top-articles-header">top articles</div>
+          <div className="link-header top-articles-header">top articles</div>
           <NavLink exact activeClassName="" to="/article">
             <div className="top-article bottom-margin">
             <div className="top-article-img-div">

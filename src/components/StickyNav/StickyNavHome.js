@@ -22,7 +22,7 @@ class StickyNavHome extends Component {
   }
 
   handleScroll() {
-    if (window.pageYOffset > 300) {
+    if (window.pageYOffset > 400) {
       this.setState({
         stickyheader: true
       });

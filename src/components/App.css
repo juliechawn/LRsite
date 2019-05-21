@@ -112,10 +112,42 @@ a:visited {
   letter-spacing: 0.25em;
 }
 
-.w3-animate-opacity {animation:opac 2s}
+.one-opacity { animation:opac 1s }
+.four-opacity { animation:opac 4s }
   
-@keyframes opac{from{opacity:0} to{opacity:1}}
+@keyframes opac{from {opacity:0} to{opacity:1}}
 
+.grow { animation-iteration-count: infinite; animation-name: grow; }
+
+@keyframes grow{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.anchor{
+  display: block;
+  height: 75px; /*same height as header*/
+  margin-top: -75px; /*same height as header*/
+  visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .my-smooth-container {
+    scroll-behavior: auto;
+  }
+}
 
 @media (min-width: 1px) and (max-width: 999px) {
   .page-body {
@@ -204,7 +236,7 @@ a:visited {
   }
 
   .link-title {
-    font-size: 54px;
+    font-size: 36px;
     font-family: "badtaste", sans-serif;
   }
 

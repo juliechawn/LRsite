@@ -98,7 +98,7 @@ class MoreArticles extends Component {
             .map((item, index) => {
               return (
                 <NavLink exact activeClassName="" to="/article" key={item.id}>
-                  <div className="more-article">
+                  <div className="more-article ">
                     <img
                       className="more-img"
                       alt="img"
@@ -118,7 +118,7 @@ class MoreArticles extends Component {
             })}  
           <div onClick={this.loadMoreMobile}>
             {this.state.visibleMobile < this.state.items.length && (
-              <i className="fas fa-arrow-down button" />
+              <i className="fas fa-arrow-down fa-lg button" />
             )}
           </div>
         </div>
@@ -127,7 +127,7 @@ class MoreArticles extends Component {
         <div className="more-articles-div-tablet">
         <div onClick={this.goBackTablet}>
             {this.state.currentTablet > 0 && (
-              <i className="fas fa-arrow-left button" />
+              <i className="fas fa-arrow-left fa-lg button" />
            )}
           </div>
           {this.state.items
@@ -156,7 +156,7 @@ class MoreArticles extends Component {
            
           <div onClick={this.loadMoreTablet}>
             {this.state.visibleTablet < this.state.items.length && (
-              <i className="fas fa-arrow-right button" />
+              <i className="fas fa-arrow-right fa-lg button" />
             )}
           </div>          
         </div>
@@ -164,7 +164,7 @@ class MoreArticles extends Component {
         <div className="more-articles-div-desktop">
         <div onClick={this.goBackDesktop}>
             {this.state.currentDesktop > 0 && (
-              <i className="fas fa-arrow-left button" />
+              <i className="fas fa-arrow-left fa-lg button" />
            )}
           </div>
           {this.state.items
@@ -193,7 +193,7 @@ class MoreArticles extends Component {
            
           <div onClick={this.loadMoreDesktop}>
             {this.state.visibleDesktop < this.state.items.length && (
-              <i className="fas fa-arrow-right button" />
+              <i className="fas fa-arrow-right fa-lg button" />
             )}
           </div>
         </div>

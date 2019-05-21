@@ -105,12 +105,11 @@
     padding-top: 80px;
   }
 
-  .page-header-photogrid-desktop {
+  .home-header-tablet-desktop-photogrid {
     align-content: center;
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
   }
 
   .page-header-img {
