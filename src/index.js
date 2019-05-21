@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ScrollToTop from 'react-router-scroll-top'
-import App from "./components/App/App";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Article from "./components/Articles/IndividualArticle/Article";
@@ -18,7 +17,6 @@ const Root = () => (
     <React.Fragment>
     <Switch>
       <Route component={Home} exact path="/" />
-      <Route component={App} path="/allarticles" />
       <Route component={About} path="/about" />
       <Route component={ArticleCatOne} path="/articlecategory1" />
       <Route component={ArticleCatTwo} path="/articlecategory2" />
