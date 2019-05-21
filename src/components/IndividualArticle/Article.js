@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 // import Navbar from "./Navbar";
-import Footer from "../../Footer/Footer.js";
-import StickyNav from "../../StickyNav/StickyNav.js";
-import MoreArticles from "../../MoreArticles/MoreArticles"
-import Comments from "../../Comments/Comments"
-import Share from "../../Share/Share";
+import Footer from "../Footer/Footer.js";
+import StickyNav from "../StickyNav/StickyNav.js";
+import MoreArticles from "../MoreArticles/MoreArticles"
+import Comments from "../Comments/Comments"
+import Share from "../Share/Share";
 import "./Article.css";
-import TopArticles from "../../TopArticles/TopArticles.js";
+import TopArticles from "../TopArticles/TopArticles.js";
 
 class Article extends Component {
   render() {

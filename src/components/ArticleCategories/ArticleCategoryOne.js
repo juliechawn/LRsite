@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./ArticleCategory.css";
-import Footer from "../../Footer/Footer.js";
-import StickyNav from "../../StickyNav/StickyNav.js";
-import MoreArticles from "../../MoreArticles/MoreArticles"
-import ArticlePreviewRight from "../../ArticlePreviews/ArticlePreviewRight";
+import Footer from "../Footer/Footer.js";
+import StickyNav from "../StickyNav/StickyNav.js";
+import MoreArticles from "../MoreArticles/MoreArticles"
+import ArticlePreviewRight from "../ArticlePreviews/ArticlePreviewRight";
 
 class ArticleCategoryOne extends Component {
   render() {

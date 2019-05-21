@@ -5,11 +5,11 @@ import ScrollToTop from 'react-router-scroll-top'
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import App from "./components/App/App"
-import Article from "./components/Articles/IndividualArticle/Article";
-import ArticleCatOne from "./components/Articles/ArticleCategories/ArticleCategoryOne";
-import ArticleCatTwo from "./components/Articles/ArticleCategories/ArticleCategoryTwo.js";
-import ArticleCatThree from "./components/Articles/ArticleCategories/ArticleCategoryThree";
-import ArticleCatFour from "./components/Articles/ArticleCategories/ArticleCategoryFour";
+import Article from "./components/IndividualArticle/Article";
+import ArticleCatOne from "./components/ArticleCategories/ArticleCategoryOne";
+import ArticleCatTwo from "./components/ArticleCategories/ArticleCategoryTwo.js";
+import ArticleCatThree from "./components/ArticleCategories/ArticleCategoryThree";
+import ArticleCatFour from "./components/ArticleCategories/ArticleCategoryFour";
 import registerServiceWorker from "./registerServiceWorker";
 
 const Root = () => (
