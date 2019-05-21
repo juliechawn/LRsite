@@ -22,15 +22,15 @@ class Comments extends Component {
             <i className="fas fa-times" />
           </span>
           <span className="link">COMMENT</span>
-          <input className="comment-input" type="text" />
+          <textarea className="comment-input" type="text" />
           <div className="addComment-contact">
             <span className="addComment-contact-span">
               <span className="link">NAME</span>
-              <input className="contact-input" type="text" />
+              <textarea className="contact-input" type="text" />
             </span>
             <span className="addComment-contact-span">
               <span className="link">EMAIL</span>
-              <input className="contact-input" type="text" />
+              <textarea className="contact-input" type="text" />
             </span>
           </div>
           <div
@@ -40,7 +40,7 @@ class Comments extends Component {
             }
           >
             {/* <NavLink to="/article"> */}
-            <span className="button">POST COMMENT</span>
+            <span className="box-button button">POST COMMENT</span>
             {/* </NavLink> */}
           </div>
         </div>

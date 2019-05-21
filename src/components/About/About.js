@@ -63,19 +63,19 @@ class About extends React.Component {
               </div>
             </div>
             <div className="contact-top-articles-div">
-              <div className="contact-form">
-                <div className="cnt-reading ">contact lauren</div>
+              <div className="contact-form link-header top-border">
+                <div>contact lauren</div>
                 <div className="addComment">
                   <span className="link">MESSAGE</span>
-                  <input className="comment-input" type="text" />
+                  <textarea className="comment-input" type="text" />
                   <div className="addComment-contact">
                     <span className="addComment-contact-span">
                       <span className="link">NAME</span>
-                      <input className="contact-input" type="text" />
+                      <textarea className="contact-input" type="text" />
                     </span>
                     <span className="addComment-contact-span">
                       <span className="link">EMAIL</span>
-                      <input className="contact-input" type="text" />
+                      <textarea className="contact-input" type="text" />
                     </span>
                   </div>
                   <div className="addComment-btn">

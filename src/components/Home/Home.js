@@ -18,8 +18,8 @@ class Home extends Component {
           subheader={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
         />
         <div className="page-body">
-          <span className="anchor" id="home-top"></span>
           <div className="home-body">
+          <span className="anchor" id="home-top"></span>
             <div className="home-top-article">
               <div className="top-img-div">
                 <img
