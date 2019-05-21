@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ScrollToTop from 'react-router-scroll-top'
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
-import App from "./components/App/App"
 import Article from "./components/IndividualArticle/Article";
 import ArticleCatOne from "./components/ArticleCategories/ArticleCategoryOne";
 import ArticleCatTwo from "./components/ArticleCategories/ArticleCategoryTwo.js";

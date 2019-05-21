@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import Navbar from "./Navbar";
 import Footer from "../Footer/Footer.js";
 import StickyNav from "../StickyNav/StickyNav.js";
 import MoreArticles from "../MoreArticles/MoreArticles"

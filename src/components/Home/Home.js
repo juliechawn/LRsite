@@ -6,6 +6,7 @@ import HeaderHome from "../Header/HeaderHome.js";
 import "./Home.css";
 import ArticlePreviewRight from "../ArticlePreviews/ArticlePreviewRight";
 import ArticlePreviewLeft from "../ArticlePreviews/ArticlePreviewLeft";
+import "../App.css";
 
 class Home extends Component {
   render() {
