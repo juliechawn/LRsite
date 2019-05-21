@@ -58,7 +58,7 @@ class StickyNavHome extends Component {
                   <i className="fa fa-square fa-stack-2x fa-inverse" />
                   <i className="fas fa-search fa-md fa-stack-1x" />
                 </span>
-                <input placeholder="SEARCH" />
+                <input className="link" placeholder="SEARCH" />
               </span>
             </div>
           </div>

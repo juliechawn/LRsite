@@ -134,24 +134,18 @@ a:visited {
 
 .anchor{
   display: block;
-  height: 75px; /*same height as header*/
-  margin-top: -75px; /*same height as header*/
+  height: 75px;
+  margin-top: -75px;
   visibility: hidden;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .my-smooth-container {
-    scroll-behavior: auto;
-  }
+.scroll-touch {
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (min-width: 1px) and (max-width: 999px) {
   .page-body {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 95%;
     margin: 0px auto;
   }
@@ -215,7 +209,7 @@ html {
 
 @media (min-width: 1000px) {
   .page-body {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 90%;
     margin: 0px auto;
   }

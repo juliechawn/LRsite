@@ -1,10 +1,11 @@
 @media (min-width: 1px) and (max-width: 749px) {
   .more-articles-div{
     display: none;
+    background-color: white;
   }
 
   .more-articles {
-    margin: 25px 0;
+    padding: 25px 0;
   }
 
   .more-articles-div-mobile {
@@ -61,7 +62,8 @@
   }
 
   .more-articles {
-    margin: 25px 0;
+    padding: 25px 0;
+    background-color: white;
   }
   
   .more-articles-title {
@@ -115,7 +117,9 @@
   }
 
 .more-articles {
-  margin: 25px 0;
+  padding: 25px 0;
+  background-color: white;
+
 }
 
 .more-articles-title {

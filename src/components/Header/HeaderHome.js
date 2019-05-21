@@ -1,8 +1,22 @@
 import React, { Component } from "react";
 import "./HeaderHome.css";
+import smoothscroll from "smoothscroll-polyfill";
+smoothscroll.polyfill();
+
 // import { NavLink } from "react-router-dom";
 
 class HeaderHome extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  handleScroll() {
+    var elmnt = document.getElementById("home-top");
+    elmnt.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  
   render() {
     return (
       <div className="home-header">
@@ -94,7 +108,10 @@ class HeaderHome extends Component {
           <div className="photogrid-subheader four-opacity">
             {this.props.subheader}
           </div>
-          <a className="photogrid-arrow grow four-opacity" href="/#whatsnew">
+          <a
+            onClick={this.handleScroll}
+            className="scroll-touch photogrid-arrow grow four-opacity"
+          >
             <i className="fas fa-arrow-down fa-2x button" />
           </a>
         </div>

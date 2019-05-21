@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import SocialMedia from "../SocialMedia/SocialMedia";
 

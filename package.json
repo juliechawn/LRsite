@@ -13,6 +13,7 @@
     "react-spinners": "^0.4.5",
     "react-stripe-elements": "^2.0.1",
     "react-transition-group": "^1.2.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "strapi-sdk-javascript": "^0.2.1"
   },
   "scripts": {
