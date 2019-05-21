@@ -144,10 +144,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .nav-about {
     padding: 0 0 0 50px;
+
   }
 
   .nav-title {

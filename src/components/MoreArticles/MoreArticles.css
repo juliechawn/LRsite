@@ -1,22 +1,127 @@
+@media (min-width: 1px) and (max-width: 749px) {
+  .more-articles-div{
+    display: none;
+  }
+
+  .more-articles {
+    margin: 25px 0;
+  }
+
+  .more-articles-div-mobile {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .more-articles-div-tablet, .more-articles-div-desktop {
+    display: none;
+  }
+
+  .more-articles-title {
+    text-align: left;
+  }
+     
+  .more-article {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .more-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .more-title {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  
+  .see-more-button-div {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  div .link-title {
+    padding: 20px 0;
+  }
+
+}
+
+
+@media (min-width: 750px) and (max-width: 1099px) {
+  .more-articles-div-mobile, .more-articles-div-desktop {
+    display: none;
+  }
+
+  .more-articles {
+    margin: 25px 0;
+  }
+  
+  .more-articles-title {
+    text-align: left;
+  }
+  
+  .more-articles-div-tablet {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+  } 
+   
+  .more-article {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .more-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .more-title {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+  
+  .see-more-button-div {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+  }
+  
+  div .link-title {
+    padding: 20px 0;
+  }
+
+}
+
+
+@media (min-width: 1100px) {
+  .more-articles-div-mobile, .more-articles-div-tablet {
+    display: none;
+  }
+
 .more-articles {
   margin: 25px 0;
 }
 
 .more-articles-title {
-  background: rgba(0, 0, 0, .8);
-  color: white;
-  padding: 10px 50px;
   text-align: left;
 }
 
-.more-articles-div {
-  /* padding: 30px 0; */
+.more-articles-div-desktop {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
   justify-content: space-around;
-  /* background: rgba(0, 0, 0, .8) */
 }
 
 .more-article {
@@ -45,4 +150,4 @@
 div .link-title {
   padding: 20px 0;
 }
-
+}

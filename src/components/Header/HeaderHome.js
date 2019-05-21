@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./HeaderHome.css";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 class HeaderHome extends Component {
   render() {

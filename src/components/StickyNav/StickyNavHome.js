@@ -49,7 +49,7 @@ class StickyNavHome extends Component {
             </div>
             <div className="nav-div">
               <NavLink activeClassName="active" to="/about">
-                <span className="nav-about link underline">ABOUT</span>
+                <span className="link underline">ABOUT</span>
               </NavLink>
             </div>
             <div className="social-media-div">

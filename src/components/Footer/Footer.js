@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 class Footer extends Component {
   render() {
     return (
-      <div id="footer">
-        <p className="link">ALL RIGHTS RESERVED 2019</p>
-        <NavLink exact activeClassName="" to="/about">
-        <span className="link">CONTACT</span>
-        </NavLink>
+      <div className="footer">
+        <SocialMedia />
+        <span className="menu-link link">ALL RIGHTS RESERVED 2019</span>
       </div>
     );
   }
