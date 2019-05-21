@@ -1,6 +1,6 @@
 @media (min-width: 1px) and (max-width: 800px) {
   .article-category-body {
-    padding-top: 150px;
+    padding-top: 120px;
   }
   
   .idv-post {
@@ -63,7 +63,7 @@
 
 @media (min-width: 801px) {
   .article-category-body {
-    padding-top: 150px;
+    padding-top: 120px;
   }
 
   .idv-post {
@@ -116,7 +116,7 @@
   }
 
   .text-preview-div {
-    height: 12em;
+    height: 9em;
     overflow: hidden;
     text-overflow: ellipsis;
   }

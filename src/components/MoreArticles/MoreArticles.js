@@ -116,7 +116,7 @@ class MoreArticles extends Component {
                 </NavLink>
               );
             })}  
-          <div onClick={this.loadMoreMobile}>
+          <div onClick={this.loadMoreMobile} className="arrow-down">
             {this.state.visibleMobile < this.state.items.length && (
               <i className="fas fa-arrow-down fa-lg button" />
             )}
