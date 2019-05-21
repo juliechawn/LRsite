@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "./ArticleCategory.css";
 import Footer from "../../Footer/Footer.js";
 import StickyNav from "../../StickyNav/StickyNav.js";
-import ArticlePreview from "../ArticlePreview/ArticlePreview";
 import MoreArticles from "../../MoreArticles/MoreArticles"
+import ArticlePreviewRight from "../../ArticlePreviews/ArticlePreviewRight";
 
 class ArticleCategoryTwo extends Component {
   render() {
@@ -12,7 +12,7 @@ class ArticleCategoryTwo extends Component {
       <StickyNav />
         <div className="page-body">
           <div className="article-category-body">
-            <ArticlePreview
+            <ArticlePreviewRight
               category={"CATEGORY TWO"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
@@ -23,7 +23,7 @@ class ArticleCategoryTwo extends Component {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
               }
             />
-            <ArticlePreview
+            <ArticlePreviewRight
               category={"CATEGORY TWO"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}

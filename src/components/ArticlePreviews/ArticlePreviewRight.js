@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import Share from "../../Share/Share";
+import React from "react";
+import Share from "../Share/Share";
 import { NavLink } from "react-router-dom";
+import "./ArticlePreview.css";
 
-class ArticlePreview extends Component {
+class ArticlePreviewRight extends React.Component {
   getCategory() {
     switch (this.props.category) {
       case "CATEGORY ONE":
@@ -18,14 +19,19 @@ class ArticlePreview extends Component {
   }
   render() {
     return (
-      <div className="idv-post">
-        <div className="img-tags-div">
+      <div className="home-top-article">
+        <div className="top-img-div">
           <NavLink to="/article">
-            <img className="preview-img" alt="img" src={this.props.image} />
+            <img
+              className="home-top-article-img"
+              alt="img"
+              src={this.props.image}
+            />
           </NavLink>
           <div className="tags-div">
             <NavLink
-              exact activeClassName=""
+              exact
+              activeClassName=""
               className={`button ${this.getCategory()}`}
               to={`/${this.getCategory()}`}
             >
@@ -33,19 +39,17 @@ class ArticlePreview extends Component {
             </NavLink>
           </div>
         </div>
-        <div className="text-div">
-          <div className="titles-div">
-            <p className="date">{this.props.date}</p>
-            <NavLink to="/article">
-              <span className="title">{this.props.title}</span>
-            </NavLink>
-          </div>
-          <div className="text-preview-div">
-            <p className="text">{this.props.text}</p>
+        <div className="home-top-article-text">
+          <span className="date">{this.props.date}</span>
+          <span className="home-title">{this.props.title}</span>
+          <div className="home-text-preview-div">
+            <div className="home-text">
+              {this.props.text}
+            </div>
           </div>
           <div className="addComment-btn">
             <NavLink to="/article">
-            <span className="box-button button">CONTINUE READING</span>
+              <span className="box-button button">CONTINUE READING</span>
             </NavLink>
           </div>
           <Share />
@@ -55,4 +59,4 @@ class ArticlePreview extends Component {
   }
 }
 
-export default ArticlePreview;
+export default ArticlePreviewRight;

@@ -170,14 +170,6 @@ a:visited {
     letter-spacing: 0.25em;
   }
 
-  .title {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.1em;
-    word-spacing: 5px;
-  }
-
   .text {
     font-size: 14px;
     margin: 0 auto;
@@ -233,13 +225,6 @@ a:visited {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 0.25em;
-  }
-
-  .title {
-    font-size: 24px;
-    margin-bottom: 0;
-    letter-spacing: 0.1em;
-    word-spacing: 5px;
   }
 
   .text {

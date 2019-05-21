@@ -64,7 +64,7 @@ class StickyNav extends Component {
             <SocialMedia />
             <span>
               <NavLink
-                className="menu-link link underline"
+                className="menu-link link"
                 exact
                 activeClassName="active"
                 to="/"
@@ -74,7 +74,7 @@ class StickyNav extends Component {
             </span>
             <span>
               <NavLink
-                className="menu-link link underline"
+                className="menu-link link"
                 activeClassName="active"
                 to="/about"
               >
@@ -83,7 +83,7 @@ class StickyNav extends Component {
             </span>
             <span>
               <NavLink
-                className="menu-link link underline"
+                className="menu-link link"
                 activeClassName="active"
                 to="/articlecategory1"
               >
@@ -92,7 +92,7 @@ class StickyNav extends Component {
             </span>
             <span>
               <NavLink
-                className="menu-link link underline"
+                className="menu-link link"
                 activeClassName="active"
                 to="/articlecategory2"
               >
@@ -101,7 +101,7 @@ class StickyNav extends Component {
             </span>
             <span>
               <NavLink
-                className="menu-link link underline"
+                className="menu-link link"
                 activeClassName="active"
                 to="/articlecategory3"
               >
@@ -110,7 +110,7 @@ class StickyNav extends Component {
             </span>
             <span>
               <NavLink
-                className="menu-link link underline"
+                className="menu-link link"
                 activeClassName="active"
                 to="/articlecategory4"
               >
@@ -118,13 +118,13 @@ class StickyNav extends Component {
               </NavLink>
             </span>
 
-            {/* <span className="search">
+            <span className="search">
               <span className="fa-stack fa-md">
                 <i className="fa fa-square fa-stack-2x fa-inverse" />
                 <i className="fas fa-search fa-md fa-stack-1x" />
               </span>
               <input placeholder="SEARCH" />
-            </span> */}
+            </span>
           </div>
         </div>
       );
