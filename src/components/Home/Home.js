@@ -12,7 +12,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      zoom: false
+      zoom: 'top-img-div zoom'
     };
     this.handleZoom = this.handleZoom.bind(this);
   }
@@ -26,24 +26,22 @@ class Home extends Component {
   }
 
   handleZoom() {
-    var elementTarget = document.getElementsByClassName("img");
-    console.log(elementTarget.offsetHeight)
-    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-      console.log('here')
-      this.setState({
-        zoom: true
+    var element = document.querySelector(".img");
+    if (window.scrollY < element.offsetHeight + element.offsetTop) {
+        this.setState({
+        zoom: 'top-img-div zoom zoomIn'
       });
     } else {
+      console.log(this.state.zoom)
       this.setState({
-        zoom: true
+        zoom: 'top-img-div zoom zoomIn'
       });
     }
   }
-  
 
   render() {
     return (
-      <div id="home" onScroll={this.handleZoom}>
+      <div id="home">
         <StickyNavHome />
         <HeaderHome
           title={"milk mama"}
@@ -53,6 +51,7 @@ class Home extends Component {
           <div className="home-body">
             <span className="anchor" id="home-top" />
             <ArticlePreviewRight
+              zoom={this.state.zoom}
               category={"CATEGORY FOUR"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
