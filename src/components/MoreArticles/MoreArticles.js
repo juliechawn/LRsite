@@ -90,8 +90,8 @@ class MoreArticles extends Component {
   }
   render() {
     return (
-      <div className="more-articles">
-        <div className="link-header more-articles-title top-border">YOU MAY ALSO LIKE</div>
+      <div className="more-articles  top-border">
+        <div className="link-header more-articles-title">YOU MAY ALSO LIKE</div>
         <div className="more-articles-div-mobile">
           {this.state.items
             .slice(0, this.state.visibleMobile)

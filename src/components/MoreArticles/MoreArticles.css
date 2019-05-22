@@ -1,12 +1,11 @@
 
 @media (min-width: 1px) and (max-width: 749px) {
-  .more-articles-div{
-    display: none;
-    background-color: white;
+  .more-articles {
+    padding: 20px 0;
   }
 
-  .more-articles {
-    padding: 25px 0;
+  .more-articles-div{
+    display: none;
   }
 
   .more-articles-div-mobile {
@@ -62,15 +61,14 @@
 
 
 @media (min-width: 750px) and (max-width: 1099px) {
+  .more-articles {
+    padding: 25px 0;
+  }
+  
   .more-articles-div-mobile, .more-articles-div-desktop {
     display: none;
   }
 
-  .more-articles {
-    padding: 25px 0;
-    background-color: white;
-  }
-  
   .more-articles-title {
     padding: 25px 0;
     width: 90%;

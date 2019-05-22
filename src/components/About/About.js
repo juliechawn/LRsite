@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../Footer/Footer.js";
 import StickyNav from "../StickyNav/StickyNav.js";
 import TopArticles from "../TopArticles/TopArticles";
+import Contact from "../CommentsContact/Contact"
 import "./About.css";
 
 class About extends React.Component {
@@ -10,84 +11,40 @@ class About extends React.Component {
       <div id="about">
         <StickyNav />
         <div className="page-body">
-          <div className="about-body">
-            <div className="article">
-              <div className="article-img-div">
-                <img
-                  className="article-main-img"
-                  alt="img"
-                  src="https://images.unsplash.com/photo-1506836467174-27f1042aa48c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80"
-                />
-                <div className="caption">
-                  <strong>
-                    caption caption caption caption caption caption caption
-                    caption caption caption caption caption
-                  </strong>
-                </div>
-              </div>
-              <div className="text-div-about">
-                <p className="text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                  <br />
-                  <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
+        <div className="article-body">
+          <div className="article">
+            <div className="article-img-div  zoom">
+              <img
+                className="article-main-img"
+                alt="img"
+                src="https://images.unsplash.com/photo-1506836467174-27f1042aa48c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" />
+                <div className="caption"><strong>caption caption caption caption caption caption caption caption caption caption caption caption</strong></div>
+            </div>
+            <div className="text-div-about">
+              <p className="text article-p">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-              </div>
+            </div>     
             </div>
-            <div className="contact-top-articles-div">
-              <div className="contact-form link-header top-border">
-                <div>contact lauren</div>
-                <div className="addComment">
-                  <span className="link">MESSAGE</span>
-                  <textarea className="comment-input" type="text" />
-                  <div className="addComment-contact">
-                    <span className="addComment-contact-span">
-                      <span className="link">NAME</span>
-                      <textarea className="contact-input" type="text" />
-                    </span>
-                    <span className="addComment-contact-span">
-                      <span className="link">EMAIL</span>
-                      <textarea className="contact-input" type="text" />
-                    </span>
-                  </div>
-                  <div className="addComment-btn">
-                    <span className="box-button button">SEND MESSAGE</span>
-                  </div>
-                  <div />
-                </div>
-              </div>
-              <TopArticles />
+            <div className="top-article-div">
+            <Contact />
+            <TopArticles />
             </div>
-          </div>
-        </div>
+            </div>
+          </div>  
         <Footer />
       </div>
     );

@@ -1,11 +1,11 @@
 @media (min-width: 1px) and (max-width: 800px) {
   .article-category-body {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 
 @media (min-width: 801px) {
   .article-category-body {
-    padding-top: 120px;
+    padding-top: 80px;
   }  
 }

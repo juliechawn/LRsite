@@ -5,15 +5,16 @@ import "./TopArticles.css";
 class TopArticles extends Component {
   render() {
     return (
-          <div className="top-articles">
-          <div className="link-header top-articles-header">top articles</div>
+          <div className="top-articles top-border">
+          <div className="top-articles-header link-header">top articles</div>
           <NavLink exact activeClassName="" to="/article">
-            <div className="top-article bottom-margin">
+            <div className="top-article">
             <div className="top-article-img-div">
               <img 
                 className="top-article-img"
                 alt="img"
-                src="https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"/>
+                src="https://images.unsplash.com/photo-1549069786-641f4cb652c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                />
               </div>
               <div className="top-article-title-div">
               <span className="button articlecategory1">CATEGORY ONE</span> 

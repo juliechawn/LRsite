@@ -48,21 +48,19 @@ class Comments extends Component {
     }
     return (
       <div className="comments top-border">
-        <div className="share-post">
-          <span>
-            <span>COMMENTS</span>
+        <div className="comments-title-div">
+          <span className="link-header">
+          <span>COMMENTS</span>
             <span> 2 </span>
           </span>
           <span>|</span>
           <span>
             <span
-              className="button"
+              className="button link-header"
               onClick={() =>
                 this.setState({ addComment: !this.state.addComment })
               }
-            >
-              WRITE A COMMENT
-            </span>
+            >  WRITE A COMMENT</span>
           </span>
         </div>
         {addComment}

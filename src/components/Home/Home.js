@@ -9,9 +9,41 @@ import ArticlePreviewLeft from "../ArticlePreviews/ArticlePreviewLeft";
 import "../App.css";
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      zoom: false
+    };
+    this.handleZoom = this.handleZoom.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleZoom);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleZoom);
+  }
+
+  handleZoom() {
+    var elementTarget = document.getElementsByClassName("img");
+    console.log(elementTarget.offsetHeight)
+    if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+      console.log('here')
+      this.setState({
+        zoom: true
+      });
+    } else {
+      this.setState({
+        zoom: true
+      });
+    }
+  }
+  
+
   render() {
     return (
-      <div id="home">
+      <div id="home" onScroll={this.handleZoom}>
         <StickyNavHome />
         <HeaderHome
           title={"milk mama"}
@@ -19,27 +51,29 @@ class Home extends Component {
         />
         <div className="page-body">
           <div className="home-body">
-          <span className="anchor" id="home-top"></span>
-            <ArticlePreviewRight 
-             category={"CATEGORY FOUR"}
-             date={"JANUARY 1, 2019"}
-             title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-             image={
-              "https://images.unsplash.com/photo-1549069786-641f4cb652c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-            }
-             text={
-               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-             }/>
+            <span className="anchor" id="home-top" />
+            <ArticlePreviewRight
+              category={"CATEGORY FOUR"}
+              date={"JANUARY 1, 2019"}
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+              image={
+                "https://images.unsplash.com/photo-1549069786-641f4cb652c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+              }
+              text={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              }
+            />
             <ArticlePreviewLeft
-             category={"CATEGORY FOUR"}
-             date={"JANUARY 1, 2019"}
-             title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
-             image={
-              "https://images.unsplash.com/photo-1458071103673-6a6e4c4a3413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-            }
-             text={
-               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-             } />
+              category={"CATEGORY FOUR"}
+              date={"JANUARY 1, 2019"}
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+              image={
+                "https://images.unsplash.com/photo-1458071103673-6a6e4c4a3413?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              }
+              text={
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              }
+            />
           </div>
           <MoreArticles api={"family"} category={"CATEGORY ONE"} />
         </div>

@@ -105,6 +105,15 @@
     transform: translate(-100%);
     transition: transform 1000ms ease-in-out;
   } 
+
+  .mobile-search {
+    color:white;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+  }
 }
 
 

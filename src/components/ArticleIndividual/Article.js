@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Footer from "../Footer/Footer.js";
 import StickyNav from "../StickyNav/StickyNav.js";
 import MoreArticles from "../MoreArticles/MoreArticles"
-import Comments from "../Comments/Comments"
+import Comments from "../CommentsContact/Comments"
 import Share from "../Share/Share";
 import "./Article.css";
 import TopArticles from "../TopArticles/TopArticles.js";

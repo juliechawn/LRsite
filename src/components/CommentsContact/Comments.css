@@ -1,6 +1,30 @@
+@media (min-width: 1px) and (max-width: 649px) {
+  .contact-form {
+    padding: 20px 0;
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1099px) {
+  .contact-form {
+    padding: 20px 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .contact-form {
+    padding: 20px 0;
+  }
+}
+
+
 .comments {
-  padding: 20px 0;
+  padding: 25px 0;
   background-color: white;
+}
+
+.comments-title-div {
+  padding: 10px 0;
 }
 
 .addComment {
@@ -9,7 +33,6 @@
   justify-content: center;
   width: 100%;
   margin: 0px auto;
-  padding: 20px 0;
 }
 
 .close-addComment {
@@ -24,10 +47,6 @@
 
 .comment-input {
   padding: 0 0 50px 0;
-}
-
-.contact-input {
-  padding: 0 0 25px 0;
 }
 
 .addComment-contact {
@@ -53,4 +72,11 @@
   background-color: rgba(0, 52, 89, 0.1);
   border: 0.5px rgba(0, 52, 89, 0.1) solid;
   padding: 10px 20px;
+}
+
+.contact-top-articles-div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
 }
