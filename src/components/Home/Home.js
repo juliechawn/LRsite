@@ -14,30 +14,30 @@ class Home extends Component {
     this.state = {
       zoom: 'top-img-div zoom'
     };
-    this.handleZoom = this.handleZoom.bind(this);
+    // this.handleZoom = this.handleZoom.bind(this);
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleZoom);
-  }
+  // componentDidMount() {
+  //   window.addEventListener("scroll", this.handleZoom);
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleZoom);
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener("scroll", this.handleZoom);
+  // }
 
-  handleZoom() {
-    var element = document.querySelector(".img");
-    if (window.scrollY < element.offsetHeight + element.offsetTop) {
-        this.setState({
-        zoom: 'top-img-div zoom zoomIn'
-      });
-    } else {
-      console.log(this.state.zoom)
-      this.setState({
-        zoom: 'top-img-div zoom zoomIn'
-      });
-    }
-  }
+  // handleZoom() {
+  //   var element = document.querySelector("img");
+  //   if (window.scrollY === element.offsetHeight + element.offsetTop) {
+  //       this.setState({
+  //       zoom: 'top-img-div zoom  '
+  //     });
+  //   } else {
+  //     console.log(this.state.zoom)
+  //     this.setState({
+  //       zoom: 'top-img-div zoom two-opacity'
+  //     });
+  //   }
+  // }
 
   render() {
     return (
@@ -51,7 +51,6 @@ class Home extends Component {
           <div className="home-body">
             <span className="anchor" id="home-top" />
             <ArticlePreviewRight
-              zoom={this.state.zoom}
               category={"CATEGORY FOUR"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}

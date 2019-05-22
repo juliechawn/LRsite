@@ -19,7 +19,7 @@ class ArticlePreviewLeft extends React.Component {
   }
   render() {
     return (
-      <div className="home-top-article reverse">
+      <div className="home-top-article reverse img">
         <div className="home-top-article-text">
           <span className="date">{this.props.date}</span>
           <span className="home-title">{this.props.title}</span>
@@ -33,10 +33,10 @@ class ArticlePreviewLeft extends React.Component {
           </div>
           <Share />
         </div>
-        <div className="top-img-div">
+        <div className="top-img-div zoom" >
           <img
             src={this.props.image}
-            className="img home-top-article-img"
+            className="home-top-article-img"
             alt="img"
           />
           <div className="tags-div">

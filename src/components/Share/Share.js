@@ -9,7 +9,7 @@ class Share extends Component {
           <i className="fas fa-heart fa-lg button" />
           <span>1</span>
         </span>
-        <span> | </span>
+        <span>|</span>
         <span>
           <span>SHARE</span>
           <i className="fab fa-instagram fa-lg button" />

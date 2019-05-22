@@ -17,7 +17,9 @@ class TopArticles extends Component {
                 />
               </div>
               <div className="top-article-title-div">
+                <div className="push-down">
               <span className="button articlecategory1">CATEGORY ONE</span> 
+              </div>
               <p className="top-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               </div>
             </div>
@@ -31,7 +33,9 @@ class TopArticles extends Component {
                 src="https://images.unsplash.com/photo-1516897106004-1ed8b96ea408?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80"/>
               </div>
               <div className="top-article-title-div">
+              <div className="push-down">
               <span className="button articlecategory4">CATEGORY FOUR</span> 
+              </div>
               <p className="top-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               </div>
             </div>
@@ -45,7 +49,9 @@ class TopArticles extends Component {
                 src="https://images.unsplash.com/photo-1527599296290-e847cebb1d00?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM3Mzg5fQ"/>
               </div>
               <div className="top-article-title-div">
+              <div className="push-down">
               <span className="button articlecategory3">CATEGORY THREE</span> 
+              </div>
               <p className="top-article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               </div>
             </div>

@@ -20,7 +20,7 @@ class Article extends Component {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
               <p className="date"><span className="button articlecategory1">CATEGORY ONE</span> | JANUARY 1, 2019</p> 
-              <p><Share /></p>
+              <div className="share-div"><Share /></div>
             </div>
             <div className="article-img-div">
               <img
@@ -71,7 +71,7 @@ class Article extends Component {
               <div className="caption"><strong>caption caption caption caption caption caption caption caption caption caption caption caption</strong></div>
               </div>
             </div>     
-            <Share />
+            <p><Share /></p>
             </div>
             <div className="top-article-div">
             <TopArticles />

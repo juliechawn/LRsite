@@ -108,7 +108,7 @@ a:visited {
   letter-spacing: 0.25em;
 }
 
-.one-opacity { animation:opac 1s }
+.two-opacity { animation:opac 2s }
 .four-opacity { animation:opac 4s }
   
 @keyframes opac{from {opacity:0} to{opacity:1}}
@@ -165,7 +165,6 @@ a:visited {
 .scroll-touch {
   -webkit-overflow-scrolling: touch;
 }
-
 @media (min-width: 1px) and (max-width: 999px) {
   .page-body {
     width: 95%;

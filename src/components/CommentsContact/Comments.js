@@ -48,8 +48,8 @@ class Comments extends Component {
     }
     return (
       <div className="comments top-border">
-        <div className="comments-title-div">
-          <span className="link-header">
+        <div className="comments-title-div link-header">
+          <span className="">
           <span>COMMENTS</span>
             <span> 2 </span>
           </span>

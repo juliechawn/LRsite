@@ -13,7 +13,7 @@ class About extends React.Component {
         <div className="page-body">
         <div className="article-body">
           <div className="article">
-            <div className="article-img-div  zoom">
+            <div className="article-img-div">
               <img
                 className="article-main-img"
                 alt="img"

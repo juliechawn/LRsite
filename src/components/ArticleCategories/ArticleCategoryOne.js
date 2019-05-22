@@ -27,7 +27,6 @@ class ArticleCategoryOne extends Component {
           <MoreArticles 
           api={"pregnancy"}
           category={"CATEGORY ONE"}/>
-
         </div>
         <Footer />
       </div>

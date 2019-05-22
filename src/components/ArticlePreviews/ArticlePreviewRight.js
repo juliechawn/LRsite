@@ -19,9 +19,9 @@ class ArticlePreviewRight extends React.Component {
   }
   render() {
     return (
-      <div className="home-top-article">
+      <div className="home-top-article img">
         <div 
-        className="top-img-div zoom zoomIn">
+        className="top-img-div zoom">
           <NavLink to="/article">
             <img
               className="home-top-article-img"
@@ -41,15 +41,13 @@ class ArticlePreviewRight extends React.Component {
           </div>
         </div>
         <div className="home-top-article-text">
-        <NavLink to="/article">
-          <span className="date">{this.props.date}</span>
+        <span className="date">{this.props.date}</span>
           <span className="home-title">{this.props.title}</span>
           <div className="home-text-preview-div">
             <div className="home-text">
               {this.props.text}
             </div>
           </div>
-          </NavLink>
           <div className="addComment-btn">
             <NavLink to="/article">
               <span className="box-button button">CONTINUE READING</span>
