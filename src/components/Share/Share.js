@@ -12,9 +12,30 @@ class Share extends Component {
         <span>|</span>
         <span>
           <span>SHARE</span>
+          <a
+          className="fa-stack fa-md button"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-instagram fa-lg button" />
+          </a>
+          <a
+          className="fa-stack fa-md button"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-facebook-f fa-lg button" />
+          </a>
+          <a
+          className="fa-stack fa-md button"
+          href="https://www.pinterest.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fab fa-pinterest-p fa-lg button" />
+          </a>
         </span>
       </span>
     );
