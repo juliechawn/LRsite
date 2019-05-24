@@ -108,7 +108,6 @@ class MoreArticles extends Component {
       });
   }
   render() {
-    console.log( window.scrollY )
     let moreArticlesMobile = (
       <div className="more-articles-div-mobile">
         {this.state.items

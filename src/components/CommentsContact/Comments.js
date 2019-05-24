@@ -66,7 +66,7 @@ class Comments extends Component {
         {addComment}
         <div className="comment">
           <p>
-            <span className="date">LOREM IPSUM | TUESDAY, JANUARY 1, 2019</span>
+            <span className="date">LOREM IPSUM | JANUARY 1, 2019</span>
           </p>
           <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -77,7 +77,7 @@ class Comments extends Component {
         </div>
         <div className="comment">
           <p>
-            <span className="date">LOREM IPSUM | TUESDAY, JANUARY 1, 2019</span>
+            <span className="date">LOREM IPSUM | JANUARY 1, 2019</span>
           </p>
           <p className="text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
