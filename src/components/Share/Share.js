@@ -13,7 +13,6 @@ class Share extends Component {
         <span>
           <span>SHARE</span>
           <a
-          className="fa-stack fa-md button"
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -21,7 +20,6 @@ class Share extends Component {
           <i className="fab fa-instagram fa-lg button" />
           </a>
           <a
-          className="fa-stack fa-md button"
           href="https://www.facebook.com/"
           target="_blank"
           rel="noopener noreferrer"
@@ -29,7 +27,6 @@ class Share extends Component {
           <i className="fab fa-facebook-f fa-lg button" />
           </a>
           <a
-          className="fa-stack fa-md button"
           href="https://www.pinterest.com/"
           target="_blank"
           rel="noopener noreferrer"

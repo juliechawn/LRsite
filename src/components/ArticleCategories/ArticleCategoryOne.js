@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./ArticleCategory.css";
 import Footer from "../Footer/Footer.js";
 import StickyNav from "../StickyNav/StickyNav.js";
 import MoreArticles from "../MoreArticles/MoreArticles"
 import ArticlePreviewRight from "../ArticlePreviews/ArticlePreviewRight";
+import PageTitle from "../PageTitle/PageTitle"
 
 class ArticleCategoryOne extends Component {
   render() {
@@ -11,6 +11,8 @@ class ArticleCategoryOne extends Component {
       <div id="article-category">
         <StickyNav />
         <div className="page-body">
+        <PageTitle pagetitle={"category three"} />
+
           <div className="article-category-body">
           <ArticlePreviewRight 
           category={"CATEGORY ONE"}

@@ -121,7 +121,7 @@ class StickyNav extends Component {
               <span className="fa-stack fa-md">
                 <i className="fas fa-search fa-md fa-stack-1x" />
               </span>
-              <input className="mobile-search menu-link" placeholder="SEARCH" />
+              <input className="mobile-search" placeholder="SEARCH" />
             </span>
           </div>
         </div>

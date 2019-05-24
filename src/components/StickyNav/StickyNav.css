@@ -113,7 +113,17 @@
     text-decoration: none;
     overflow: hidden;
     outline: none;
+    font-size: 12px !important;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
   }
+
+
+  .mobile-search input {
+    height: 30px;
+    
+  }
+
 }
 
 

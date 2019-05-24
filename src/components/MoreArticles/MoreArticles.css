@@ -29,6 +29,7 @@
   .more-article {
     width: 300px;
     margin: 10px;
+    background-color: rgba(182, 185, 187, 0.1);
   }
   
   .more-img {
@@ -40,29 +41,23 @@
   .more-title {
     margin: 20px 0;
     font-size: 16px;
+    padding: 5px 10px 0px 10px;
+  }
+ 
+  .more-title-link {
+    padding: 10px 0;
   }
   
-  .see-more-button-div {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    margin: 25px 0;
-  }
-  
-  div .link-title {
-    padding: 20px 0;
-  }
-
   .arrow-down {
     padding: 25px;
   }
-
 }
 
 
 @media (min-width: 750px) and (max-width: 1099px) {
   .more-articles {
     padding: 25px 0;
+    
   }
   
   .more-articles-div-mobile, .more-articles-div-desktop {
@@ -87,6 +82,8 @@
   .more-article {
     width: 300px;
     margin: 10px;
+    background-color: rgba(182, 185, 187, 0.1);
+    
   }
   
   .more-img {
@@ -98,24 +95,17 @@
   .more-title {
     margin: 20px 0;
     font-size: 16px;
+    padding: 5px 10px 0px 10px;
   }
-  
-  .see-more-button-div {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    margin: 25px 0;
-  }
-  
-  div .link-title {
-    padding: 20px 0;
+
+  .more-title-link {
+    padding: 10px 0;
   }
 
 }
 
 
 @media (min-width: 1100px) {
-
   .more-articles-div-mobile, .more-articles-div-tablet {
     display: none;
   }
@@ -139,11 +129,13 @@
   flex-flow: row wrap;
   width: 100%;
   justify-content: space-around;
+  
 }
 
 .more-article {
   width: 300px;
   margin: 10px;
+  background-color: rgba(182, 185, 187, 0.1);
 }
 
 .more-img {
@@ -155,16 +147,10 @@
 .more-title {
   margin: 20px 0;
   font-size: 16px;
+  padding: 5px 10px 0px 10px;
 }
 
-.see-more-button-div {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  margin: 25px 0;
-}
-
-div .link-title {
-  padding: 20px 0;
+.more-title-link {
+  padding: 10px 0;
 }
 }

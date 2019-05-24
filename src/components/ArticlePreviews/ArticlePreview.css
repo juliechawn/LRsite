@@ -4,6 +4,7 @@
     flex-direction: column;
     background: white;
     width: 100%;
+    padding-bottom: 30px;
   }
 
   .tags-div {
@@ -30,7 +31,7 @@
     height: 100%;
   }
 
-  .home-top-article-text {
+  .home-top-article-text-right, .home-top-article-text-left {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -75,10 +76,9 @@
   .home-top-article {
     display: flex;
     flex-direction: row;
-    height: 500px;
     background: white;
     width: 100%;
-    padding: 30px 0;
+    padding-bottom: 75px;
   }
 
   .tags-div {
@@ -96,6 +96,7 @@
   .top-img-div {
     position: relative;
     width: 50%;
+    height: 500px;
   }
 
   .home-top-article-img {
@@ -104,13 +105,24 @@
     height: 100%;
   }
 
-  .home-top-article-text {
+  .home-top-article-text-right {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
     width: 50%;
-    padding: 0px 30px;
+    height: 500px;
+    padding: 0 0px 0px 30px;
+  }
+
+  .home-top-article-text-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 500px;
+    padding: 0 30px 0px 0px;
   }
 
   .home-title {
@@ -137,10 +149,9 @@
   .home-top-article {
     display: flex;
     flex-direction: row;
-    height: 600px;
     background: white;
     width: 100%;
-    padding: 50px 0;
+    padding-bottom: 75px;
   }
 
   .tags-div {
@@ -158,6 +169,7 @@
   .top-img-div {
     position: relative;
     width: 50%;
+    height: 500px;
   }
 
   .home-top-article-img {
@@ -166,13 +178,24 @@
     height: 100%;
   }
 
-  .home-top-article-text {
+  .home-top-article-text-right {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
     width: 50%;
-    padding: 0px 30px;
+    height: 500px;
+    padding: 0 0 0 30px;
+  }
+
+  .home-top-article-text-left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 500px;
+    padding: 0 30px 0 0;
   }
 
   .home-title {

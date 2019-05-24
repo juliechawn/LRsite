@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./ArticleCategory.css";
 import Footer from "../Footer/Footer.js";
 import StickyNav from "../StickyNav/StickyNav.js";
 import MoreArticles from "../MoreArticles/MoreArticles"
 import ArticlePreviewRight from "../ArticlePreviews/ArticlePreviewRight";
+import PageTitle from "../PageTitle/PageTitle"
 
 class ArticleCategoryTwo extends Component {
   render() {
@@ -11,9 +11,10 @@ class ArticleCategoryTwo extends Component {
       <div id="article-category">
       <StickyNav />
         <div className="page-body">
+          <PageTitle pagetitle={"category two"} />
           <div className="article-category-body">
             <ArticlePreviewRight
-              category={"CATEGORY FOUR"}
+              category={"CATEGORY TWO"}
               date={"JANUARY 1, 2019"}
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
               image={

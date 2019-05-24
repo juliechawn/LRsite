@@ -17,7 +17,7 @@ class Article extends Component {
           <div className="article">
             <div className="titles-div">
             <p className="article-title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                Lorem ipsum dolor sit amet
               </p>
               <p className="date"><span className="button articlecategory1">CATEGORY ONE</span> | JANUARY 1, 2019</p> 
               <div className="share-div"><Share /></div>

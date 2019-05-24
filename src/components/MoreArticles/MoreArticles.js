@@ -21,6 +21,7 @@ class MoreArticles extends Component {
     this.loadMoreTablet = this.loadMoreTablet.bind(this);
     this.goBackTablet = this.goBackTablet.bind(this);
     this.loadMoreMobile = this.loadMoreMobile.bind(this);
+
   }
 
   getCategory() {
@@ -78,9 +79,14 @@ class MoreArticles extends Component {
   }
 
   loadMoreMobile() {
+    var element = document.querySelector("more-articles-div-mobile");
     this.setState(prev => {
       return { visibleMobile: prev.visibleMobile + 1 };
     });
+    console.log(window.pageYOffset )
+    console.log(window.scrollY )
+    // let scroll = window.scrollY + 500;
+    // window.scrollTo(0, window.scrollingElement);
   }
 
   componentDidMount() {
@@ -102,6 +108,7 @@ class MoreArticles extends Component {
       });
   }
   render() {
+    console.log( window.scrollY )
     let moreArticlesMobile = (
       <div className="more-articles-div-mobile">
         {this.state.items
@@ -109,7 +116,7 @@ class MoreArticles extends Component {
           .map((item, index) => {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
-                <div className="more-article ">
+                <div className="more-article">
                 <div className="zoom">
                   <img className="more-img" alt="img" src={item.urls.regular} />
                   </div>
@@ -117,7 +124,7 @@ class MoreArticles extends Component {
                     <span className={`button ${this.getCategory()}`}>
                       <strong>{this.props.category}</strong>
                     </span>
-                    <p className="more-title">
+                    <p className="more-title-link">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                   </div>
@@ -153,7 +160,7 @@ class MoreArticles extends Component {
                     <span className={`button ${this.getCategory()}`}>
                       <strong>{this.props.category}</strong>
                     </span>
-                    <p className="more-title">
+                    <p className="more-title-link">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                   </div>
@@ -191,7 +198,7 @@ class MoreArticles extends Component {
                     <span className={`button ${this.getCategory()}`}>
                       <strong>{this.props.category}</strong>
                     </span>
-                    <p className="more-title">
+                    <p className="more-title-link">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </p>
                   </div>
@@ -207,7 +214,7 @@ class MoreArticles extends Component {
       </div>
     );
     return (
-      <div className="more-articles  top-border">
+      <div className="more-articles top-border">
         <div className="link-header more-articles-title">YOU MAY ALSO LIKE</div>
         {moreArticlesMobile}
         {moreArticlesTablet}

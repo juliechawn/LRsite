@@ -19,8 +19,8 @@ class ArticlePreviewLeft extends React.Component {
   }
   render() {
     return (
-      <div className="home-top-article reverse img">
-        <div className="home-top-article-text">
+      <div className="home-top-article reverse">
+        <div className="home-top-article-text-left">
           <span className="date">{this.props.date}</span>
           <span className="home-title">{this.props.title}</span>
           <div className="home-text-preview-div">
