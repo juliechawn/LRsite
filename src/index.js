@@ -14,34 +14,27 @@ import { CSSTransitionGroup } from "react-transition-group";
 
 const Root = () => (
   <Router>
-    <Route
-      render={({ location }) => {
-        return (
-          <ScrollToTop>
-            <React.Fragment>
-              <CSSTransitionGroup
-              
-                transitionName="location-cards"
-                transitionAppear={true}
-                transitionAppearTimeout={400}
-                transitionEnterTimeout={400}
-                transitionLeaveTimeout={400}
-              >
-                <Switch location={location}>
-                  <Route component={Home} exact path="/" />
-                  <Route component={About} path="/about" />
-                  <Route component={ArticleCatOne} path="/articlecategory1" />
-                  <Route component={ArticleCatTwo} path="/articlecategory2" />
-                  <Route component={ArticleCatThree} path="/articlecategory3" />
-                  <Route component={ArticleCatFour} path="/articlecategory4" />
-                  <Route component={Article} path="/article" />
-                </Switch>
-              </CSSTransitionGroup>
-            </React.Fragment>
-          </ScrollToTop>
-        );
-      }}
-    />
+    <Route>
+      <ScrollToTop>
+        <React.Fragment>
+          <Switch>
+            <Route component={Home} exact path="/" />
+            <Route component={About} path="/about" />
+            <Route component={ArticleCatOne} path="/articlecategory1" />
+            <Route component={ArticleCatTwo} path="/articlecategory2" />
+            <Route component={ArticleCatThree} path="/articlecategory3" />
+            <Route component={ArticleCatFour} path="/articlecategory4" />
+            {/* <CSSTransitionGroup
+              transitionName="fade"
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={300}
+            > */}
+              <Route component={Article} path="/article" />
+            {/* </CSSTransitionGroup> */}
+          </Switch>
+        </React.Fragment>
+      </ScrollToTop>
+    </Route>
   </Router>
 );
 

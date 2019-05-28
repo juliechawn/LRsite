@@ -12,7 +12,7 @@ class Article extends Component {
     return (
       <div id="article">
         <StickyNav />
-        <div className="page-body">
+        <div className="page-body two-opacity">
         <div className="article-body">
           <div className="article">
             <div className="titles-div">

@@ -11,7 +11,7 @@ class About extends React.Component {
     return (
       <div id="about">
         <StickyNav />
-        <div className="page-body">
+        <div className="page-body two-opacity">
           <PageTitle pagetitle={"about lauren"} />
           <div className="about-body">
             <div className="about-div">

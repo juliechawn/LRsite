@@ -6,7 +6,7 @@ class Comments extends Component {
     super(props);
     this.state = {
       addComment: false,
-      items: [
+      comments: [
         {
           comment:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
@@ -39,6 +39,7 @@ class Comments extends Component {
       };
     });
   }
+
   render() {
     let addComment;
     if (this.state.addComment === true) {
@@ -70,9 +71,7 @@ class Comments extends Component {
               this.setState({ addComment: !this.state.addComment })
             }
           >
-            {/* <NavLink to="/article"> */}
             <span className="box-button button">POST COMMENT</span>
-            {/* </NavLink> */}
           </div>
         </div>
       );
@@ -82,7 +81,7 @@ class Comments extends Component {
         <div className="comments-title-div link-header">
           <span className="">
             <span>COMMENTS</span>
-            <span> {this.state.items.length} </span>
+            <span> {this.state.comments.length} </span>
           </span>
           <span>|</span>
           <span>
@@ -97,21 +96,20 @@ class Comments extends Component {
           </span>
         </div>
         {addComment}
-
-        {this.state.items.slice(0, this.state.visible).map((item, index) => {
+        {this.state.comments.slice(0, this.state.visible).map((comment, index) => {
           return (
-            <div className="comment">
+            <div className="comment" key={index}>
               <p>
                 <span className="date">
-                  {item.name} | {item.date}
+                  {comment.name} | {comment.date}
                 </span>
               </p>
-              <p className="text">{item.comment}</p>
+              <p className="text">{comment.comment}</p>
             </div>
           );
         })}
         <div className="addComment-btn" onClick={this.moreComments}>
-          {this.state.visible < this.state.items.length && (
+          {this.state.visible < this.state.comments.length && (
             <span className="box-button button">SEE MORE COMMENTS</span>
           )}
         </div>

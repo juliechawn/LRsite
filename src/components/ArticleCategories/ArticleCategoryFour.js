@@ -13,7 +13,7 @@ class ArticleCategoryFour extends Component {
         <div className="page-body">
         <PageTitle pagetitle={"category four"} />
 
-          <div className="article-category-body">
+          <div className="article-category-body two-opacity">
             <ArticlePreviewRight
               category={"CATEGORY FOUR"}
               date={"JANUARY 1, 2019"}

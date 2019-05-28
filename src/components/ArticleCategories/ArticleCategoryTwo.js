@@ -12,7 +12,7 @@ class ArticleCategoryTwo extends Component {
       <StickyNav />
         <div className="page-body">
           <PageTitle pagetitle={"category two"} />
-          <div className="article-category-body">
+          <div className="article-category-body two-opacity">
             <ArticlePreviewRight
               category={"CATEGORY TWO"}
               date={"JANUARY 1, 2019"}

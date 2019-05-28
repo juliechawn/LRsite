@@ -21,7 +21,6 @@ class MoreArticles extends Component {
     this.loadMoreTablet = this.loadMoreTablet.bind(this);
     this.goBackTablet = this.goBackTablet.bind(this);
     this.loadMoreMobile = this.loadMoreMobile.bind(this);
-
   }
 
   getCategory() {
@@ -110,7 +109,7 @@ class MoreArticles extends Component {
   render() {
     let moreArticlesMobile = (
       <div className="more-articles-div-mobile">
-         <div onClick={this.goBackDesktop}>
+        <div onClick={this.goBackDesktop}>
           {this.state.currentDesktop > 0 && (
             <i className="fas fa-arrow-up fa-lg button" />
           )}
@@ -123,7 +122,11 @@ class MoreArticles extends Component {
               <NavLink exact activeClassName="" to="/article" key={item.id}>
                 <div className="more-article ">
                   <div className="zoom">
-                  <img className="more-img" alt="img" src={item.urls.regular} />
+                    <img
+                      className="more-img"
+                      alt="img"
+                      src={item.urls.regular}
+                    />
                   </div>
                   <div className="more-title">
                     <span className={`button ${this.getCategory()}`}>
@@ -158,8 +161,12 @@ class MoreArticles extends Component {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
                 <div className="more-article">
-                <div className="zoom">
-                  <img className="more-img" alt="img" src={item.urls.regular} />
+                  <div className="zoom">
+                    <img
+                      className="more-img"
+                      alt="img"
+                      src={item.urls.regular}
+                    />
                   </div>
                   <div className="more-title">
                     <span className={`button ${this.getCategory()}`}>
@@ -189,28 +196,39 @@ class MoreArticles extends Component {
             <i className="fas fa-arrow-left fa-lg button" />
           )}
         </div>
+       
+          {this.state.items
+            .slice(this.state.currentDesktop, this.state.visibleDesktop)
+            .map((item, index) => {
+              return (
+        //          {/* <CSSTransitionGroup
+        //   transitionName="fade"
+        //   transitionEnterTimeout={500}
+        //   transitionLeaveTimeout={300}
+        // > */}
+                <NavLink exact activeClassName="" to="/article" key={item.id}>
+                  <div className="more-article ">
+                    <div className="zoom">
+                      <img
+                        className="more-img"
+                        alt="img"
+                        src={item.urls.regular}
+                      />
+                    </div>
+                    <div className="more-title">
+                      <span className={`button ${this.getCategory()}`}>
+                        <strong>{this.props.category}</strong>
+                      </span>
+                      <p className="more-title-link">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                      </p>
+                    </div>
+                  </div>
+                </NavLink>
+              );
+            })}
+        {/* </CSSTransitionGroup> */}
 
-        {this.state.items
-          .slice(this.state.currentDesktop, this.state.visibleDesktop)
-          .map((item, index) => {
-            return (
-              <NavLink exact activeClassName="" to="/article" key={item.id}>
-                <div className="more-article ">
-                  <div className="zoom">
-                  <img className="more-img" alt="img" src={item.urls.regular} />
-                  </div>
-                  <div className="more-title">
-                    <span className={`button ${this.getCategory()}`}>
-                      <strong>{this.props.category}</strong>
-                    </span>
-                    <p className="more-title-link">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    </p>
-                  </div>
-                </div>
-              </NavLink>
-            );
-          })}
         <div onClick={this.loadMoreDesktop}>
           {this.state.visibleDesktop < this.state.items.length && (
             <i className="fas fa-arrow-right fa-lg button" />
@@ -219,20 +237,11 @@ class MoreArticles extends Component {
       </div>
     );
     return (
-      <div  id="more-articles" className="more-articles top-border">
+      <div id="more-articles" className="more-articles top-border">
         <div className="link-header more-articles-title">YOU MAY ALSO LIKE</div>
         {moreArticlesMobile}
         {moreArticlesTablet}
-
-        <CSSTransitionGroup
-          transitionName="location-cards"
-          transitionAppear={true}
-          transitionAppearTimeout={400}
-          transitionEnterTimeout={400}
-          transitionLeaveTimeout={400}
-        >
-          {moreArticlesDesktop}
-        </CSSTransitionGroup>
+        {moreArticlesDesktop}
       </div>
     );
   }

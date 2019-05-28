@@ -10,7 +10,7 @@ class ArticleCategoryThree extends Component {
     return (
       <div id="article-category">
         <StickyNav />
-        <div className="page-body">
+        <div className="page-body two-opacity">
         <PageTitle pagetitle={"category three"} />
           <div className="article-category-body">
             <ArticlePreviewRight

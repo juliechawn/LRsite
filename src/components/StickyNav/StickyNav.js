@@ -201,10 +201,9 @@ class StickyNav extends Component {
           </div>
         </div>
         <CSSTransitionGroup
-          transitionName="background"
-          animation="0.5s slideIn forwards"
+          transitionName="fade"
           transitionEnterTimeout={500}
-          transitionLeaveTimeout={500}
+          transitionLeaveTimeout={300}
         >
           {dropdownMenu}
         </CSSTransitionGroup>

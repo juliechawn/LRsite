@@ -40,7 +40,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: calc(100vh - 80px);
-
   }
 
   .photogrid-div {
