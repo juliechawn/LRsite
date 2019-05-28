@@ -5,8 +5,39 @@ class Comments extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      addComment: false
+      addComment: false,
+      items: [
+        {
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          name: "LOREM IPSUM",
+          date: "JANUARY 1, 2019"
+        },
+        {
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          name: "LOREM IPSUM",
+          date: "JANUARY 1, 2019"
+        },
+        {
+          comment:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+          name: "LOREM IPSUM",
+          date: "JANUARY 1, 2019"
+        }
+      ],
+      visible: 2
     };
+    this.moreComments = this.moreComments.bind(this);
+
+  }
+
+  moreComments() {
+    this.setState(prev => {
+      return {
+        visible: prev.visible + 1
+      };
+    });
   }
   render() {
     let addComment;
@@ -50,8 +81,8 @@ class Comments extends Component {
       <div className="comments top-border">
         <div className="comments-title-div link-header">
           <span className="">
-          <span>COMMENTS</span>
-            <span> 2 </span>
+            <span>COMMENTS</span>
+            <span> {this.state.items.length} </span>
           </span>
           <span>|</span>
           <span>
@@ -60,36 +91,29 @@ class Comments extends Component {
               onClick={() =>
                 this.setState({ addComment: !this.state.addComment })
               }
-            >  WRITE A COMMENT</span>
+            >
+              WRITE A COMMENT
+            </span>
           </span>
         </div>
         {addComment}
-        <div className="comment">
-          <p>
-            <span className="date">LOREM IPSUM | JANUARY 1, 2019</span>
-          </p>
-          <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div className="comment">
-          <p>
-            <span className="date">LOREM IPSUM | JANUARY 1, 2019</span>
-          </p>
-          <p className="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-        <div className="addComment-btn">
-          {/* <NavLink to="/article"> */}
-          <span className="box-button button">SEE MORE COMMENTS</span>
-          {/* </NavLink> */}
+
+        {this.state.items.slice(0, this.state.visible).map((item, index) => {
+          return (
+            <div className="comment">
+              <p>
+                <span className="date">
+                  {item.name} | {item.date}
+                </span>
+              </p>
+              <p className="text">{item.comment}</p>
+            </div>
+          );
+        })}
+        <div className="addComment-btn" onClick={this.moreComments}>
+          {this.state.visible < this.state.items.length && (
+            <span className="box-button button">SEE MORE COMMENTS</span>
+          )}
         </div>
       </div>
     );

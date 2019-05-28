@@ -102,6 +102,7 @@
     width: 100px;
     height: 110px;
     object-fit: cover;
+
   }
 
   .push-down {
@@ -116,6 +117,7 @@
 
   .top-article-title-div {
     margin-left: 10px;
+
   }
 
 }

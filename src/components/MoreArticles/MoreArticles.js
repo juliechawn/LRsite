@@ -79,14 +79,14 @@ class MoreArticles extends Component {
   }
 
   loadMoreMobile() {
-    var element = document.querySelector("more-articles-div-mobile");
     this.setState(prev => {
-      return { visibleMobile: prev.visibleMobile + 1 };
+      return {
+        currentDesktop: prev.currentDesktop + 3,
+        visibleDesktop: prev.visibleDesktop + 3
+      };
     });
-    console.log(window.pageYOffset )
-    console.log(window.scrollY )
-    // let scroll = window.scrollY + 500;
-    // window.scrollTo(0, window.scrollingElement);
+    var elmnt = document.getElementById("more-articles");
+    elmnt.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   componentDidMount() {
@@ -110,13 +110,19 @@ class MoreArticles extends Component {
   render() {
     let moreArticlesMobile = (
       <div className="more-articles-div-mobile">
+         <div onClick={this.goBackDesktop}>
+          {this.state.currentDesktop > 0 && (
+            <i className="fas fa-arrow-up fa-lg button" />
+          )}
+        </div>
+
         {this.state.items
-          .slice(0, this.state.visibleMobile)
+          .slice(this.state.currentDesktop, this.state.visibleDesktop)
           .map((item, index) => {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
-                <div className="more-article">
-                <div className="zoom">
+                <div className="more-article ">
+                  <div className="zoom">
                   <img className="more-img" alt="img" src={item.urls.regular} />
                   </div>
                   <div className="more-title">
@@ -131,8 +137,8 @@ class MoreArticles extends Component {
               </NavLink>
             );
           })}
-        <div onClick={this.loadMoreMobile} className="arrow-down">
-          {this.state.visibleMobile < this.state.items.length && (
+        <div onClick={this.loadMoreMobile}>
+          {this.state.visibleDesktop < this.state.items.length && (
             <i className="fas fa-arrow-down fa-lg button" />
           )}
         </div>
@@ -213,7 +219,7 @@ class MoreArticles extends Component {
       </div>
     );
     return (
-      <div className="more-articles top-border">
+      <div  id="more-articles" className="more-articles top-border">
         <div className="link-header more-articles-title">YOU MAY ALSO LIKE</div>
         {moreArticlesMobile}
         {moreArticlesTablet}
