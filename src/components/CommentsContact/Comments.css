@@ -25,6 +25,8 @@
 
 .comments-title-div {
   padding: 10px 10px;
+  white-space:nowrap;
+
 }
 
 .addComment {

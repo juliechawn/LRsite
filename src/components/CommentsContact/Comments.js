@@ -90,9 +90,7 @@ class Comments extends Component {
               onClick={() =>
                 this.setState({ addComment: !this.state.addComment })
               }
-            >
-              WRITE A COMMENT
-            </span>
+            > WRITE A COMMENT </span>
           </span>
         </div>
         {addComment}

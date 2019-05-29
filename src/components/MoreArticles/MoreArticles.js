@@ -120,7 +120,7 @@ class MoreArticles extends Component {
   render() {
     let moreArticlesMobile = (
       <div className="more-articles-div-mobile">
-        <div onClick={this.goBackMobile}  onTouchMove={this.goBackMobile} >
+        <div onClick={this.goBackMobile}  onTouchMove={this.goBackMobile}  onTouchMove={touchMoveEvent => this.goBackMobile(touchMoveEvent)}>
           {this.state.currentMobile > 0 && (
             <i className="fas fa-arrow-left fa-lg button" />
           )}
@@ -151,7 +151,7 @@ class MoreArticles extends Component {
               </NavLink>
             );
           })}
-        <div onClick={this.loadMoreMobile} onTouchMove={this.loadMoreMobile}>
+        <div onClick={this.loadMoreMobile} onTouchMove={this.loadMoreMobile} onTouchMove={touchMoveEvent => this.loadMoreMobile(touchMoveEvent)}>
           {this.state.visibleMobile < this.state.items.length && (
             <i className="fas fa-arrow-right fa-lg button" />
           )}
