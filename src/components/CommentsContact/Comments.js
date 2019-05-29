@@ -5,6 +5,9 @@ class Comments extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: "",
+      comment: "",
+      date: "",
       addComment: false,
       comments: [
         {
@@ -29,9 +32,28 @@ class Comments extends Component {
       visible: 2
     };
     this.moreComments = this.moreComments.bind(this);
-
   }
 
+  // handleChange(e) {
+  //   this.setState({ [e.target.name]: e.target.value });
+  // }
+
+  date() {
+    let d = new Date();
+    let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ];
+    this.setState({
+      date: days[d.getDay()]
+    })
+    console.log(this.state.date)
+  }
   moreComments() {
     this.setState(prev => {
       return {
@@ -53,18 +75,18 @@ class Comments extends Component {
           >
             <i className="fas fa-times" />
           </span>
-          <span className="link">COMMENT</span>
-          <textarea className="comment-input" type="text" />
           <div className="addComment-contact">
             <span className="addComment-contact-span">
               <span className="link">NAME</span>
               <textarea className="contact-input" type="text" />
             </span>
             <span className="addComment-contact-span">
-              <span className="link">EMAIL</span>
-              <textarea className="contact-input" type="text" />
+              <span className="link">SOCIAL MEDIA</span>
+              <textarea className="contact-input" type="text"></textarea>
             </span>
           </div>
+          <span className="link">COMMENT</span>
+          <textarea className="comment-input" type="text" />
           <div
             className="addComment-btn"
             onClick={() =>
@@ -90,22 +112,27 @@ class Comments extends Component {
               onClick={() =>
                 this.setState({ addComment: !this.state.addComment })
               }
-            > WRITE A COMMENT </span>
+            >
+              {" "}
+              WRITE A COMMENT{" "}
+            </span>
           </span>
         </div>
         {addComment}
-        {this.state.comments.slice(0, this.state.visible).map((comment, index) => {
-          return (
-            <div className="comment" key={index}>
-              <p>
-                <span className="date">
-                  {comment.name} | {comment.date}
-                </span>
-              </p>
-              <p className="text">{comment.comment}</p>
-            </div>
-          );
-        })}
+        {this.state.comments
+          .slice(0, this.state.visible)
+          .map((comment, index) => {
+            return (
+              <div className="comment" key={index}>
+                <p>
+                  <span className="date">
+                    {comment.name} | {comment.date}
+                  </span>
+                </p>
+                <p className="text">{comment.comment}</p>
+              </div>
+            );
+          })}
         <div className="addComment-btn" onClick={this.moreComments}>
           {this.state.visible < this.state.comments.length && (
             <span className="box-button button">SEE MORE COMMENTS</span>

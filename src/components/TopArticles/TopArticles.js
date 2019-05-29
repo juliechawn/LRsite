@@ -9,7 +9,7 @@ class TopArticles extends Component {
         <div className="top-articles-header link-header">top articles</div>
         <NavLink exact activeClassName="" to="/article">
           <div className="top-article">
-            <div className="top-article-img-div">
+            <div className="top-article-img-div zoom">
               <img
                 className="top-article-img"
                 alt="img"
@@ -18,7 +18,7 @@ class TopArticles extends Component {
             </div>
             <div className="top-article-title-div">
               <div className="push-down">
-                <span className="button articlecategory1">CATEGORY ONE</span>
+                <span className="articlecategory1">CATEGORY ONE</span>
               </div>
               <p className="top-article-title">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -28,7 +28,7 @@ class TopArticles extends Component {
         </NavLink>
         <NavLink exact activeClassName="" to="/article">
           <div className="top-article top-article-border">
-            <div className="top-article-img-div">
+            <div className="top-article-img-div  zoom">
               <img
                 className="top-article-img"
                 alt="img"
@@ -37,9 +37,9 @@ class TopArticles extends Component {
             </div>
             <div className="top-article-title-div">
               <div className="push-down">
-                <span className="button articlecategory4">CATEGORY FOUR</span>
+                <span className="articlecategory4">CATEGORY FOUR</span>
               </div>
-              <p className="top-article-title">
+              <p className="top-article-title button">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
             </div>
@@ -47,7 +47,7 @@ class TopArticles extends Component {
         </NavLink>
         <NavLink exact activeClassName="" to="/article">
           <div className="top-article top-article-border">
-            <div className="top-article-img-div">
+            <div className="top-article-img-div  zoom">
               <img
                 className="top-article-img"
                 alt="img"
@@ -56,9 +56,9 @@ class TopArticles extends Component {
             </div>
             <div className="top-article-title-div">
               <div className="push-down">
-                <span className="button articlecategory3">CATEGORY THREE</span>
+                <span className="articlecategory3">CATEGORY THREE</span>
               </div>
-              <p className="top-article-title">
+              <p className="top-article-title  button">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
             </div>

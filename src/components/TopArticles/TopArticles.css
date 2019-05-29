@@ -39,6 +39,10 @@
   .top-article-title-div {
     margin-left: 10px;
   }
+
+  .top-article-title {
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: 650px) and (max-width: 1099px) {
@@ -75,6 +79,9 @@
 
   .top-article-title-div {
     margin-top: 10px;
+  }
+  .top-article-title {
+    padding-top: 5px;
   }
 }
 
@@ -119,6 +126,8 @@
     margin-left: 10px;
 
   }
-
+  .top-article-title {
+    padding-top: 5px;
+  }
 }
 

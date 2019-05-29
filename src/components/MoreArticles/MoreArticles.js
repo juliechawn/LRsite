@@ -140,18 +140,18 @@ class MoreArticles extends Component {
                     />
                   </div>
                   <div className="more-title">
-                    <span className={`button ${this.getCategory()}`}>
+                    <span className={`${this.getCategory()}`}>
                       <strong>{this.props.category}</strong>
                     </span>
-                    <p className="more-title-link">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    <p className="more-title-link button ">
+                      Lorem ipsum dolor sit amet
                     </p>
                   </div>
                 </div>
               </NavLink>
             );
           })}
-        <div onClick={this.loadMoreMobile} onSwipe={this.loadMoreMobile}>
+        <div onClick={this.loadMoreMobile}>
           {this.state.visibleMobile < this.state.items.length && (
             <i className="fas fa-arrow-right fa-lg button" />
           )}
@@ -180,10 +180,10 @@ class MoreArticles extends Component {
                     />
                   </div>
                   <div className="more-title">
-                    <span className={`button ${this.getCategory()}`}>
+                    <span className={`${this.getCategory()}`}>
                       <strong>{this.props.category}</strong>
                     </span>
-                    <p className="more-title-link">
+                    <p className="more-title-link  button">
                       Lorem ipsum dolor sit amet
                     </p>
                   </div>
@@ -227,7 +227,7 @@ class MoreArticles extends Component {
                         <strong>{this.props.category}</strong>
                       </span>
                       <p className="more-title-link">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Lorem ipsum dolor sit amet  
                       </p>
                     </div>
                   </div>

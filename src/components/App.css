@@ -109,7 +109,7 @@ a:visited {
 }
 
 .two-opacity { animation:opac 1s }
-.four-opacity { animation:opac 4s }
+.four-opacity { animation:opac 3s }
   
 @keyframes opac{from {opacity:0} to{opacity:1}}
 

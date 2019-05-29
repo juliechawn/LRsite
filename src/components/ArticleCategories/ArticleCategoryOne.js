@@ -18,7 +18,7 @@ class ArticleCategoryOne extends Component {
                 category={"CATEGORY ONE"}
                 date={"JANUARY 1, 2019"}
                 title={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  "Lorem ipsum dolor sit amet"
                 }
                 image={
                   "https://images.unsplash.com/photo-1549816478-c051987383ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80"

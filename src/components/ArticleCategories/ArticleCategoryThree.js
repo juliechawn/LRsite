@@ -16,7 +16,7 @@ class ArticleCategoryThree extends Component {
             <ArticlePreviewRight
               category={"CATEGORY THREE"}
               date={"JANUARY 1, 2019"}
-              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+              title={"Lorem ipsum dolor sit amet"}
               image={
                 "https://images.unsplash.com/photo-1509116043833-3233ceed8153?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
               }
