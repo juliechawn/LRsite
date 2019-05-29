@@ -12,7 +12,8 @@ class MoreArticles extends Component {
       currentDesktop: 0,
       visibleTablet: 2,
       currentTablet: 0,
-      visibleMobile: 3,
+      visibleMobile: 1,
+      currentMobile: 0,
       error: false
     };
 
@@ -21,6 +22,7 @@ class MoreArticles extends Component {
     this.loadMoreTablet = this.loadMoreTablet.bind(this);
     this.goBackTablet = this.goBackTablet.bind(this);
     this.loadMoreMobile = this.loadMoreMobile.bind(this);
+    this.goBackMobile = this.goBackMobile.bind(this);
   }
 
   getCategory() {
@@ -80,12 +82,21 @@ class MoreArticles extends Component {
   loadMoreMobile() {
     this.setState(prev => {
       return {
-        currentDesktop: prev.currentDesktop + 3,
-        visibleDesktop: prev.visibleDesktop + 3
+        currentMobile: prev.currentMobile + 1,
+        visibleMobile: prev.visibleMobile + 1
       };
     });
-    var elmnt = document.getElementById("more-articles");
-    elmnt.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  goBackMobile() {
+    this.setState(prev => {
+      if (this.state.currentMobile > 0) {
+        return {
+          currentMobile: prev.currentMobile - 1,
+          visibleMobile: prev.visibleMobile - 1
+        };
+      }
+    });
   }
 
   componentDidMount() {
@@ -109,14 +120,14 @@ class MoreArticles extends Component {
   render() {
     let moreArticlesMobile = (
       <div className="more-articles-div-mobile">
-        <div onClick={this.goBackDesktop}>
-          {this.state.currentDesktop > 0 && (
-            <i className="fas fa-arrow-up fa-lg button" />
+        <div onClick={this.goBackMobile}  onTouchMove={this.goBackMobile} >
+          {this.state.currentMobile > 0 && (
+            <i className="fas fa-arrow-left fa-lg button" />
           )}
         </div>
 
         {this.state.items
-          .slice(this.state.currentDesktop, this.state.visibleDesktop)
+          .slice(this.state.currentMobile, this.state.visibleMobile)
           .map((item, index) => {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
@@ -140,9 +151,9 @@ class MoreArticles extends Component {
               </NavLink>
             );
           })}
-        <div onClick={this.loadMoreMobile}>
-          {this.state.visibleDesktop < this.state.items.length && (
-            <i className="fas fa-arrow-down fa-lg button" />
+        <div onClick={this.loadMoreMobile} onTouchMove={this.loadMoreMobile}>
+          {this.state.visibleMobile < this.state.items.length && (
+            <i className="fas fa-arrow-right fa-lg button" />
           )}
         </div>
       </div>
@@ -201,11 +212,7 @@ class MoreArticles extends Component {
             .slice(this.state.currentDesktop, this.state.visibleDesktop)
             .map((item, index) => {
               return (
-        //          {/* <CSSTransitionGroup
-        //   transitionName="fade"
-        //   transitionEnterTimeout={500}
-        //   transitionLeaveTimeout={300}
-        // > */}
+
                 <NavLink exact activeClassName="" to="/article" key={item.id}>
                   <div className="more-article ">
                     <div className="zoom">
@@ -227,7 +234,6 @@ class MoreArticles extends Component {
                 </NavLink>
               );
             })}
-        {/* </CSSTransitionGroup> */}
 
         <div onClick={this.loadMoreDesktop}>
           {this.state.visibleDesktop < this.state.items.length && (
@@ -241,7 +247,14 @@ class MoreArticles extends Component {
         <div className="link-header more-articles-title">YOU MAY ALSO LIKE</div>
         {moreArticlesMobile}
         {moreArticlesTablet}
+        <CSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}
+        >
         {moreArticlesDesktop}
+        </CSSTransitionGroup>
+
       </div>
     );
   }
