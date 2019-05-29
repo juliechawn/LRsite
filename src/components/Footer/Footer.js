@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Footer.css";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import { NavLink } from "react-router-dom";
 
 class Footer extends Component {
   render() {
@@ -8,6 +9,14 @@ class Footer extends Component {
       <div className="footer">
         <SocialMedia />
         <span className="menu-link link">ALL RIGHTS RESERVED 2019</span>
+    
+            <NavLink
+           
+              activeClassName=""
+              to="/about"
+            >
+        <span className="logo">mm</span>
+        </NavLink>
       </div>
     );
   }

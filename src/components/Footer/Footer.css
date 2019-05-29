@@ -10,3 +10,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.logo {
+  color: white;
+  font-family: "badtaste";
+  font-size: 30px;
+}

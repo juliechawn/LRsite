@@ -79,6 +79,8 @@
     background: white;
     width: 100%;
     padding-bottom: 75px;
+    height: 80vh;
+    align-items: center;
   }
 
   .tags-div {
@@ -152,6 +154,8 @@
     background: white;
     width: 100%;
     padding-bottom: 75px;
+    /* height: 80vh; */
+    /* align-items: center; */
   }
 
   .tags-div {
