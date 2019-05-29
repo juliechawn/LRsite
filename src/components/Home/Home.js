@@ -23,7 +23,7 @@ class Home extends Component {
         <StickyNavHome />
         <HeaderHome
           title={"milk mama"}
-          subheader={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}
+          subheader={"Lorem ipsum dolor sit amet"}
         />
         <div className="page-body-home two-opacity">
           <span className="anchor" id="home-top" />
@@ -33,7 +33,7 @@ class Home extends Component {
                 category={"CATEGORY FOUR"}
                 date={"JANUARY 1, 2019"}
                 title={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  "Lorem ipsum dolor sit amet"
                 }
                 image={
                   "https://images.unsplash.com/photo-1549069786-641f4cb652c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
@@ -46,7 +46,7 @@ class Home extends Component {
                 category={"CATEGORY THREE"}
                 date={"JANUARY 1, 2019"}
                 title={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                  "Lorem ipsum dolor sit amet"
                 }
                 image={
                   "https://images.unsplash.com/photo-1509115429432-e9b549ffb669?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"

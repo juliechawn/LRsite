@@ -28,13 +28,13 @@
   }
      
   .more-article {
-    width: 300px;
+    width: 275px;
     margin: 10px;
     background-color: rgba(182, 185, 187, 0.1);
   }
   
   .more-img {
-    height: 250px;
+    height: 225px;
     object-fit: cover;
     width: 100%;
   }
@@ -81,14 +81,14 @@
   } 
    
   .more-article {
-    width: 300px;
+    width: 275px;
     margin: 10px;
     background-color: rgba(182, 185, 187, 0.1);
     
   }
   
   .more-img {
-    height: 250px;
+    height: 225px;
     object-fit: cover;
     width: 100%;
   }
