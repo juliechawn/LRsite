@@ -1,4 +1,4 @@
-@media (min-width: 1px) and (max-width: 999px) {
+@media (min-width: 1px) and (max-width: 649px) {
   .home-header-tablet-desktop-photogrid {
     display: none;
   }
@@ -66,6 +66,88 @@
     white-space: pre-line;
     line-height: 3;
     font-size: 14px;
+    letter-spacing: 0.25em;
+    padding: 10px 25px;
+    word-spacing: 5px;
+  }
+
+  .photogrid-arrow {
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 999px) {
+  .home-header-tablet-desktop-photogrid {
+    display: none;
+  }
+
+  .home-header {
+    height: calc(100% - 80px);
+    padding-top: 80px;
+  }
+
+  .page-header-photogrid-mobile {   
+    align-content: center;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  
+  .photogrid-img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+  }
+  
+  .vertical {    
+    opacity: 0.15;
+    width: 50%;
+    height: calc(50vh - 40px);
+  }
+  
+  .horizontal {
+    opacity: 0.15;
+    height: calc(50vh - 40px);
+
+  }
+  
+  .column {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: calc(100vh - 80px);
+  }
+
+  .photogrid-div {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column wrap;
+    top: 30vh;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .photogrid-title {
+    text-align: center;
+    font-size: 125px;
+    font-family: "badtaste", sans-serif;
+  }
+
+  .photogrid-subheader {
+    text-align: center;
+    text-transform: uppercase;
+    white-space: pre-line;
+    line-height: 3;
+    font-size: 18px;
     letter-spacing: 0.25em;
     padding: 10px 25px;
     word-spacing: 5px;

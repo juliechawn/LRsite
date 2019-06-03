@@ -5,9 +5,7 @@ class Comments extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      comment: "",
-      date: "",
+      // newComment: { name: "", comment: "", date: "" },
       addComment: false,
       comments: [
         {
@@ -32,28 +30,47 @@ class Comments extends Component {
       visible: 2
     };
     this.moreComments = this.moreComments.bind(this);
+    this.handleCommentInput = this.handleCommentInput.bind(this);
+    this.handleCommentSubmit = this.handleCommentSubmit.bind(this);
   }
 
-  // handleChange(e) {
-  //   this.setState({ [e.target.name]: e.target.value });
-  // }
-
-  date() {
+  handleCommentInput(e) {
     let d = new Date();
-    let days = [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
+    let day = d.getDate();
+    var monthIndex = d.getMonth();
+    var year = d.getFullYear();
+    var monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
     ];
-    this.setState({
-      date: days[d.getDay()]
-    })
-    console.log(this.state.date)
+    let date = monthNames[monthIndex] + " " + day + ", " + year;
+
+    this.setState({ [e.target.name]: e.target.value, date: date });
   }
+
+  handleCommentSubmit(e) {
+    e.preventDefault();
+    this.setState({
+      newComment: {
+        name: this.state.name,
+        comment: this.state.comment,
+        date: this.state.date
+      }
+    });
+
+    console.log(this.state.newComment);
+  }
+
   moreComments() {
     this.setState(prev => {
       return {
@@ -78,20 +95,33 @@ class Comments extends Component {
           <div className="addComment-contact">
             <span className="addComment-contact-span">
               <span className="link">NAME</span>
-              <textarea className="contact-input" type="text" />
+              <textarea
+                name="name"
+                onChange={this.handleCommentInput}
+                value={this.state.name}
+                className="contact-input"
+                type="text"
+              />
             </span>
-            <span className="addComment-contact-span">
+            {/* <span className="addComment-contact-span">
               <span className="link">SOCIAL MEDIA</span>
-              <textarea className="contact-input" type="text"></textarea>
-            </span>
+              <textarea className="contact-input" type="text" />
+            </span> */}
           </div>
           <span className="link">COMMENT</span>
-          <textarea className="comment-input" type="text" />
+          <textarea
+            name="comment"
+            onChange={this.handleCommentInput}
+            value={this.state.comment}
+            className="comment-input"
+            type="text"
+          />
           <div
             className="addComment-btn"
-            onClick={() =>
-              this.setState({ addComment: !this.state.addComment })
-            }
+            onSubmit={this.handleCommentSubmit}
+            // onClick={() =>
+            //   this.setState({ addComment: !this.state.addComment })
+            // }
           >
             <span className="box-button button">POST COMMENT</span>
           </div>
