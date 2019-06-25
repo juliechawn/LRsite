@@ -1,3 +1,14 @@
-#article-category {
-  /* max-width: 900px; */
+@media (min-width: 1px) and (max-width: 1199px) {
+  .article-category-body {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article-category-body {
+    width: 70%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
 }

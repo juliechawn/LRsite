@@ -161,17 +161,18 @@ class MoreArticles extends Component {
 
     let moreArticlesTablet = (
       <div className="more-articles-div-tablet">
-        <div onClick={this.goBackTablet}>
-          {this.state.currentTablet > 0 && (
-            <i className="fas fa-arrow-left fa-lg button" />
-          )}
-        </div>
+      <div onClick={this.goBackTablet}>
+        {this.state.currentTablet > 0 && (
+          <i className="fas fa-arrow-left fa-lg button" />
+        )}
+      </div>
+     
         {this.state.items
           .slice(this.state.currentTablet, this.state.visibleTablet)
           .map((item, index) => {
             return (
               <NavLink exact activeClassName="" to="/article" key={item.id}>
-                <div className="more-article">
+                <div className="more-article ">
                   <div className="zoom">
                     <img
                       className="more-img"
@@ -180,11 +181,11 @@ class MoreArticles extends Component {
                     />
                   </div>
                   <div className="more-title">
-                    <span className={`${this.getCategory()}`}>
+                    <span className={`button ${this.getCategory()}`}>
                       <strong>{this.props.category}</strong>
                     </span>
-                    <p className="more-title-link  button">
-                      Lorem ipsum dolor sit amet
+                    <p className="more-title-link">
+                      Lorem ipsum dolor sit amet  
                     </p>
                   </div>
                 </div>
@@ -192,12 +193,12 @@ class MoreArticles extends Component {
             );
           })}
 
-        <div onClick={this.loadMoreTablet}>
-          {this.state.visibleTablet < this.state.items.length && (
-            <i className="fas fa-arrow-right fa-lg button" />
-          )}
-        </div>
+      <div onClick={this.loadMoreTablet}>
+        {this.state.visibleTablet < this.state.items.length && (
+          <i className="fas fa-arrow-right fa-lg button" />
+        )}
       </div>
+    </div>
     );
 
     let moreArticlesDesktop = (
@@ -212,7 +213,6 @@ class MoreArticles extends Component {
             .slice(this.state.currentDesktop, this.state.visibleDesktop)
             .map((item, index) => {
               return (
-
                 <NavLink exact activeClassName="" to="/article" key={item.id}>
                   <div className="more-article ">
                     <div className="zoom">

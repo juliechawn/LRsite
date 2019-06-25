@@ -72,15 +72,15 @@
   }
 }
 
-@media (min-width: 650px) and (max-width: 1099px) {
+@media (min-width: 650px) and (max-width: 999px) {
   .home-top-article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: white;
     width: 100%;
-    padding-bottom: 75px;
-    height: 80vh;
-    align-items: center;
+    padding-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .tags-div {
@@ -97,7 +97,7 @@
 
   .top-img-div {
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 500px;
   }
 
@@ -107,35 +107,35 @@
     height: 100%;
   }
 
-  .home-top-article-text-right {
+  .home-top-article-text-right, .home-top-article-text-left {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-evenly;
-    width: 50%;
-    height: 500px;
-    padding: 0 0px 0px 15px;
+    width: 100%;
+    height: 350px;
+    margin: 10px 0 10px 0px;
   }
 
-  .home-top-article-text-left {
-    display: flex;
-    flex-direction: column;
+  .reverse {
     text-align: center;
-    justify-content: space-evenly;
-    width: 50%;
-    height: 500px;
-    padding: 0 15px 0px 0px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .home-title {
-    font-size: 18px;
+    padding: 15px 0 15px 0;
+    font-size: 24px;
     letter-spacing: 0.1em;
-    word-spacing: 5px;
+    word-spacing: 10px;
   }
 
   .home-text-preview-div {
-    height: 5em;
+    width: 90%;
+    margin: 0 auto;
+    height: 6em;
     overflow: hidden;
+    padding: 0 0 25px 0;
   }
 
   .home-text {
@@ -147,6 +147,7 @@
     text-align: justify;
   }
 }
+
 @media (min-width: 1000px) {
   .home-top-article {
     display: flex;
@@ -154,8 +155,7 @@
     background: white;
     width: 100%;
     padding-bottom: 75px;
-    /* height: 80vh; */
-    /* align-items: center; */
+    max-width: 1300px;
   }
 
   .tags-div {
@@ -190,6 +190,7 @@
     width: 50%;
     height: 500px;
     padding: 0 0 0 30px;
+   
   }
 
   .home-top-article-text-left {

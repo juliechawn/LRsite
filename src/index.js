@@ -10,7 +10,6 @@ import ArticleCatTwo from "./components/ArticleCategories/ArticleCategoryTwo.js"
 import ArticleCatThree from "./components/ArticleCategories/ArticleCategoryThree";
 import ArticleCatFour from "./components/ArticleCategories/ArticleCategoryFour";
 import registerServiceWorker from "./registerServiceWorker";
-import {Helmet} from "react-helmet";
 
 const Root = () => (
   <Router>

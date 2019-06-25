@@ -82,9 +82,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
-          <div className="home-more-articles">
           <MoreArticles api={"family"} category={"CATEGORY ONE"} />
-          </div>
         </div>
         <Footer />
       </div>
