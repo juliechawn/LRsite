@@ -179,13 +179,13 @@ a:visited {
   }
 
   .page-body {
-    width: 95%;
+    /* width: 95%; */
     margin: 0px auto;
     padding-top: 80px;
   }
 
   .page-body-home {
-    width: 95%;
+    /* width: 95%; */
     margin: 0px auto;
     padding-top: 80px;
     /* max-width: 600px; */

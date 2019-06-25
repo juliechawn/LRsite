@@ -1,6 +1,8 @@
 
 @media (min-width: 1px) and (max-width: 799px) {
   .more-articles {
+    width: 95%;
+    margin: 0 auto;
     padding: 20px 0;
   }
 
@@ -58,6 +60,8 @@
 
 @media (min-width: 800px) and (max-width: 1199px) {
   .more-articles {
+    width: 95%;
+    margin: 0 auto;
     padding: 25px 0;
   }
   
