@@ -4,7 +4,7 @@
   }
 
   .home-header {
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
     padding-top: 70px;
   }
 
@@ -25,12 +25,12 @@
   .vertical {    
     opacity: 0.15;
     width: 50%;
-    height: calc(50vh - 40px);
+    height: calc(50vh - 35px);
   }
   
   .horizontal {
     opacity: 0.15;
-    height: calc(50vh - 40px);
+    height: calc(50vh - 35px);
 
   }
   
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
   }
 
   .photogrid-div {
@@ -86,7 +86,7 @@
   }
 
   .home-header {
-    height: calc(100% - 80px);
+    height: calc(100% - 70px);
     padding-top: 70px;
   }
 
@@ -107,12 +107,12 @@
   .vertical {    
     opacity: 0.15;
     width: 50%;
-    height: calc(50vh - 40px);
+    height: calc(50vh - 35px);
   }
   
   .horizontal {
     opacity: 0.15;
-    height: calc(50vh - 40px);
+    height: calc(50vh - 35px);
 
   }
   
@@ -121,7 +121,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
   }
 
   .photogrid-div {
