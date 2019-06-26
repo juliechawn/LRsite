@@ -1,4 +1,8 @@
 @media (min-width: 1px) and (max-width: 649px) {
+  .comments {
+    width: 95%;
+    margin: 0 auto;
+  }
   .contact-form {
     padding: 20px 0;
     margin-top: 25px;
@@ -6,6 +10,11 @@
 }
 
 @media (min-width: 650px) and (max-width: 1099px) {
+  .comments {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
   .contact-form {
     padding: 20px 0;
   }
