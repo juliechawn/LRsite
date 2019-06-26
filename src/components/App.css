@@ -179,16 +179,13 @@ a:visited {
   }
 
   .page-body {
-    /* width: 95%; */
     margin: 0px auto;
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .page-body-home {
-    /* width: 95%; */
     margin: 0px auto;
-    padding-top: 80px;
-    /* max-width: 600px; */
+    padding-top: 70px;
   }
 
   .link {
@@ -256,14 +253,14 @@ a:visited {
     width: 95%;
     max-width: 1600px;
     margin: 0px auto;
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .page-body {
     width: 95%;
     max-width: 1600px;
     margin: 0px auto;
-    padding-top: 80px;
+    padding-top: 70px;
   }
 
   .link-header {
