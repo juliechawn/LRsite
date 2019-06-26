@@ -8,7 +8,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <SocialMedia />
-        <span className="rights">ALL RIGHTS RESERVED 2019</span>
+        <span className="rights">ARR 2019</span>
             <NavLink
               activeClassName=""
               to="/about"

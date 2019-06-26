@@ -43,7 +43,7 @@
 }
 
 .addComment textarea{
-  background-color: rgba(182, 185, 187, 0.1);
+  background-color: #F8F8F8;
   border: 0.5px rgba(0, 52, 89, 0.1) solid;
 }
 
@@ -71,7 +71,7 @@
 .comment {
   width: 90%;
   margin: 20px auto;
-  background-color: rgba(182, 185, 187, 0.1);
+  background-color: #F8F8F8;
   border: 0.5px rgba(0, 52, 89, 0.1) solid;
   padding: 10px 20px;
 }

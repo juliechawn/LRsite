@@ -7,7 +7,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -68,9 +68,6 @@
     display: none;
   }
 
-  .page-title {
-
-  }
   .about-body {
     background-color: white;
     display: flex;

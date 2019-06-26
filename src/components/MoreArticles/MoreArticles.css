@@ -33,7 +33,7 @@
   .more-article {
     width: 275px;
     margin: 10px;
-    background-color: rgba(182, 185, 187, 0.1);
+    background-color: #F8F8F8;
   }
   
   .more-img {
@@ -88,7 +88,7 @@
   .more-article {
     width: 275px;
     margin: 10px;
-    background-color: rgba(182, 185, 187, 0.1);
+    background-color: #F8F8F8;
     
   }
   
@@ -140,7 +140,7 @@
 .more-article {
   width: 300px;
   margin: 10px;
-  background-color: rgba(182, 185, 187, 0.1);
+  background-color: #F8F8F8;
 }
 
 .more-img {
